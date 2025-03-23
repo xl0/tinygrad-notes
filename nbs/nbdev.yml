@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "tinygrad-notes"
+  site-url: "https://xl0.github.io/tinygrad-notes"
+  description: "My notes on TinyGrad internals"
+  repo-branch: master
+  repo-url: "https://github.com/xl0/tinygrad-notes"
