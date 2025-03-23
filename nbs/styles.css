@@ -11,10 +11,10 @@
 }
 
 .cell-output > pre, .cell-output > .sourceCode > pre, .cell-output-stdout > pre {
-  margin-left: 0.8rem;
+  /* margin-left: 0.8rem; */
   margin-top: 0;
   background: none;
-  border-left: 2px solid lightsalmon;
+  /* border-left: 2px solid lightsalmon; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -34,4 +34,23 @@ div.description {
   font-style: italic;
   font-size: 135%;
   opacity: 70%;
+}
+
+@media (min-width: 992px) {
+  body.floating .page-columns {
+    grid-template-columns:  [screen-start] 0.5em
+                            [screen-start-inset] 5fr
+                            [page-start] minmax(10px, 50px)
+                            [page-start-inset] minmax(50px, 150px)
+                            [body-start-outset] minmax(25px, 50px)
+                            [body-start] 0.5em
+                            [body-content-start] minmax(500px, calc(4000px - 3em))
+                            [body-content-end] 0.5em
+                            [body-end] minmax(25px, 50px)
+                            [body-end-outset] minmax(50px, 150px)
+                            [page-end-inset] minmax(25px, 50px)
+                            [page-end] 5fr
+                            [screen-end-inset] 0.5em
+                            [screen-end]
+  }
 }

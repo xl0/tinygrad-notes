@@ -6,17 +6,28 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-location: left
+    # toc-location: left
     page-layout: full
+    embed-resources: true
+    grid:
+      sidebar-width: 240px
+      gutter-width: 200px
 
 website:
-  twitter-card: true
+  twitter-card:
+      creator: "@xl0xl0xl0"
   open-graph: true
-  repo-actions: [issue]
+  # repo-actions: [issue]
   navbar:
     background: primary
     search: true
+    right:
+      - icon: github
+        href: "http://github.com/xl0/tinygrad-notes"
+      - icon: twitter
+        href: "https://x.com/xl0xl0xl0"
   sidebar:
     style: floating
+
 
 metadata-files: [nbdev.yml, sidebar.yml]
