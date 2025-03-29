@@ -3,3 +3,5 @@ website:
     contents:
       - index.ipynb
       - 00_intro.ipynb
+      - 01_uops.ipynb
+      - 02_uops_annotated.ipynb
