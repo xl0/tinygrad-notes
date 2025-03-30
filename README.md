@@ -10,3 +10,9 @@ Tinygrad notes by
 
 - [0 - Introduction](https://xl0.github.io/tinygrad-notes/intro.html)
 - [1 - UOps](https://xl0.github.io/tinygrad-notes/uops.html)
+- [1.1 - UOp full
+  summary](https://xl0.github.io/tinygrad-notes/uops_annotated.html)
+- [2 - View and
+  ShapeTracker](https://xl0.github.io/tinygrad-notes/shapetracker.html)
+- [3 - The Pattern
+  Matcher](https://xl0.github.io/tinygrad-notes/patternmatcher.html)
