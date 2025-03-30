@@ -12,9 +12,6 @@ format:
     grid:
       sidebar-width: 240px
       gutter-width: 200px
-    # theme:
-    #   light: flatly
-    #   dark: darkly
 
 website:
   twitter-card:

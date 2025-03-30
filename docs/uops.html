@@ -4963,7 +4963,7 @@ grid-template-columns: [screen-start] 0.5em
 </section>
 <section id="uop-is-a-singleton" class="level3">
 <h3 class="anchored" data-anchor-id="uop-is-a-singleton">UOp is a singleton</h3>
-<p>As noted by [mesozoic-egg@github][https://mesozoic-egg.github.io/tinygrad-notes/20250119_uop_singleton.html], UOp is a singleton.</p>
+<p>As noted by <a href="https://mesozoic-egg.github.io/tinygrad-notes/20250119_uop_singleton.html">mesozoic-egg@github</a>, UOp is a singleton.</p>
 <p>It’s implemented using a MetaClass:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> UOpMetaClass(<span class="bu">type</span>):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  ucache:<span class="bu">dict</span>[<span class="bu">tuple</span>, weakref.ReferenceType[UOp]] <span class="op">=</span> {}</span>
@@ -5043,14 +5043,13 @@ grid-template-columns: [screen-start] 0.5em
 <h3 class="anchored" data-anchor-id="uop.render">UOp.render()</h3>
 <p><code>.render()</code> converts the UOp tree into a C expression.</p>
 <p>This is not how TinyGrad generates the code normally, but it’s useful for debugging.</p>
-<p>I think only scalars can</p>
 <div id="cell-17" class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>add1.render(simplify<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>&#39;((3*5)+2)&#39;</code></pre>
 </div>
 </div>
-<p>This only works for a similted subset of trees with simple operations though.</p>
+<p>This only works for a limited subset of trees with simple operations though.</p>
 <p>If the tree can not be rendered, the function returns an str(op).</p>
 </section>
 <section id="uop-creation-helpers" class="level3">
@@ -5164,7 +5163,10 @@ Ops.ADD None</code></pre>
            x4,)),)),)),)),))</code></pre>
 </div>
 </div>
-<p>The first step is to “schedule” the computation. This converts the UOp tree to a lover level one. You might also notice that it computed the <code>1+2=3</code>. &gt; Note: We will cover the <code>ShapeTracker</code> in a separate chapter soon</p>
+<p>The first step is to “schedule” the computation. This converts the UOp tree to a lover level one. You might also notice that it computed the <code>1+2=3</code>.</p>
+<blockquote class="blockquote">
+<p>Note: We will cover the <code>ShapeTracker</code> in a separate chapter soon</p>
+</blockquote>
 <div id="cell-36" class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>schedule, <span class="bu">vars</span> <span class="op">=</span> a.schedule_with_vars()</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>schedule, <span class="bu">vars</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
