@@ -9,7 +9,8 @@ format:
     # toc-location: left
     page-layout: full
     embed-resources: true
-    max-width: 1200px
+    # max-width: 2200px
+    # margin-left: 0px
     # grid:
     #   sidebar-width: 240px
     #   gutter-width: 200px

@@ -4743,13 +4743,15 @@ vertical-align: -.125em;
 <style type="text/css">.cell {
 margin-bottom: 1rem;
 }
-.cell > .sourceCode {
+.cell>.sourceCode {
 margin-bottom: 0;
 }
-.cell-output > pre {
+.cell-output>pre {
 margin-bottom: 0;
 }
-.cell-output > pre, .cell-output > .sourceCode > pre, .cell-output-stdout > pre {
+.cell-output>pre,
+.cell-output>.sourceCode>pre,
+.cell-output-stdout>pre {
 
 margin-top: 0;
 background: none;
@@ -4757,10 +4759,10 @@ background: none;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
 }
-.cell-output > .sourceCode {
+.cell-output>.sourceCode {
 border: none;
 }
-.cell-output > .sourceCode {
+.cell-output>.sourceCode {
 background: none;
 margin-top: 0;
 }
@@ -4771,7 +4773,13 @@ font-style: italic;
 font-size: 135%;
 opacity: 70%;
 }
-
+@media (min-width: 992px) {
+body.floating .page-columns {
+display: grid;
+gap: 0;
+grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-start] minmax(25px, 50px) [page-start-inset] minmax(50px, 150px) [body-start-outset] minmax(25px, 50px) [body-start] 1.5em [body-content-start] minmax(500px, calc(1800px - 3em)) [body-content-end] 1.5em [body-end] minmax(25px, 50px) [body-end-outset] minmax(50px, 150px) [page-end-inset] minmax(25px, 50px) [page-end] 05fr [screen-end-inset] 1.5em [screen-end];
+}
+}
 </style>
 <meta property="og:title" content="0 - Introduction – tinygrad-notes">
 <meta property="og:description" content="My notes on TinyGrad internals">
