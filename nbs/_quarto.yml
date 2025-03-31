@@ -9,9 +9,10 @@ format:
     # toc-location: left
     page-layout: full
     embed-resources: true
-    grid:
-      sidebar-width: 240px
-      gutter-width: 200px
+    max-width: 1200px
+    # grid:
+    #   sidebar-width: 240px
+    #   gutter-width: 200px
 
 website:
   twitter-card:
@@ -19,6 +20,7 @@ website:
   open-graph: true
   # repo-actions: [issue]
   navbar:
+    collapse: false
     background: primary
     search: true
     right:

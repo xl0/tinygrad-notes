@@ -2,7 +2,7 @@ project:
   output-dir: docs
 
 website:
-  title: "tinygrad-notes"
+  title: "Tinygrad notes"
   site-url: "https://xl0.github.io/tinygrad-notes"
   description: "My notes on TinyGrad internals"
   repo-branch: master
