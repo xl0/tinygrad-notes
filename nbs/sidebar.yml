@@ -7,4 +7,3 @@ website:
       - 01a_uops_annotated.ipynb
       - 02_shapetracker.ipynb
       - 03_patternmatcher.ipynb
-      - 04_life.ipynb
