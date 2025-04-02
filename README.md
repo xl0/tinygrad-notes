@@ -19,3 +19,5 @@ Notes
   ShapeTracker](https://xl0.github.io/tinygrad-notes/shapetracker.html)
 - [3 - The Pattern
   Matcher](https://xl0.github.io/tinygrad-notes/patternmatcher.html)
+- [4 - The `.arange()`
+  insanity](https://xl0.github.io/tinygrad-notes/arange.html)
