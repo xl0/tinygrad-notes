@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/intro.html</loc>
-    <lastmod>2025-03-31T23:51:23.911Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.091Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/uops_annotated.html</loc>
-    <lastmod>2025-03-31T23:51:23.886Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.070Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/shapetracker.html</loc>
-    <lastmod>2025-03-31T23:51:23.880Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.052Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/uops.html</loc>
-    <lastmod>2025-03-31T23:51:23.872Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.040Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/arange.html</loc>
+    <lastmod>2025-04-02T00:04:20.047Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/patternmatcher.html</loc>
-    <lastmod>2025-03-31T23:51:23.883Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.061Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/index.html</loc>
-    <lastmod>2025-03-31T23:51:23.896Z</lastmod>
+    <lastmod>2025-04-02T00:04:20.078Z</lastmod>
   </url>
 </urlset>
