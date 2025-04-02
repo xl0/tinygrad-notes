@@ -92,11 +92,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My notes on TyniGrad internals",
+    "title": "My notes on TinyGrad internals",
     "section": "",
-    "text": "Tinygrad source: https://github.com/tinygrad/tinygrad\nTinygrad docs: https://docs.tinygrad.org/\nA great deal of inspiration has been taken from mesozoic-egg Tynigrad Notes\n\n0 - Introduction\n1 - UOps\n1.1 - UOp full summary\n2 - View and ShapeTracker\n3 - The Pattern Matcher\n4 - The .arange() insanity",
+    "text": "Tinygrad source: https://github.com/tinygrad/tinygrad\nTinygrad docs: https://docs.tinygrad.org/\nA great deal of inspiration has been taken from mesozoic-egg TinyGrad Notes\n\n0 - Introduction\n1 - UOps\n1.1 - UOp full summary\n2 - View and ShapeTracker\n3 - The Pattern Matcher\n4 - The .arange() insanity",
     "crumbs": [
-      "My notes on TyniGrad internals"
+      "My notes on TinyGrad internals"
     ]
   }
 ]
