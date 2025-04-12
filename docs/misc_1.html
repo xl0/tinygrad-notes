@@ -4938,7 +4938,7 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 <p>ELF is the standard format for executables and libraries, as well as intermediate object files (.o) on Linux.</p>
 <p>TinyGrad uses it for 2 somewhat distinct roles:</p>
 <ol type="1">
-<li>When it generates CPU code (clang or LLVM IR backends), it it then needs to load the generated binary code into memory to run it.</li>
+<li>When it generates CPU code (clang or LLVM IR backends), it then needs to load the generated binary code into memory to run it.</li>
 </ol>
 <blockquote class="blockquote">
 <p>We could have built a shared library (.so), but then I think we’d have to save it to use <code>dlopen()</code>, and it would not be portable anyway. So instead of this, TinyGrad only does the compilation step (generates a .o) and implements a minimal ELF loader.</p>
@@ -4947,8 +4947,11 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 <p><a href="https://github.com/uuuvn"><span class="citation" data-cites="uuuuvn">@uuuuvn</span></a> also pointed out that doing a proper linking step is slow, and there is a bug in the OSX linker that can’t output to stdout.</p>
 </blockquote>
 <ol start="2" type="1">
-<li>When it generates cuda code, it also comes out as ELF. The sections and relocation rules are different from those found on Linux, but the format is the same. &gt; The CUDA Runtime library would be able to load this object file, and that’s what we do for the <code>CUDA</code> backend, but the <code>NV</code> backend does not rely on the CUDA Runtime libraries, so we parse the ELF manually.</li>
+<li>When it generates cuda code, it also comes out as ELF. The sections and relocation rules are different from those found on Linux, but the format is the same.</li>
 </ol>
+<blockquote class="blockquote">
+<p>The CUDA Runtime library would be able to load this object file, and that’s what we do for the <code>CUDA</code> backend, but the <code>NV</code> backend does not rely on the CUDA Runtime libraries, so we parse the ELF manually.</p>
+</blockquote>
 <p>The loader and relocation code for host (x86_64 and ARM 64) platforms is implemented in <a href="https://github.com/tinygrad/tinygrad/blob/09ec33a5786cd59cb013dd736250fa58a56203d5/tinygrad/runtime/support/elf.py">tinygrad/runtime/support/elf.py</a></p>
 <p>Since we only deal with self-contained object files (they don’t access data/function from other files), the task is less danting than you might thnk.</p>
 <p>Let’s first look at the ELF format, at least the bits relevant here:</p>
@@ -5008,9 +5011,9 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 </section>
 <section id="relocations" class="level3">
 <h3 class="anchored" data-anchor-id="relocations">Relocations</h3>
-<p>Even in self-contained object files, the compiler generates an object file with symbols (constants, global vars, functions) that don’t have their final location assigned. This code might:</p>
+<p>Even for a self-contained file, the compiler generates an object file with symbols (constants, global vars, functions) that don’t have their final location assigned. This code might:</p>
 <ul>
-<li>Access a function defined elsewhere in the same object file (e.g., a helper function in another part of <code>.text</code>).</li>
+<li>Access a function defined elsewhere in the same file (e.g., a helper function in another part of <code>.text</code>).</li>
 <li>Reference constants or static data (e.g., accessing a string literal in <code>.rodata</code> or a static array in <code>.data</code>).</li>
 </ul>
 <blockquote class="blockquote">
@@ -5132,20 +5135,16 @@ Contents of section .rodata.cst4:
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>image, sections, relocs <span class="op">=</span> elf_loader(elf_bytes)</span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Image size: </span><span class="sc">{</span><span class="bu">len</span>(image)<span class="sc">}</span><span class="ss"> bytes&quot;</span>)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of sections: </span><span class="sc">{</span><span class="bu">len</span>(sections)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of relocations: </span><span class="sc">{</span><span class="bu">len</span>(relocs)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Sections:&quot;</span>)</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, section <span class="kw">in</span> <span class="bu">enumerate</span>(sections):</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;  </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>section<span class="sc">.</span>name<span class="sc">}</span><span class="ss"> (size: </span><span class="sc">{</span>section<span class="sc">.</span>header<span class="sc">.</span>sh_size<span class="sc">}</span><span class="ss">, addr: </span><span class="sc">{</span><span class="bu">hex</span>(section.header.sh_addr)<span class="sc">}</span><span class="ss">)&quot;</span>)</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> relocs:</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Relocations:&quot;</span>)</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, (offset, target, r_type, addend) <span class="kw">in</span> <span class="bu">enumerate</span>(relocs):</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;  </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">: offset=</span><span class="sc">{</span><span class="bu">hex</span>(offset)<span class="sc">}</span><span class="ss">, target=</span><span class="sc">{</span><span class="bu">hex</span>(target)<span class="sc">}</span><span class="ss">, type=</span><span class="sc">{</span>r_type<span class="sc">}</span><span class="ss">, addend=</span><span class="sc">{</span>addend<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Sections:&quot;</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, section <span class="kw">in</span> <span class="bu">enumerate</span>(sections):</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;  </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>section<span class="sc">.</span>name<span class="sc">}</span><span class="ss"> (size: </span><span class="sc">{</span>section<span class="sc">.</span>header<span class="sc">.</span>sh_size<span class="sc">}</span><span class="ss">, addr: </span><span class="sc">{</span><span class="bu">hex</span>(section.header.sh_addr)<span class="sc">}</span><span class="ss">)&quot;</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> relocs:</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Relocations:&quot;</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, (offset, target, r_type, addend) <span class="kw">in</span> <span class="bu">enumerate</span>(relocs):</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;  </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">: offset=</span><span class="sc">{</span><span class="bu">hex</span>(offset)<span class="sc">}</span><span class="ss">, target=</span><span class="sc">{</span><span class="bu">hex</span>(target)<span class="sc">}</span><span class="ss">, type=</span><span class="sc">{</span>r_type<span class="sc">}</span><span class="ss">, addend=</span><span class="sc">{</span>addend<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Image size: 32 bytes
-Number of sections: 8
-Number of relocations: 1
 
 Sections:
   0:  (size: 0, addr: 0x0)
@@ -5161,7 +5160,7 @@ Relocations:
   0: offset=0x10, target=0x1c, type=2, addend=-4</code></pre>
 </div>
 </div>
-<p>Disassemble the code</p>
+<p>Disassemble the code in the image:</p>
 <div id="cell-18" class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tinygrad.helpers <span class="im">import</span> capstone_flatdump</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
