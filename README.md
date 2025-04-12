@@ -7,9 +7,9 @@ Tinygrad source: <https://github.com/tinygrad/tinygrad>
 
 Tinygrad docs: <https://docs.tinygrad.org/>
 
-A great deal of inspiration has been taken from
-[mesozoic-egg](https://mesozoic-egg.github.io/tinygrad-notes/) TinyGrad
-Notes
+Written with help from great people in TinyGrad Discord, amd a great
+deal of inspiration has been taken from
+[mesozoic-egg](https://mesozoic-egg.github.io/tinygrad-notes/).
 
 ### Chapters
 
@@ -33,9 +33,11 @@ Notes
 - [1 - `elf.py` and the ELF
   format](https://xl0.github.io/tinygrad-notes/misc_1.html)
 
-Reading order: - Scroll through Appendix A after reading the intro. It
-will make reading the code much easier - Scroll through Appendix B after
-reading the chapter of UOps
+Reading order:
+
+- Scroll through Appendix A after reading the intro. It will make
+  reading the code much easier
+- Scroll through Appendix B after reading the chapter of UOps
 
 If you want to contribute, install `nbdev`
 
