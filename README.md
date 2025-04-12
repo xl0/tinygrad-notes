@@ -30,8 +30,8 @@ Notes
 
 ### Miscellaneous
 
-- [1 - Loading code with
-  `elf.py`](https://xl0.github.io/tinygrad-notes/misc_1.html)
+- [1 - `elf.py` and the ELF
+  format](https://xl0.github.io/tinygrad-notes/misc_1.html)
 
 Reading order: - Scroll through Appendix A after reading the intro. It
 will make reading the code much easier - Scroll through Appendix B after
