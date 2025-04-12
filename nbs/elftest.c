@@ -1,0 +1,1 @@
+float foo(int x) { return x + 12345678.f; } // I use float because an int const stays in .text for some reason

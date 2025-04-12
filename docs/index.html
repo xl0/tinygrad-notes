@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -4821,12 +4855,6 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./uops_annotated.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.1 - UOp Summary</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./shapetracker.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2 - View and ShapeTracker</span></a>
   </div>
@@ -4843,16 +4871,42 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
  <span class="menu-text">4 - The <code>.arange()</code> insanity</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix A: <code>helpers.py</code></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix_b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix B - UOp Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./misc_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Misc 1 - elf.py and the ELF format</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#chapters" id="toc-chapters" class="nav-link active" data-scroll-target="#chapters">Chapters</a></li>
+  <li><a href="#appendices" id="toc-appendices" class="nav-link" data-scroll-target="#appendices">Appendices</a></li>
+  <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous">Miscellaneous</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -4861,7 +4915,7 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -4877,16 +4931,36 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 <p>Tinygrad source: <a href="https://github.com/tinygrad/tinygrad">https://github.com/tinygrad/tinygrad</a></p>
 <p>Tinygrad docs: <a href="https://docs.tinygrad.org/">https://docs.tinygrad.org/</a></p>
 <p>A great deal of inspiration has been taken from <a href="https://mesozoic-egg.github.io/tinygrad-notes/">mesozoic-egg</a> TinyGrad Notes</p>
+<section id="chapters" class="level3">
+<h3 class="anchored" data-anchor-id="chapters">Chapters</h3>
 <ul>
 <li><a href="https://xl0.github.io/tinygrad-notes/intro.html">0 - Introduction</a></li>
 <li><a href="https://xl0.github.io/tinygrad-notes/uops.html">1 - UOps</a></li>
-<li><a href="https://xl0.github.io/tinygrad-notes/uops_annotated.html">1.1 - UOp full summary</a></li>
 <li><a href="https://xl0.github.io/tinygrad-notes/shapetracker.html">2 - View and ShapeTracker</a></li>
 <li><a href="https://xl0.github.io/tinygrad-notes/patternmatcher.html">3 - The Pattern Matcher</a></li>
 <li><a href="https://xl0.github.io/tinygrad-notes/arange.html">4 - The <code>.arange()</code> insanity</a></li>
 </ul>
+</section>
+<section id="appendices" class="level3">
+<h3 class="anchored" data-anchor-id="appendices">Appendices</h3>
+<ul>
+<li><a href="https://xl0.github.io/tinygrad-notes/appendix_a.html">A: <code>helpers.py</code></a></li>
+<li><a href="https://xl0.github.io/tinygrad-notes/appendix_b.html">B: UOp Summary</a></li>
+</ul>
+</section>
+<section id="miscellaneous" class="level3">
+<h3 class="anchored" data-anchor-id="miscellaneous">Miscellaneous</h3>
+<ul>
+<li><a href="https://xl0.github.io/tinygrad-notes/misc_1.html">1 - Loading code with <code>elf.py</code></a></li>
+</ul>
+<p>Reading order: - Scroll through Appendix A after reading the intro. It will make reading the code much easier - Scroll through Appendix B after reading the chapter of UOps</p>
+<p>If you want to contribute, install <code>nbdev</code></p>
+<p>Run</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">nbdev_clean</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">nbdev_docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

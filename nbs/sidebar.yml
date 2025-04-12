@@ -4,7 +4,9 @@ website:
       - index.ipynb
       - 00_intro.ipynb
       - 01_uops.ipynb
-      - 01a_uops_annotated.ipynb
       - 02_shapetracker.ipynb
       - 03_patternmatcher.ipynb
       - 04_arange.ipynb
+      - 80_appendix_a.ipynb
+      - 81_appendix_b.ipynb
+      - 90_misc_1.ipynb

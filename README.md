@@ -11,13 +11,37 @@ A great deal of inspiration has been taken from
 [mesozoic-egg](https://mesozoic-egg.github.io/tinygrad-notes/) TinyGrad
 Notes
 
+### Chapters
+
 - [0 - Introduction](https://xl0.github.io/tinygrad-notes/intro.html)
 - [1 - UOps](https://xl0.github.io/tinygrad-notes/uops.html)
-- [1.1 - UOp full
-  summary](https://xl0.github.io/tinygrad-notes/uops_annotated.html)
 - [2 - View and
   ShapeTracker](https://xl0.github.io/tinygrad-notes/shapetracker.html)
 - [3 - The Pattern
   Matcher](https://xl0.github.io/tinygrad-notes/patternmatcher.html)
 - [4 - The `.arange()`
   insanity](https://xl0.github.io/tinygrad-notes/arange.html)
+
+### Appendices
+
+- [A:
+  `helpers.py`](https://xl0.github.io/tinygrad-notes/appendix_a.html)
+- [B: UOp Summary](https://xl0.github.io/tinygrad-notes/appendix_b.html)
+
+### Miscellaneous
+
+- [1 - Loading code with
+  `elf.py`](https://xl0.github.io/tinygrad-notes/misc_1.html)
+
+Reading order: - Scroll through Appendix A after reading the intro. It
+will make reading the code much easier - Scroll through Appendix B after
+reading the chapter of UOps
+
+If you want to contribute, install `nbdev`
+
+Run
+
+``` bash
+nbdev_clean
+nbdev_docs
+```
