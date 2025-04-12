@@ -7,8 +7,8 @@ Tinygrad source: <https://github.com/tinygrad/tinygrad>
 
 Tinygrad docs: <https://docs.tinygrad.org/>
 
-Written with help from great people in TinyGrad Discord, amd a great
-deal of inspiration has been taken from
+Written with help from good people in TinyGrad Discord, and a great deal
+of inspiration has been taken from
 [mesozoic-egg](https://mesozoic-egg.github.io/tinygrad-notes/).
 
 ### Chapters
