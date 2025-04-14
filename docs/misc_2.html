@@ -4905,7 +4905,12 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#device-init" id="toc-device-init" class="nav-link active" data-scroll-target="#device-init">Device init</a></li>
+  <li><a href="#saxpy.cu" id="toc-saxpy.cu" class="nav-link active" data-scroll-target="#saxpy.cu"><code>saxpy.cu</code></a></li>
+  <li><a href="#device-init" id="toc-device-init" class="nav-link" data-scroll-target="#device-init">Device init</a></li>
+  <li><a href="#device-information" id="toc-device-information" class="nav-link" data-scroll-target="#device-information">Device information</a></li>
+  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context">Context</a></li>
+  <li><a href="#memory-management" id="toc-memory-management" class="nav-link" data-scroll-target="#memory-management">Memory management</a></li>
+  <li><a href="#load-and-run-the-kernel" id="toc-load-and-run-the-kernel" class="nav-link" data-scroll-target="#load-and-run-the-kernel">Load and run the kernel</a></li>
   </ul>
 </nav>
     </div>
@@ -4939,6 +4944,8 @@ grid-template-columns: [screen-start] 1.5em [screen-start-inset] 0.5fr [page-sta
 </ul>
 <p>We will play with the CUDA library here, and do things NV-style in the next chapter.</p>
 <p>See <a href="https://docs.nvidia.com/cuda/cuda-driver-api/index.html">CUDA Driver API</a>.</p>
+<section id="saxpy.cu" class="level3">
+<h3 class="anchored" data-anchor-id="saxpy.cu"><code>saxpy.cu</code></h3>
 <p>Let’s look at a free-standing CUDA kernel. This does not include any host code:</p>
 <p><code>saxpy.cu</code></p>
 <div class="sourceCode">
@@ -5031,6 +5038,7 @@ Resource usage:
 ...</code></pre>
 </div>
 </div>
+</section>
 <section id="device-init" class="level3">
 <h3 class="anchored" data-anchor-id="device-init">Device init</h3>
 <p>TinyGrad autogenerates <code>ctypes</code> bindings for the CUDA library, so let’s just use them.</p>
@@ -5045,11 +5053,11 @@ Resource usage:
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># os.environ[&quot;IOCTL&quot;] = &quot;1&quot;</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># import nv_ioctl</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check(status):</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> status <span class="op">!=</span> <span class="dv">0</span>: <span class="cf">raise</span> <span class="pp">RuntimeError</span>(</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f&quot;CUDA Error </span><span class="sc">{</span>status<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>ctypes<span class="sc">.</span>string_at(init_c_var(ctypes.POINTER(ctypes.c_char)(), <span class="kw">lambda</span> x: cuda.cuGetErrorString(status, ctypes.byref(x))))<span class="sc">.</span>decode()<span class="sc">}</span><span class="ss">&quot;</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check(status):</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> status <span class="op">!=</span> <span class="dv">0</span>:</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        error_str <span class="op">=</span> ctypes.string_at(init_c_var(ctypes.POINTER(ctypes.c_char)(),</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                                               <span class="kw">lambda</span> x: cuda.cuGetErrorString(status, ctypes.byref(x)))).decode()</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="ss">f&quot;CUDA Error </span><span class="sc">{</span>status<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>error_str<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-13" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__INITIALIZE.html</span></span>
@@ -5058,119 +5066,164 @@ Resource usage:
 <div id="cell-14" class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>cu_device <span class="op">=</span> ctypes.c_int() <span class="co"># It&#39;s actually just an int with the value of the device ID</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># It fails if you try to get a device that does not exist, but oherwise if just returns the device ID you gave it.</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceGet(cu_device, <span class="dv">0</span>)) <span class="co"># cu_device is passed by pointer.</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>cu_device.value <span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceGet(cu_device, <span class="dv">0</span>)) <span class="co"># cu_device is passed by pointer, it&#39;s converted automatically based on the cuDeviceGet function signature</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>cu_device.value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="cell-15" class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>cu_context <span class="op">=</span> cuda.CUcontext()</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># cuCtxCreate_v2 is actually identical to cuCtxCreate:</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># include/cuda.h:</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># ...</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># #define cuCtxCreate                         cuCtxCreate_v2</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__CTX.html</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>check(cuda.cuCtxCreate_v2(cu_context, <span class="dv">0</span>, cu_device))</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>cu_context.contents <span class="co"># This is a pointer to the context object. It is opaque, no idea what is the size or composition of the context obj</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<pre><code>&lt;tinygrad.runtime.autogen.cuda.struct_CUctx_st&gt;</code></pre>
-</div>
-</div>
+</section>
+<section id="device-information" class="level3">
+<h3 class="anchored" data-anchor-id="device-information">Device information</h3>
 <div id="cell-16" class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>major <span class="op">=</span> ctypes.c_int()</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>minor <span class="op">=</span> ctypes.c_int()</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceComputeCapability(major, minor, <span class="dv">0</span>))</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>major.value, minor.value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>device_count <span class="op">=</span> ctypes.c_int()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceGetCount(device_count))</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of CUDA devices available: </span><span class="sc">{</span>device_count<span class="sc">.</span>value<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Number of CUDA devices available: 1</code></pre>
+</div>
+</div>
+<div id="cell-17" class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>device_name <span class="op">=</span> ctypes.create_string_buffer(<span class="dv">100</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceGetName(device_name, <span class="bu">len</span>(device_name), cu_device))</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(device_name.value.decode())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NVIDIA GeForce RTX 3080 Laptop GPU</code></pre>
+</div>
+</div>
+<div id="cell-18" class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>minor <span class="op">=</span> ctypes.c_int()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>major <span class="op">=</span> ctypes.c_int()</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceComputeCapability(major, minor, <span class="dv">0</span>))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>major.value, minor.value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>(8, 6)</code></pre>
 </div>
 </div>
-<p>The device is ready. Let’s allocate the memory for the input and output arrays.</p>
-<div id="cell-18" class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">128</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># saxpy performs the operation y = a*x + y</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>dev_x <span class="op">=</span> cuda.CUdeviceptr() <span class="co"># 64 bit pointer to device memory</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>dev_y <span class="op">=</span> cuda.CUdeviceptr()</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Allocate the buffers on the device</span></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MEM.html</span></span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co"># include/cuda.h:</span></span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co"># #define cuMemAlloc                          cuMemAlloc_v2</span></span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemAlloc_v2(dev_x, N<span class="op">*</span><span class="dv">4</span>))</span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>check(cuda.cuCtxSynchronize()) <span class="co"># Wait for the kernel to finish</span></span>
-<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemAlloc_v2(dev_y, N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <div id="cell-19" class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create input array with random values</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>host_x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">100</span>, N).astype(np.float32)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>host_y <span class="op">=</span> np.zeros(N).astype(np.float32)</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy data to device. IDK why they are all called _v2</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyHtoD_v2(dev_x, host_x.ctypes.data_as(ctypes.c_void_p), N<span class="op">*</span><span class="dv">4</span>))</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyHtoD_v2(dev_y, host_y.ctypes.data_as(ctypes.c_void_p), N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get total memory on the device</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>total_memory <span class="op">=</span> ctypes.c_size_t()</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>check(cuda.cuDeviceTotalMem_v2(ctypes.byref(total_memory), cu_device))</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Total memory on device: </span><span class="sc">{</span>total_memory<span class="sc">.</span>value <span class="op">/</span> (<span class="dv">1024</span><span class="op">**</span><span class="dv">3</span>)<span class="sc">:.2f}</span><span class="ss"> GB&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Total memory on device: 15.59 GB</code></pre>
 </div>
-<p>Load the kernel and run it!</p>
+</div>
+</section>
+<section id="context" class="level3">
+<h3 class="anchored" data-anchor-id="context">Context</h3>
+<p>In CUDA, a context represents the primary object for managing resources and execution on a GPU device.</p>
+<p>Each thread can have one active context at a time, and contexts can be pushed/popped from a stack. The context must be created before any CUDA operations can be performed on a device.</p>
 <div id="cell-21" class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> <span class="bu">open</span>(<span class="st">&quot;saxpy.cubin&quot;</span>, <span class="st">&quot;rb&quot;</span>).read()</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>module <span class="op">=</span> cuda.CUmodule() <span class="co"># Another opaque object, no idea what it&#39;s inside.</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MODULE.html</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>check(cuda.cuModuleLoadData(module, image))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>cu_context <span class="op">=</span> cuda.CUcontext()</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># cuCtxCreate_v2 is actually identical to cuCtxCreate:</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># include/cuda.h:</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co"># ...</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># #define cuCtxCreate                         cuCtxCreate_v2</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__CTX.html</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>check(cuda.cuCtxCreate_v2(cu_context, <span class="dv">0</span>, cu_device))</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>cu_context.contents <span class="co"># This is a pointer to the context object. It is opaque, no idea what is the size or composition of the context object.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;tinygrad.runtime.autogen.cuda.struct_CUctx_st&gt;</code></pre>
 </div>
-<div id="cell-22" class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fx <span class="op">=</span> cuda.CUfunction() <span class="co"># You guessed it, anoher opaque object</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuModuleGetFunction(fx, module, <span class="st">&quot;_Z5saxpyfPfS_i&quot;</span>.encode(<span class="st">&quot;utf-8&quot;</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Create the parameter array for the kernel</p>
+</section>
+<section id="memory-management" class="level3">
+<h3 class="anchored" data-anchor-id="memory-management">Memory management</h3>
+<p>The device is ready. Let’s allocate the memory for the input and output arrays.</p>
+<div id="cell-23" class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">128</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># saxpy performs the operation y = a*x + y</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>dev_x <span class="op">=</span> cuda.CUdeviceptr() <span class="co"># 64 bit pointer to device memory</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>dev_y <span class="op">=</span> cuda.CUdeviceptr()</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Allocate the buffers on the device</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MEM.html</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="co"># include/cuda.h:</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co"># #define cuMemAlloc                          cuMemAlloc_v2</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemAlloc_v2(dev_x, N<span class="op">*</span><span class="dv">4</span>))</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemAlloc_v2(dev_y, N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div id="cell-24" class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>grid_size <span class="op">=</span>  (<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>block_size <span class="op">=</span> (N,<span class="dv">1</span>,<span class="dv">1</span>)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>shared_mem_size <span class="op">=</span> <span class="dv">0</span> <span class="co"># We don&#39;t need shared memory for this kernel</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Params</span></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 0 - alpha (float)</span></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 1 - input (pointer to float)</span></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 2 - output (pointer to float)</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 3 - N (int)</span></span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The params argument to cuLaunchKernel is a pointer to an array of pointers to the parameters.</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="co"># The CUDA library knows the size of each parameter from the metadata, so it can figure out how to pass them to the kernel.</span></span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__EXEC.html</span></span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>alpha_val <span class="op">=</span> ctypes.c_float(<span class="fl">2.0</span>)</span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> ctypes.c_int32(N)</span>
-<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>alpha_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(alpha_val), ctypes.c_void_p) <span class="co"># Pointer to alpha value</span></span>
-<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>dev_x_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(dev_x), ctypes.c_void_p) <span class="co"># Pointer to the x array</span></span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>dev_y_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(dev_y), ctypes.c_void_p) <span class="co"># Pointer to the y array</span></span>
-<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>n_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(n), ctypes.c_void_p) <span class="co"># Pointer to the N value</span></span>
-<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>VoidPtrArrayType <span class="op">=</span> ctypes.c_void_p <span class="op">*</span> <span class="dv">4</span></span>
-<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> VoidPtrArrayType() <span class="co"># Create the array to hold pointers to args</span></span>
-<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Populate the array with pointers to the actual kernel arguments</span></span>
-<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">0</span>] <span class="op">=</span> alpha_ptr</span>
-<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">1</span>] <span class="op">=</span> dev_x_ptr</span>
-<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">2</span>] <span class="op">=</span> dev_y_ptr</span>
-<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">3</span>] <span class="op">=</span> n_ptr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>host_x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">100</span>, N).astype(np.float32)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>host_y <span class="op">=</span> np.zeros(N).astype(np.float32)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy data to device. IDK why they are all called _v2</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyHtoD_v2(dev_x, host_x.ctypes.data_as(ctypes.c_void_p), N<span class="op">*</span><span class="dv">4</span>))</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyHtoD_v2(dev_y, host_y.ctypes.data_as(ctypes.c_void_p), N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Run the kernel</p>
+</section>
+<section id="load-and-run-the-kernel" class="level3">
+<h3 class="anchored" data-anchor-id="load-and-run-the-kernel">Load and run the kernel</h3>
 <div id="cell-26" class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__EXEC.html</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuLaunchKernel(fx, <span class="op">*</span>grid_size, <span class="op">*</span>block_size, shared_mem_size, <span class="va">None</span>, params, <span class="va">None</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> <span class="bu">open</span>(<span class="st">&quot;saxpy.cubin&quot;</span>, <span class="st">&quot;rb&quot;</span>).read()</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>module <span class="op">=</span> cuda.CUmodule() <span class="co"># Another opaque object.</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MODULE.html</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>check(cuda.cuModuleLoadData(module, image))</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>module</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;tinygrad.runtime.autogen.cuda.LP_struct_CUmod_st&gt;</code></pre>
+</div>
 </div>
 <div id="cell-27" class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy the result back to the host</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyDtoH_v2(host_y.ctypes.data_as(ctypes.c_void_p), dev_y, N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fx <span class="op">=</span> cuda.CUfunction() <span class="co"># You guessed it, anoher opaque object</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuModuleGetFunction(fx, module, <span class="st">&quot;_Z5saxpyfPfS_i&quot;</span>.encode(<span class="st">&quot;utf-8&quot;</span>)))</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>fx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;tinygrad.runtime.autogen.cuda.LP_struct_CUfunc_st&gt;</code></pre>
 </div>
-<div id="cell-28" class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>host_x[:<span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Create the parameter array for the kernel</p>
+<div id="cell-29" class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>grid_size <span class="op">=</span>  (<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>block_size <span class="op">=</span> (N,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>shared_mem_size <span class="op">=</span> <span class="dv">0</span> <span class="co"># We don&#39;t need shared memory for this kernel</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Args</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 0 - alpha (float)</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 1 - input (pointer to float)</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 2 - output (pointer to float)</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 3 - N (int32)</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The params argument to cuLaunchKernel is a pointer to an array of pointers to the parameters.</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a><span class="co"># The CUDA library knows the size of each parameter from the metadata, so it can figure out how to pass them to the kernel.</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__EXEC.html</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>alpha_val <span class="op">=</span> ctypes.c_float(<span class="fl">2.0</span>)</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> ctypes.c_int32(N)</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>alpha_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(alpha_val), ctypes.c_void_p) <span class="co"># Pointer to alpha value</span></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>dev_x_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(dev_x), ctypes.c_void_p) <span class="co"># Pointer to the x array</span></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>dev_y_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(dev_y), ctypes.c_void_p) <span class="co"># Pointer to the y array</span></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>n_ptr <span class="op">=</span> ctypes.cast(ctypes.addressof(n), ctypes.c_void_p) <span class="co"># Pointer to the N value</span></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>VoidPtrArrayType <span class="op">=</span> ctypes.c_void_p <span class="op">*</span> <span class="dv">4</span></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> VoidPtrArrayType() <span class="co"># Create the array to hold pointers to args</span></span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Populate the array with pointers to the actual kernel arguments</span></span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">0</span>] <span class="op">=</span> alpha_ptr</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">1</span>] <span class="op">=</span> dev_x_ptr</span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">2</span>] <span class="op">=</span> dev_y_ptr</span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>params[<span class="dv">3</span>] <span class="op">=</span> n_ptr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Run the kernel</p>
+<div id="cell-31" class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__EXEC.html</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuLaunchKernel(fx, <span class="op">*</span>grid_size, <span class="op">*</span>block_size, shared_mem_size, <span class="va">None</span>, params, <span class="va">None</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-32" class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy the result back to the host</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>check(cuda.cuMemcpyDtoH_v2(host_y.ctypes.data_as(ctypes.c_void_p), dev_y, N<span class="op">*</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Verify the result</p>
+<div id="cell-34" class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>host_x[:<span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>array([ 0.        ,  0.78740156,  1.5748031 ,  2.3622048 ,  3.1496062 ,
         3.937008  ,  4.7244096 ,  5.5118113 ,  6.2992125 ,  7.086614  ,
@@ -5178,8 +5231,8 @@ Resource usage:
        11.811024  ], dtype=float32)</code></pre>
 </div>
 </div>
-<div id="cell-29" class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>host_y[:<span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-35" class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>host_y[:<span class="dv">16</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>array([ 0.       ,  1.5748031,  3.1496062,  4.7244096,  6.2992125,
         7.874016 ,  9.448819 , 11.0236225, 12.598425 , 14.173228 ,
@@ -5187,8 +5240,8 @@ Resource usage:
        23.622047 ], dtype=float32)</code></pre>
 </div>
 </div>
-<div id="cell-30" class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>(host_y <span class="op">==</span> host_x <span class="op">*</span> alpha_val.value).<span class="bu">all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-36" class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>(host_y <span class="op">==</span> host_x <span class="op">*</span> alpha_val.value).<span class="bu">all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>np.True_</code></pre>
 </div>

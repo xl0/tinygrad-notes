@@ -32,6 +32,8 @@ of inspiration has been taken from
 
 - [1 - `elf.py` and the ELF
   format](https://xl0.github.io/tinygrad-notes/misc_1.html)
+- [2 - Misc 2 - CUDA Runtime
+  library](https://xl0.github.io/tinygrad-notes/misc_2.html)
 
 Reading order:
 
