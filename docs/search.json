@@ -24,7 +24,7 @@
     "href": "index.html",
     "title": "My notes on TinyGrad internals",
     "section": "",
-    "text": "Tinygrad source: https://github.com/tinygrad/tinygrad\nTinygrad docs: https://docs.tinygrad.org/\nWritten with help from good people in TinyGrad Discord, and a great deal of inspiration has been taken from mesozoic-egg.\n\nChapters\n\n0 - Introduction\n1 - UOps\n2 - View and ShapeTracker\n3 - The Pattern Matcher\n4 - The .arange() insanity\n\n\n\nAppendices\n\nA: helpers.py\nB: UOp Summary\n\n\n\nMiscellaneous\n\n1 - elf.py and the ELF format\n2 - Misc 2 - CUDA Runtime library\n\nReading order:\n\nScroll through Appendix A after reading the intro. It will make reading the code much easier\nScroll through Appendix B after reading the chapter of UOps\n\nIf you want to contribute, install nbdev\nRun\nnbdev_clean\nnbdev_docs",
+    "text": "Tinygrad source: https://github.com/tinygrad/tinygrad\nTinygrad docs: https://docs.tinygrad.org/\nWritten with help from good people in TinyGrad Discord, and a great deal of inspiration has been taken from mesozoic-egg.\n\nChapters\n\n0 - Introduction\n1 - UOps\n2 - View and ShapeTracker\n3 - The Pattern Matcher\n4 - The .arange() insanity\n\n\n\nAppendices\n\nA: helpers.py\nB: UOp Summary\n\n\n\nMiscellaneous\n\n1 - elf.py and the ELF format\n2 - CUDA Runtime library\n\nReading order:\n\nScroll through Appendix A after reading the intro. It will make reading the code much easier\nScroll through Appendix B after reading the chapter of UOps\n\nIf you want to contribute, install nbdev\nRun\nnbdev_clean\nnbdev_docs",
     "crumbs": [
       "My notes on TinyGrad internals"
     ]
