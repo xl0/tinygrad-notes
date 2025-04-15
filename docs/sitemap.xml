@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/appendix_b.html</loc>
-    <lastmod>2025-04-12T05:03:23.547Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.212Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/misc_1.html</loc>
-    <lastmod>2025-04-12T05:03:23.567Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.203Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/index.html</loc>
-    <lastmod>2025-04-14T23:45:16.314Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.175Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/shapetracker.html</loc>
-    <lastmod>2025-04-12T05:03:23.515Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.112Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/uops.html</loc>
-    <lastmod>2025-04-12T05:03:23.478Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/misc_3.html</loc>
+    <lastmod>2025-04-15T16:35:07.073Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/misc_2.html</loc>
-    <lastmod>2025-04-14T23:39:10.022Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.137Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/arange.html</loc>
-    <lastmod>2025-04-12T05:03:23.506Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.158Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/patternmatcher.html</loc>
-    <lastmod>2025-04-12T05:03:23.536Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.171Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/intro.html</loc>
-    <lastmod>2025-04-12T05:03:23.519Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.190Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/appendix_a.html</loc>
-    <lastmod>2025-04-12T05:03:23.575Z</lastmod>
+    <lastmod>2025-04-15T16:35:07.166Z</lastmod>
   </url>
 </urlset>
