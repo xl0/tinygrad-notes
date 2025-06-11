@@ -4311,7 +4311,9 @@ numpy masking   9.24 ms</code></pre>
 *** CUDA     706 r_32768_32_995328_3_4n1                   arg  4 mem  0.11 GB tm   1902.87ms/  3185.22ms ( 26326.76 GFLOPS    0.0|17551.2 GB/s) [&#39;masked_select&#39;]</code></pre>
 </div>
 </div>
-<p>Yes, this is absolutely unreasonable. And of course this is a known issues: https://github.com/tinygrad/tinygrad/issues/10340</p>
+<p>Yes, this is absolutely unreasonable. And of course this is a known issue: <a href="https://github.com/tinygrad/tinygrad/issues/10340">https://github.com/tinygrad/tinygrad/issues/10340</a></p>
+<p><code>FUSE_ARANGE</code> improves the situation a bit, but not nearly enough.</p>
+<p>And this is awkward, but looks like someone else is working on this bounty too, and they made some progress. Well, too late to stop now.</p>
 <p>How else can we select a square region from a BCHW tensor? Let’s try to use pad with negative padding.</p>
 <div id="cell-34" class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> Tensor.randn(<span class="dv">1024</span>, <span class="dv">3</span>, <span class="dv">36</span>, <span class="dv">36</span>).contiguous().realize()</span>
@@ -4417,9 +4419,7 @@ randperm 338.18 ms
 shuffle 2391.26 ms</code></pre>
 </div>
 </div>
-<p>This is too slow! But looks like it’s a known issue too https://github.com/tinygrad/tinygrad/issues/10340</p>
-<p>And this is awkward, but looks like someone else is working on this bounty too, and they made some progress. Well, too late to stop now.</p>
-<p>In any case, let’s try with <code>FUSE_ARANGE=1</code></p>
+<p>This is too slow! Luckily, I checked Discord, and turns out that in this case <code>FUSE_ARANGE=1</code> actually makes a huge difference!</p>
 <div id="cell-42" class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> Tensor.randn(<span class="dv">50000</span>, <span class="dv">3</span><span class="op">*</span><span class="dv">36</span><span class="op">*</span><span class="dv">36</span>).contiguous().realize()</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
