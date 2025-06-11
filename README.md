@@ -34,6 +34,7 @@ of inspiration has been taken from
   format](https://xl0.github.io/tinygrad-notes/misc_1.html)
 - [2 - CUDA Runtime
   library](https://xl0.github.io/tinygrad-notes/misc_2.html)
+- [3 - Bounty hunt](https://xl0.github.io/tinygrad-notes/bounty1.html)
 
 Reading order:
 
@@ -51,17 +52,22 @@ nbdev_docs
 ```
 
 <blockquote>
+
 <p>
+
 </br> I am not a madman for saying that it is likely that the code for
 Artificial General Intelligence is going to be tens of thousands of
 lines of code, not millions of lines of code.</br>This is code that
 conceivably one individual could write, unlike writing a new web browser
 or operating system.</br> And based on the progress that AI machine
 learning has made in the recent decade, it’s likely that the important
-things that we don’t know are relatively simple. </br>
+things that we don’t know are relatively simple.
 </p>
+
 <footer>
+
 — <a href="https://www.youtube.com/watch?v=I845O57ZSy4&t=14576s">John
 Carmack
 </footer>
+
 </blockquote>

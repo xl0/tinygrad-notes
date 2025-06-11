@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://xl0.github.io/tinygrad-notes/appendix_b.html</loc>
-    <lastmod>2025-04-15T16:35:07.212Z</lastmod>
+    <loc>https://xl0.github.io/tinygrad-notes/arange.html</loc>
+    <lastmod>2025-06-11T11:19:41.651Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/misc_1.html</loc>
-    <lastmod>2025-04-15T16:35:07.203Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xl0.github.io/tinygrad-notes/index.html</loc>
-    <lastmod>2025-04-15T16:35:07.175Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xl0.github.io/tinygrad-notes/shapetracker.html</loc>
-    <lastmod>2025-04-15T16:35:07.112Z</lastmod>
+    <lastmod>2025-06-11T11:19:41.651Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/uops.html</loc>
-    <lastmod>2025-04-15T16:35:07.149Z</lastmod>
+    <lastmod>2025-06-11T11:19:41.610Z</lastmod>
   </url>
   <url>
-    <loc>https://xl0.github.io/tinygrad-notes/misc_3.html</loc>
-    <lastmod>2025-04-15T17:08:49.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xl0.github.io/tinygrad-notes/misc_2.html</loc>
-    <lastmod>2025-04-16T15:44:21.628Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xl0.github.io/tinygrad-notes/arange.html</loc>
-    <lastmod>2025-04-15T16:35:07.158Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xl0.github.io/tinygrad-notes/patternmatcher.html</loc>
-    <lastmod>2025-04-15T16:35:07.171Z</lastmod>
+    <loc>https://xl0.github.io/tinygrad-notes/bounty1.html</loc>
+    <lastmod>2025-06-11T11:19:41.609Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/intro.html</loc>
-    <lastmod>2025-04-15T16:35:07.190Z</lastmod>
+    <lastmod>2025-06-11T11:19:41.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/misc_2.html</loc>
+    <lastmod>2025-06-11T11:19:41.498Z</lastmod>
   </url>
   <url>
     <loc>https://xl0.github.io/tinygrad-notes/appendix_a.html</loc>
-    <lastmod>2025-04-15T16:35:07.166Z</lastmod>
+    <lastmod>2025-06-11T11:19:41.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/index.html</loc>
+    <lastmod>2025-06-11T11:19:41.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/patternmatcher.html</loc>
+    <lastmod>2025-06-11T11:19:41.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/appendix_b.html</loc>
+    <lastmod>2025-06-11T11:19:41.617Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xl0.github.io/tinygrad-notes/shapetracker.html</loc>
+    <lastmod>2025-06-11T11:19:41.643Z</lastmod>
   </url>
 </urlset>

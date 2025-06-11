@@ -1,0 +1,1013 @@
+shuffling training dataset in 81.14 ms (epoch=0)
+  0 6111.70 ms run, 6110.69 ms python,    1.01 ms CUDA, 1187.85 loss, 0.000015 LR, 1.68 GB used,    116.21 GFLOPS,    710.26 GOPS
+  1 1092.63 ms run, 1091.44 ms python,    1.18 ms CUDA, 1184.85 loss, 0.000030 LR, 2.89 GB used,    599.36 GFLOPS,    654.88 GOPS
+  2   75.08 ms run,   11.27 ms python,   63.81 ms CUDA, 1184.01 loss, 0.000045 LR, 2.89 GB used,   8722.51 GFLOPS,    654.88 GOPS
+  3   76.07 ms run,    7.18 ms python,   68.88 ms CUDA, 1174.82 loss, 0.000060 LR, 2.89 GB used,   8609.20 GFLOPS,    654.88 GOPS
+  4   74.17 ms run,    6.98 ms python,   67.19 ms CUDA, 1168.06 loss, 0.000075 LR, 2.89 GB used,   8828.94 GFLOPS,    654.88 GOPS
+  5   75.07 ms run,    7.06 ms python,   68.01 ms CUDA, 1166.45 loss, 0.000090 LR, 2.89 GB used,   8723.21 GFLOPS,    654.88 GOPS
+  6   75.12 ms run,    7.03 ms python,   68.09 ms CUDA, 1161.73 loss, 0.000105 LR, 2.89 GB used,   8718.29 GFLOPS,    654.88 GOPS
+  7   76.12 ms run,    6.90 ms python,   69.22 ms CUDA, 1151.20 loss, 0.000120 LR, 2.89 GB used,   8603.23 GFLOPS,    654.88 GOPS
+  8   74.06 ms run,    7.13 ms python,   66.93 ms CUDA, 1153.14 loss, 0.000135 LR, 2.89 GB used,   8842.81 GFLOPS,    654.88 GOPS
+  9   74.72 ms run,    7.00 ms python,   67.72 ms CUDA, 1144.76 loss, 0.000149 LR, 2.89 GB used,   8764.61 GFLOPS,    654.88 GOPS
+ 10   75.24 ms run,    6.91 ms python,   68.34 ms CUDA, 1140.76 loss, 0.000164 LR, 2.89 GB used,   8703.68 GFLOPS,    654.88 GOPS
+ 11   76.01 ms run,    6.97 ms python,   69.04 ms CUDA, 1112.78 loss, 0.000179 LR, 2.89 GB used,   8615.18 GFLOPS,    654.88 GOPS
+ 12   74.54 ms run,    7.01 ms python,   67.53 ms CUDA, 1109.27 loss, 0.000194 LR, 2.89 GB used,   8785.66 GFLOPS,    654.88 GOPS
+ 13   75.20 ms run,    6.92 ms python,   68.28 ms CUDA, 1099.51 loss, 0.000209 LR, 2.89 GB used,   8708.78 GFLOPS,    654.88 GOPS
+ 14   75.79 ms run,    6.97 ms python,   68.81 ms CUDA, 1075.67 loss, 0.000224 LR, 2.89 GB used,   8641.16 GFLOPS,    654.88 GOPS
+ 15   75.44 ms run,    6.88 ms python,   68.56 ms CUDA, 1057.91 loss, 0.000239 LR, 2.89 GB used,   8680.83 GFLOPS,    654.88 GOPS
+ 16   74.84 ms run,    6.93 ms python,   67.91 ms CUDA, 1035.13 loss, 0.000254 LR, 2.89 GB used,   8750.28 GFLOPS,    654.88 GOPS
+ 17   74.56 ms run,    6.78 ms python,   67.78 ms CUDA, 1034.51 loss, 0.000269 LR, 2.89 GB used,   8783.00 GFLOPS,    654.88 GOPS
+ 18   75.54 ms run,    7.06 ms python,   68.48 ms CUDA, 1012.75 loss, 0.000284 LR, 2.89 GB used,   8669.78 GFLOPS,    654.88 GOPS
+ 19   75.03 ms run,    6.91 ms python,   68.13 ms CUDA,  998.00 loss, 0.000299 LR, 2.89 GB used,   8728.07 GFLOPS,    654.88 GOPS
+ 20   74.86 ms run,    6.92 ms python,   67.95 ms CUDA,  986.23 loss, 0.000314 LR, 2.89 GB used,   8747.51 GFLOPS,    654.88 GOPS
+ 21   76.08 ms run,    7.68 ms python,   68.40 ms CUDA,  973.47 loss, 0.000329 LR, 2.89 GB used,   8607.69 GFLOPS,    654.88 GOPS
+ 22   77.36 ms run,    9.48 ms python,   67.88 ms CUDA,  963.80 loss, 0.000344 LR, 2.89 GB used,   8465.21 GFLOPS,    654.88 GOPS
+ 23   75.82 ms run,    7.11 ms python,   68.71 ms CUDA,  955.50 loss, 0.000359 LR, 2.89 GB used,   8637.12 GFLOPS,    654.88 GOPS
+ 24   75.31 ms run,    6.81 ms python,   68.50 ms CUDA,  938.07 loss, 0.000374 LR, 2.89 GB used,   8695.79 GFLOPS,    654.88 GOPS
+ 25   75.16 ms run,    7.13 ms python,   68.03 ms CUDA,  983.66 loss, 0.000389 LR, 2.89 GB used,   8713.10 GFLOPS,    654.88 GOPS
+ 26   75.29 ms run,    7.04 ms python,   68.25 ms CUDA, 1006.06 loss, 0.000404 LR, 2.89 GB used,   8697.77 GFLOPS,    654.88 GOPS
+ 27   75.57 ms run,    7.14 ms python,   68.43 ms CUDA,  944.68 loss, 0.000418 LR, 2.89 GB used,   8665.47 GFLOPS,    654.88 GOPS
+ 28   74.81 ms run,    6.88 ms python,   67.93 ms CUDA,  976.29 loss, 0.000433 LR, 2.89 GB used,   8753.43 GFLOPS,    654.88 GOPS
+ 29   75.52 ms run,    7.02 ms python,   68.50 ms CUDA, 1019.61 loss, 0.000448 LR, 2.89 GB used,   8671.22 GFLOPS,    654.88 GOPS
+ 30   75.19 ms run,    6.91 ms python,   68.28 ms CUDA,  964.50 loss, 0.000463 LR, 2.89 GB used,   8709.20 GFLOPS,    654.88 GOPS
+ 31   75.11 ms run,    7.00 ms python,   68.11 ms CUDA,  908.56 loss, 0.000478 LR, 2.89 GB used,   8718.99 GFLOPS,    654.88 GOPS
+ 32   74.98 ms run,    7.09 ms python,   67.90 ms CUDA,  898.60 loss, 0.000493 LR, 2.89 GB used,   8733.59 GFLOPS,    654.88 GOPS
+ 33   75.96 ms run,    6.79 ms python,   69.17 ms CUDA,  912.23 loss, 0.000508 LR, 2.89 GB used,   8621.49 GFLOPS,    654.88 GOPS
+ 34   75.24 ms run,    7.09 ms python,   68.15 ms CUDA,  879.14 loss, 0.000523 LR, 2.89 GB used,   8703.93 GFLOPS,    654.88 GOPS
+ 35   75.13 ms run,    6.97 ms python,   68.16 ms CUDA,  883.11 loss, 0.000538 LR, 2.89 GB used,   8716.38 GFLOPS,    654.88 GOPS
+ 36   75.44 ms run,    6.90 ms python,   68.54 ms CUDA,  881.15 loss, 0.000553 LR, 2.89 GB used,   8681.15 GFLOPS,    654.88 GOPS
+ 37   75.91 ms run,    6.99 ms python,   68.92 ms CUDA,  897.87 loss, 0.000568 LR, 2.89 GB used,   8627.02 GFLOPS,    654.88 GOPS
+ 38   75.11 ms run,    7.05 ms python,   68.07 ms CUDA,  875.87 loss, 0.000583 LR, 2.89 GB used,   8718.44 GFLOPS,    654.88 GOPS
+ 39   75.27 ms run,    7.11 ms python,   68.16 ms CUDA,  885.08 loss, 0.000598 LR, 2.89 GB used,   8699.93 GFLOPS,    654.88 GOPS
+ 40   75.17 ms run,    6.85 ms python,   68.32 ms CUDA,  870.48 loss, 0.000613 LR, 2.89 GB used,   8711.91 GFLOPS,    654.88 GOPS
+ 41   74.68 ms run,    7.69 ms python,   67.00 ms CUDA,  836.67 loss, 0.000628 LR, 2.89 GB used,   8768.55 GFLOPS,    654.88 GOPS
+ 42   75.05 ms run,    6.99 ms python,   68.06 ms CUDA,  844.91 loss, 0.000643 LR, 2.89 GB used,   8725.47 GFLOPS,    654.88 GOPS
+ 43   75.54 ms run,    7.02 ms python,   68.52 ms CUDA,  832.24 loss, 0.000658 LR, 2.89 GB used,   8669.05 GFLOPS,    654.88 GOPS
+ 44   75.66 ms run,    6.99 ms python,   68.67 ms CUDA,  844.83 loss, 0.000673 LR, 2.89 GB used,   8655.62 GFLOPS,    654.88 GOPS
+ 45   75.32 ms run,    7.17 ms python,   68.15 ms CUDA,  883.37 loss, 0.000688 LR, 2.89 GB used,   8694.05 GFLOPS,    654.88 GOPS
+ 46   80.23 ms run,   10.49 ms python,   69.74 ms CUDA,  873.50 loss, 0.000702 LR, 2.89 GB used,   8162.27 GFLOPS,    654.88 GOPS
+ 47   76.77 ms run,    6.97 ms python,   69.80 ms CUDA,  846.05 loss, 0.000717 LR, 2.89 GB used,   8530.49 GFLOPS,    654.88 GOPS
+ 48   74.81 ms run,    6.87 ms python,   67.94 ms CUDA,  839.02 loss, 0.000732 LR, 2.89 GB used,   8753.83 GFLOPS,    654.88 GOPS
+ 49   78.53 ms run,   10.49 ms python,   68.05 ms CUDA,  823.00 loss, 0.000747 LR, 2.89 GB used,   8338.72 GFLOPS,    654.88 GOPS
+ 50   75.17 ms run,    6.86 ms python,   68.31 ms CUDA,  863.94 loss, 0.000762 LR, 2.89 GB used,   8711.97 GFLOPS,    654.88 GOPS
+ 51   75.21 ms run,    7.13 ms python,   68.08 ms CUDA,  833.76 loss, 0.000777 LR, 2.89 GB used,   8706.78 GFLOPS,    654.88 GOPS
+ 52   75.25 ms run,    6.84 ms python,   68.41 ms CUDA,  821.72 loss, 0.000792 LR, 2.89 GB used,   8702.71 GFLOPS,    654.88 GOPS
+ 53   74.95 ms run,    6.95 ms python,   68.00 ms CUDA,  815.48 loss, 0.000807 LR, 2.89 GB used,   8738.11 GFLOPS,    654.88 GOPS
+ 54   75.55 ms run,    7.57 ms python,   67.98 ms CUDA,  814.97 loss, 0.000822 LR, 2.89 GB used,   8668.32 GFLOPS,    654.88 GOPS
+ 55   75.58 ms run,    6.94 ms python,   68.63 ms CUDA,  792.60 loss, 0.000837 LR, 2.89 GB used,   8665.15 GFLOPS,    654.88 GOPS
+ 56   76.16 ms run,    6.82 ms python,   69.34 ms CUDA,  800.12 loss, 0.000852 LR, 2.89 GB used,   8598.72 GFLOPS,    654.88 GOPS
+ 57   75.35 ms run,    7.25 ms python,   68.10 ms CUDA,  773.95 loss, 0.000867 LR, 2.89 GB used,   8691.27 GFLOPS,    654.88 GOPS
+ 58   75.26 ms run,    6.73 ms python,   68.53 ms CUDA,  770.33 loss, 0.000882 LR, 2.89 GB used,   8702.04 GFLOPS,    654.88 GOPS
+ 59   75.71 ms run,    6.96 ms python,   68.75 ms CUDA,  781.78 loss, 0.000897 LR, 2.89 GB used,   8650.39 GFLOPS,    654.88 GOPS
+ 60   74.79 ms run,    6.91 ms python,   67.88 ms CUDA,  810.64 loss, 0.000912 LR, 2.89 GB used,   8756.05 GFLOPS,    654.88 GOPS
+ 61   75.95 ms run,    6.97 ms python,   68.97 ms CUDA,  800.76 loss, 0.000927 LR, 2.89 GB used,   8623.04 GFLOPS,    654.88 GOPS
+ 62   75.72 ms run,    7.84 ms python,   67.88 ms CUDA,  817.49 loss, 0.000942 LR, 2.89 GB used,   8648.83 GFLOPS,    654.88 GOPS
+ 63   75.10 ms run,    7.00 ms python,   68.10 ms CUDA,  793.72 loss, 0.000957 LR, 2.89 GB used,   8720.02 GFLOPS,    654.88 GOPS
+ 64   75.71 ms run,    6.94 ms python,   68.77 ms CUDA,  798.77 loss, 0.000971 LR, 2.89 GB used,   8650.07 GFLOPS,    654.88 GOPS
+ 65   75.91 ms run,    6.66 ms python,   69.25 ms CUDA,  794.14 loss, 0.000986 LR, 2.89 GB used,   8626.64 GFLOPS,    654.88 GOPS
+ 66   75.04 ms run,    6.91 ms python,   68.13 ms CUDA,  786.88 loss, 0.001001 LR, 2.89 GB used,   8727.16 GFLOPS,    654.88 GOPS
+ 67   75.50 ms run,    6.86 ms python,   68.64 ms CUDA,  762.05 loss, 0.001016 LR, 2.89 GB used,   8673.60 GFLOPS,    654.88 GOPS
+ 68   75.73 ms run,    7.03 ms python,   68.70 ms CUDA,  768.87 loss, 0.001031 LR, 2.89 GB used,   8647.76 GFLOPS,    654.88 GOPS
+ 69   75.02 ms run,    6.98 ms python,   68.04 ms CUDA,  744.20 loss, 0.001046 LR, 2.89 GB used,   8729.86 GFLOPS,    654.88 GOPS
+ 70   75.68 ms run,    6.94 ms python,   68.74 ms CUDA,  752.44 loss, 0.001061 LR, 2.89 GB used,   8653.32 GFLOPS,    654.88 GOPS
+ 71   75.18 ms run,    6.87 ms python,   68.31 ms CUDA,  736.42 loss, 0.001076 LR, 2.89 GB used,   8710.91 GFLOPS,    654.88 GOPS
+ 72   75.32 ms run,    7.04 ms python,   68.27 ms CUDA,  734.97 loss, 0.001091 LR, 2.89 GB used,   8695.09 GFLOPS,    654.88 GOPS
+ 73   75.63 ms run,    7.14 ms python,   68.49 ms CUDA,  703.90 loss, 0.001106 LR, 2.89 GB used,   8659.31 GFLOPS,    654.88 GOPS
+ 74   76.27 ms run,    6.77 ms python,   69.50 ms CUDA,  747.66 loss, 0.001121 LR, 2.89 GB used,   8586.51 GFLOPS,    654.88 GOPS
+ 75   74.51 ms run,    6.88 ms python,   67.63 ms CUDA,  770.14 loss, 0.001136 LR, 2.89 GB used,   8789.02 GFLOPS,    654.88 GOPS
+ 76   75.10 ms run,    6.92 ms python,   68.18 ms CUDA,  731.96 loss, 0.001151 LR, 2.89 GB used,   8720.08 GFLOPS,    654.88 GOPS
+ 77   75.92 ms run,    7.01 ms python,   68.92 ms CUDA,  736.96 loss, 0.001166 LR, 2.89 GB used,   8625.63 GFLOPS,    654.88 GOPS
+ 78   75.53 ms run,    6.98 ms python,   68.56 ms CUDA,  721.05 loss, 0.001181 LR, 2.89 GB used,   8670.27 GFLOPS,    654.88 GOPS
+ 79   75.54 ms run,    6.88 ms python,   68.67 ms CUDA,  717.49 loss, 0.001196 LR, 2.89 GB used,   8668.85 GFLOPS,    654.88 GOPS
+ 80   75.55 ms run,    6.99 ms python,   68.56 ms CUDA,  725.94 loss, 0.001211 LR, 2.89 GB used,   8668.63 GFLOPS,    654.88 GOPS
+ 81   75.49 ms run,    7.00 ms python,   68.49 ms CUDA,  728.64 loss, 0.001226 LR, 2.89 GB used,   8675.05 GFLOPS,    654.88 GOPS
+ 82   75.52 ms run,    7.14 ms python,   68.39 ms CUDA,  721.85 loss, 0.001240 LR, 2.89 GB used,   8671.29 GFLOPS,    654.88 GOPS
+ 83   76.63 ms run,    6.91 ms python,   69.72 ms CUDA,  744.87 loss, 0.001255 LR, 2.89 GB used,   8546.06 GFLOPS,    654.88 GOPS
+ 84   74.60 ms run,    6.97 ms python,   67.64 ms CUDA,  763.84 loss, 0.001270 LR, 2.89 GB used,   8778.43 GFLOPS,    654.88 GOPS
+ 85   74.69 ms run,    6.73 ms python,   67.97 ms CUDA,  761.82 loss, 0.001285 LR, 2.89 GB used,   8767.65 GFLOPS,    654.88 GOPS
+ 86   75.55 ms run,    6.88 ms python,   68.67 ms CUDA,  717.56 loss, 0.001300 LR, 2.89 GB used,   8668.11 GFLOPS,    654.88 GOPS
+ 87   75.76 ms run,    6.90 ms python,   68.86 ms CUDA,  734.67 loss, 0.001315 LR, 2.89 GB used,   8643.94 GFLOPS,    654.88 GOPS
+ 88   75.28 ms run,    7.03 ms python,   68.26 ms CUDA,  735.22 loss, 0.001330 LR, 2.89 GB used,   8698.82 GFLOPS,    654.88 GOPS
+ 89   75.88 ms run,    7.62 ms python,   68.26 ms CUDA,  718.43 loss, 0.001345 LR, 2.89 GB used,   8631.02 GFLOPS,    654.88 GOPS
+ 90   75.46 ms run,    7.01 ms python,   68.45 ms CUDA,  714.76 loss, 0.001360 LR, 2.89 GB used,   8678.56 GFLOPS,    654.88 GOPS
+ 91   74.90 ms run,    6.97 ms python,   67.92 ms CUDA,  704.64 loss, 0.001375 LR, 2.89 GB used,   8743.70 GFLOPS,    654.88 GOPS
+ 92   76.35 ms run,    7.01 ms python,   69.34 ms CUDA,  707.62 loss, 0.001390 LR, 2.89 GB used,   8577.03 GFLOPS,    654.88 GOPS
+ 93   75.04 ms run,    6.94 ms python,   68.10 ms CUDA,  725.52 loss, 0.001405 LR, 2.89 GB used,   8726.89 GFLOPS,    654.88 GOPS
+ 94   75.21 ms run,    6.87 ms python,   68.34 ms CUDA,  725.79 loss, 0.001420 LR, 2.89 GB used,   8707.19 GFLOPS,    654.88 GOPS
+ 95   76.10 ms run,    7.06 ms python,   69.05 ms CUDA,  740.21 loss, 0.001435 LR, 2.89 GB used,   8604.96 GFLOPS,    654.88 GOPS
+ 96   75.85 ms run,    6.90 ms python,   68.95 ms CUDA,  703.56 loss, 0.001450 LR, 2.89 GB used,   8633.57 GFLOPS,    654.88 GOPS
+ 97   75.43 ms run,    6.94 ms python,   68.49 ms CUDA,  673.92 loss, 0.001465 LR, 2.89 GB used,   8682.32 GFLOPS,    654.88 GOPS
+shuffling training dataset in 77.87 ms (epoch=1)
+ 98  493.91 ms run,  424.14 ms python,   69.77 ms CUDA,  709.09 loss, 0.001480 LR, 2.89 GB used,   1431.87 GFLOPS,    707.21 GOPS
+ 99   70.60 ms run,    2.61 ms python,   67.99 ms CUDA,  678.59 loss, 0.001495 LR, 2.89 GB used,   9275.86 GFLOPS,    654.88 GOPS
+100   71.36 ms run,    2.55 ms python,   68.82 ms CUDA,  706.80 loss, 0.001510 LR, 2.89 GB used,   9176.51 GFLOPS,    654.88 GOPS
+101   72.12 ms run,    2.49 ms python,   69.63 ms CUDA,  705.83 loss, 0.001524 LR, 2.89 GB used,   9080.33 GFLOPS,    654.88 GOPS
+102   73.52 ms run,    2.52 ms python,   70.99 ms CUDA,  702.49 loss, 0.001539 LR, 2.89 GB used,   8907.85 GFLOPS,    654.88 GOPS
+103   72.51 ms run,    2.40 ms python,   70.11 ms CUDA,  719.72 loss, 0.001554 LR, 2.89 GB used,   9031.10 GFLOPS,    654.88 GOPS
+104   72.81 ms run,    2.52 ms python,   70.29 ms CUDA,  665.86 loss, 0.001569 LR, 2.89 GB used,   8994.80 GFLOPS,    654.88 GOPS
+105   74.04 ms run,    2.31 ms python,   71.73 ms CUDA,  696.50 loss, 0.001584 LR, 2.89 GB used,   8844.87 GFLOPS,    654.88 GOPS
+106   71.76 ms run,    2.49 ms python,   69.27 ms CUDA,  682.98 loss, 0.001599 LR, 2.89 GB used,   9126.35 GFLOPS,    654.88 GOPS
+107   72.85 ms run,    2.39 ms python,   70.46 ms CUDA,  710.62 loss, 0.001614 LR, 2.89 GB used,   8989.34 GFLOPS,    654.88 GOPS
+108   71.66 ms run,    2.51 ms python,   69.15 ms CUDA,  692.84 loss, 0.001629 LR, 2.89 GB used,   9138.44 GFLOPS,    654.88 GOPS
+109   72.02 ms run,    2.47 ms python,   69.55 ms CUDA,  689.69 loss, 0.001644 LR, 2.89 GB used,   9092.89 GFLOPS,    654.88 GOPS
+110   73.09 ms run,    2.51 ms python,   70.57 ms CUDA,  687.07 loss, 0.001659 LR, 2.89 GB used,   8960.42 GFLOPS,    654.88 GOPS
+111   72.19 ms run,    2.41 ms python,   69.78 ms CUDA,  680.63 loss, 0.001674 LR, 2.89 GB used,   9071.99 GFLOPS,    654.88 GOPS
+112   72.37 ms run,    2.51 ms python,   69.86 ms CUDA,  732.22 loss, 0.001689 LR, 2.89 GB used,   9048.70 GFLOPS,    654.88 GOPS
+113   74.21 ms run,    2.51 ms python,   71.70 ms CUDA,  687.85 loss, 0.001704 LR, 2.89 GB used,   8824.64 GFLOPS,    654.88 GOPS
+114   72.44 ms run,    2.48 ms python,   69.96 ms CUDA,  665.37 loss, 0.001719 LR, 2.89 GB used,   9039.94 GFLOPS,    654.88 GOPS
+115   72.80 ms run,    2.53 ms python,   70.27 ms CUDA,  659.11 loss, 0.001734 LR, 2.89 GB used,   8995.56 GFLOPS,    654.88 GOPS
+116   73.98 ms run,    2.32 ms python,   71.66 ms CUDA,  669.69 loss, 0.001749 LR, 2.89 GB used,   8852.06 GFLOPS,    654.88 GOPS
+117   72.28 ms run,    2.52 ms python,   69.76 ms CUDA,  711.31 loss, 0.001764 LR, 2.89 GB used,   9060.52 GFLOPS,    654.88 GOPS
+118   72.62 ms run,    2.34 ms python,   70.29 ms CUDA,  704.03 loss, 0.001779 LR, 2.89 GB used,   9017.27 GFLOPS,    654.88 GOPS
+119   72.37 ms run,    2.51 ms python,   69.86 ms CUDA,  680.86 loss, 0.001793 LR, 2.89 GB used,   9049.06 GFLOPS,    654.88 GOPS
+120   72.27 ms run,    2.45 ms python,   69.82 ms CUDA,  650.72 loss, 0.001808 LR, 2.89 GB used,   9060.95 GFLOPS,    654.88 GOPS
+121   72.69 ms run,    2.59 ms python,   70.10 ms CUDA,  674.89 loss, 0.001823 LR, 2.89 GB used,   9009.24 GFLOPS,    654.88 GOPS
+122   71.99 ms run,    2.55 ms python,   69.45 ms CUDA,  698.53 loss, 0.001838 LR, 2.89 GB used,   9096.27 GFLOPS,    654.88 GOPS
+123   72.35 ms run,    2.54 ms python,   69.81 ms CUDA,  685.47 loss, 0.001853 LR, 2.89 GB used,   9051.63 GFLOPS,    654.88 GOPS
+124   73.92 ms run,    2.45 ms python,   71.47 ms CUDA,  686.20 loss, 0.001868 LR, 2.89 GB used,   8859.55 GFLOPS,    654.88 GOPS
+125   72.59 ms run,    2.59 ms python,   70.00 ms CUDA,  657.11 loss, 0.001883 LR, 2.89 GB used,   9021.03 GFLOPS,    654.88 GOPS
+126   72.87 ms run,    2.61 ms python,   70.26 ms CUDA,  676.89 loss, 0.001898 LR, 2.89 GB used,   8987.17 GFLOPS,    654.88 GOPS
+127   74.07 ms run,    2.53 ms python,   71.55 ms CUDA,  648.31 loss, 0.001913 LR, 2.89 GB used,   8841.29 GFLOPS,    654.88 GOPS
+128   71.92 ms run,    2.55 ms python,   69.37 ms CUDA,  645.06 loss, 0.001928 LR, 2.89 GB used,   9106.13 GFLOPS,    654.88 GOPS
+129   72.46 ms run,    2.42 ms python,   70.03 ms CUDA,  688.14 loss, 0.001943 LR, 2.89 GB used,   9038.26 GFLOPS,    654.88 GOPS
+130   71.93 ms run,    2.57 ms python,   69.36 ms CUDA,  693.22 loss, 0.001958 LR, 2.89 GB used,   9104.82 GFLOPS,    654.88 GOPS
+131   71.93 ms run,    2.47 ms python,   69.46 ms CUDA,  680.53 loss, 0.001973 LR, 2.89 GB used,   9104.68 GFLOPS,    654.88 GOPS
+132   73.27 ms run,    2.65 ms python,   70.62 ms CUDA,  674.01 loss, 0.001988 LR, 2.89 GB used,   8938.33 GFLOPS,    654.88 GOPS
+133   72.30 ms run,    2.64 ms python,   69.67 ms CUDA,  680.39 loss, 0.002003 LR, 2.89 GB used,   9057.57 GFLOPS,    654.88 GOPS
+134   72.40 ms run,    2.55 ms python,   69.84 ms CUDA,  688.74 loss, 0.002018 LR, 2.89 GB used,   9045.69 GFLOPS,    654.88 GOPS
+135   74.06 ms run,    2.54 ms python,   71.53 ms CUDA,  679.98 loss, 0.002033 LR, 2.89 GB used,   8841.97 GFLOPS,    654.88 GOPS
+136   72.51 ms run,    2.49 ms python,   70.02 ms CUDA,  653.13 loss, 0.002048 LR, 2.89 GB used,   9031.49 GFLOPS,    654.88 GOPS
+137   72.85 ms run,    2.57 ms python,   70.28 ms CUDA,  673.91 loss, 0.002063 LR, 2.89 GB used,   8989.61 GFLOPS,    654.88 GOPS
+138   73.90 ms run,    2.36 ms python,   71.55 ms CUDA,  646.48 loss, 0.002077 LR, 2.89 GB used,   8861.31 GFLOPS,    654.88 GOPS
+139   72.25 ms run,    2.55 ms python,   69.70 ms CUDA,  666.49 loss, 0.002092 LR, 2.89 GB used,   9063.94 GFLOPS,    654.88 GOPS
+140   72.49 ms run,    2.37 ms python,   70.12 ms CUDA,  671.75 loss, 0.002107 LR, 2.89 GB used,   9033.93 GFLOPS,    654.88 GOPS
+141   72.61 ms run,    2.52 ms python,   70.08 ms CUDA,  633.08 loss, 0.002122 LR, 2.89 GB used,   9019.66 GFLOPS,    654.88 GOPS
+142   71.98 ms run,    2.50 ms python,   69.48 ms CUDA,  670.76 loss, 0.002137 LR, 2.89 GB used,   9097.45 GFLOPS,    654.88 GOPS
+143   72.73 ms run,    2.62 ms python,   70.11 ms CUDA,  694.43 loss, 0.002152 LR, 2.89 GB used,   9004.34 GFLOPS,    654.88 GOPS
+144   71.93 ms run,    2.42 ms python,   69.51 ms CUDA,  651.26 loss, 0.002167 LR, 2.89 GB used,   9104.05 GFLOPS,    654.88 GOPS
+145   72.54 ms run,    2.50 ms python,   70.03 ms CUDA,  647.56 loss, 0.002182 LR, 2.89 GB used,   9028.35 GFLOPS,    654.88 GOPS
+146   74.27 ms run,    2.51 ms python,   71.76 ms CUDA,  669.48 loss, 0.002197 LR, 2.89 GB used,   8817.67 GFLOPS,    654.88 GOPS
+147   72.59 ms run,    2.40 ms python,   70.19 ms CUDA,  691.67 loss, 0.002212 LR, 2.89 GB used,   9022.21 GFLOPS,    654.88 GOPS
+148   72.91 ms run,    2.54 ms python,   70.37 ms CUDA,  682.47 loss, 0.002227 LR, 2.89 GB used,   8982.58 GFLOPS,    654.88 GOPS
+149   74.23 ms run,    2.39 ms python,   71.84 ms CUDA,  637.63 loss, 0.002242 LR, 2.89 GB used,   8822.32 GFLOPS,    654.88 GOPS
+150   72.43 ms run,    2.52 ms python,   69.91 ms CUDA,  649.80 loss, 0.002257 LR, 2.89 GB used,   9041.64 GFLOPS,    654.88 GOPS
+151   73.15 ms run,    2.52 ms python,   70.63 ms CUDA,  657.17 loss, 0.002272 LR, 2.89 GB used,   8952.77 GFLOPS,    654.88 GOPS
+152   74.21 ms run,    2.56 ms python,   71.65 ms CUDA,  660.39 loss, 0.002287 LR, 2.89 GB used,   8824.66 GFLOPS,    654.88 GOPS
+153   72.40 ms run,    2.41 ms python,   70.00 ms CUDA,  656.64 loss, 0.002302 LR, 2.89 GB used,   9045.02 GFLOPS,    654.88 GOPS
+154   72.92 ms run,    2.55 ms python,   70.38 ms CUDA,  658.31 loss, 0.002317 LR, 2.89 GB used,   8980.24 GFLOPS,    654.88 GOPS
+155   73.88 ms run,    2.59 ms python,   71.29 ms CUDA,  653.89 loss, 0.002332 LR, 2.89 GB used,   8864.14 GFLOPS,    654.88 GOPS
+156   71.91 ms run,    2.56 ms python,   69.35 ms CUDA,  678.64 loss, 0.002346 LR, 2.89 GB used,   9106.81 GFLOPS,    654.88 GOPS
+157   72.88 ms run,    2.55 ms python,   70.33 ms CUDA,  647.29 loss, 0.002361 LR, 2.89 GB used,   8985.70 GFLOPS,    654.88 GOPS
+158   72.42 ms run,    2.51 ms python,   69.92 ms CUDA,  667.66 loss, 0.002376 LR, 2.89 GB used,   9042.72 GFLOPS,    654.88 GOPS
+159   72.23 ms run,    2.50 ms python,   69.73 ms CUDA,  672.76 loss, 0.002391 LR, 2.89 GB used,   9066.20 GFLOPS,    654.88 GOPS
+160   72.76 ms run,    2.31 ms python,   70.45 ms CUDA,  680.75 loss, 0.002406 LR, 2.89 GB used,   9000.60 GFLOPS,    654.88 GOPS
+161   72.17 ms run,    2.59 ms python,   69.58 ms CUDA,  657.79 loss, 0.002421 LR, 2.89 GB used,   9074.00 GFLOPS,    654.88 GOPS
+162   72.68 ms run,    2.70 ms python,   69.98 ms CUDA,  671.63 loss, 0.002436 LR, 2.89 GB used,   9010.46 GFLOPS,    654.88 GOPS
+163   74.10 ms run,    2.61 ms python,   71.49 ms CUDA,  668.42 loss, 0.002451 LR, 2.89 GB used,   8837.90 GFLOPS,    654.88 GOPS
+164   72.48 ms run,    2.34 ms python,   70.14 ms CUDA,  628.91 loss, 0.002466 LR, 2.89 GB used,   9035.01 GFLOPS,    654.88 GOPS
+165   72.66 ms run,    2.44 ms python,   70.21 ms CUDA,  656.85 loss, 0.002481 LR, 2.89 GB used,   9013.07 GFLOPS,    654.88 GOPS
+166   73.98 ms run,    2.53 ms python,   71.46 ms CUDA,  669.54 loss, 0.002496 LR, 2.89 GB used,   8851.57 GFLOPS,    654.88 GOPS
+167   72.27 ms run,    2.45 ms python,   69.83 ms CUDA,  662.17 loss, 0.002511 LR, 2.89 GB used,   9060.97 GFLOPS,    654.88 GOPS
+168   73.01 ms run,    2.49 ms python,   70.52 ms CUDA,  636.91 loss, 0.002526 LR, 2.89 GB used,   8970.20 GFLOPS,    654.88 GOPS
+169   73.87 ms run,    2.55 ms python,   71.32 ms CUDA,  638.75 loss, 0.002541 LR, 2.89 GB used,   8865.27 GFLOPS,    654.88 GOPS
+170   72.32 ms run,    2.61 ms python,   69.71 ms CUDA,  637.06 loss, 0.002556 LR, 2.89 GB used,   9054.73 GFLOPS,    654.88 GOPS
+171   73.08 ms run,    2.70 ms python,   70.38 ms CUDA,  648.39 loss, 0.002571 LR, 2.89 GB used,   8961.48 GFLOPS,    654.88 GOPS
+172   72.96 ms run,    2.67 ms python,   70.29 ms CUDA,  669.41 loss, 0.002586 LR, 2.89 GB used,   8976.31 GFLOPS,    654.88 GOPS
+173   72.42 ms run,    2.34 ms python,   70.08 ms CUDA,  643.85 loss, 0.002601 LR, 2.89 GB used,   9043.05 GFLOPS,    654.88 GOPS
+174   72.63 ms run,    2.58 ms python,   70.05 ms CUDA,  646.89 loss, 0.002615 LR, 2.89 GB used,   9016.92 GFLOPS,    654.88 GOPS
+175   71.83 ms run,    2.33 ms python,   69.50 ms CUDA,  661.98 loss, 0.002630 LR, 2.89 GB used,   9116.76 GFLOPS,    654.88 GOPS
+176   72.69 ms run,    2.55 ms python,   70.14 ms CUDA,  660.79 loss, 0.002645 LR, 2.89 GB used,   9009.18 GFLOPS,    654.88 GOPS
+177   74.13 ms run,    2.57 ms python,   71.56 ms CUDA,  660.69 loss, 0.002660 LR, 2.89 GB used,   8834.00 GFLOPS,    654.88 GOPS
+178   72.56 ms run,    2.65 ms python,   69.91 ms CUDA,  658.52 loss, 0.002675 LR, 2.89 GB used,   9024.96 GFLOPS,    654.88 GOPS
+179   72.34 ms run,    2.52 ms python,   69.82 ms CUDA,  647.02 loss, 0.002690 LR, 2.89 GB used,   9052.42 GFLOPS,    654.88 GOPS
+180   74.51 ms run,    2.58 ms python,   71.93 ms CUDA,  651.22 loss, 0.002705 LR, 2.89 GB used,   8789.16 GFLOPS,    654.88 GOPS
+181   72.63 ms run,    2.45 ms python,   70.19 ms CUDA,  673.15 loss, 0.002720 LR, 2.89 GB used,   9016.37 GFLOPS,    654.88 GOPS
+182   72.58 ms run,    2.60 ms python,   69.98 ms CUDA,  651.04 loss, 0.002735 LR, 2.89 GB used,   9022.83 GFLOPS,    654.88 GOPS
+183   71.54 ms run,    2.56 ms python,   68.98 ms CUDA,  647.38 loss, 0.002750 LR, 2.89 GB used,   9154.56 GFLOPS,    654.88 GOPS
+184   72.38 ms run,    2.42 ms python,   69.96 ms CUDA,  654.45 loss, 0.002765 LR, 2.89 GB used,   9047.46 GFLOPS,    654.88 GOPS
+185   72.55 ms run,    2.67 ms python,   69.87 ms CUDA,  656.80 loss, 0.002780 LR, 2.89 GB used,   9026.85 GFLOPS,    654.88 GOPS
+186   71.54 ms run,    2.33 ms python,   69.21 ms CUDA,  657.14 loss, 0.002795 LR, 2.89 GB used,   9153.99 GFLOPS,    654.88 GOPS
+187   72.61 ms run,    2.56 ms python,   70.05 ms CUDA,  656.92 loss, 0.002810 LR, 2.89 GB used,   9019.66 GFLOPS,    654.88 GOPS
+188   74.13 ms run,    2.37 ms python,   71.76 ms CUDA,  683.66 loss, 0.002825 LR, 2.89 GB used,   8833.91 GFLOPS,    654.88 GOPS
+189   72.59 ms run,    2.57 ms python,   70.02 ms CUDA,  664.86 loss, 0.002840 LR, 2.89 GB used,   9021.42 GFLOPS,    654.88 GOPS
+190   72.85 ms run,    2.59 ms python,   70.26 ms CUDA,  658.43 loss, 0.002855 LR, 2.89 GB used,   8989.40 GFLOPS,    654.88 GOPS
+191   74.30 ms run,    2.58 ms python,   71.72 ms CUDA,  678.90 loss, 0.002870 LR, 2.89 GB used,   8813.59 GFLOPS,    654.88 GOPS
+192   72.65 ms run,    2.60 ms python,   70.05 ms CUDA,  645.70 loss, 0.002885 LR, 2.89 GB used,   9014.64 GFLOPS,    654.88 GOPS
+193   73.30 ms run,    2.49 ms python,   70.81 ms CUDA,  649.28 loss, 0.002899 LR, 2.89 GB used,   8934.51 GFLOPS,    654.88 GOPS
+194   74.40 ms run,    2.56 ms python,   71.84 ms CUDA,  675.38 loss, 0.002914 LR, 2.89 GB used,   8802.35 GFLOPS,    654.88 GOPS
+195   72.72 ms run,    2.55 ms python,   70.17 ms CUDA,  625.98 loss, 0.002929 LR, 2.89 GB used,   9005.51 GFLOPS,    654.88 GOPS
+shuffling training dataset in 77.68 ms (epoch=2)
+196  498.00 ms run,  427.32 ms python,   70.69 ms CUDA,  633.36 loss, 0.002944 LR, 2.89 GB used,   1420.11 GFLOPS,    707.21 GOPS
+197   72.50 ms run,    2.71 ms python,   69.80 ms CUDA,  623.05 loss, 0.002959 LR, 2.89 GB used,   9032.69 GFLOPS,    654.88 GOPS
+198   72.89 ms run,    2.46 ms python,   70.43 ms CUDA,  654.44 loss, 0.002974 LR, 2.89 GB used,   8984.74 GFLOPS,    654.88 GOPS
+199   72.13 ms run,    2.58 ms python,   69.54 ms CUDA,  639.34 loss, 0.002989 LR, 2.89 GB used,   9079.63 GFLOPS,    654.88 GOPS
+200   72.78 ms run,    2.42 ms python,   70.36 ms CUDA,  638.11 loss, 0.003004 LR, 2.89 GB used,   8998.38 GFLOPS,    654.88 GOPS
+201   72.14 ms run,    2.55 ms python,   69.59 ms CUDA,  638.39 loss, 0.003019 LR, 2.89 GB used,   9078.04 GFLOPS,    654.88 GOPS
+202   72.67 ms run,    2.48 ms python,   70.18 ms CUDA,  644.59 loss, 0.003034 LR, 2.89 GB used,   9011.97 GFLOPS,    654.88 GOPS
+203   74.07 ms run,    2.59 ms python,   71.48 ms CUDA,  637.38 loss, 0.003049 LR, 2.89 GB used,   8840.86 GFLOPS,    654.88 GOPS
+204   72.58 ms run,    2.59 ms python,   69.99 ms CUDA,  651.44 loss, 0.003064 LR, 2.89 GB used,   9023.07 GFLOPS,    654.88 GOPS
+205   72.43 ms run,    2.51 ms python,   69.91 ms CUDA,  648.15 loss, 0.003079 LR, 2.89 GB used,   9042.06 GFLOPS,    654.88 GOPS
+206   71.71 ms run,    2.53 ms python,   69.19 ms CUDA,  667.39 loss, 0.003094 LR, 2.89 GB used,   9131.72 GFLOPS,    654.88 GOPS
+207   72.54 ms run,    2.29 ms python,   70.25 ms CUDA,  666.09 loss, 0.003109 LR, 2.89 GB used,   9027.69 GFLOPS,    654.88 GOPS
+208   73.17 ms run,    2.55 ms python,   70.61 ms CUDA,  655.43 loss, 0.003124 LR, 2.89 GB used,   8950.35 GFLOPS,    654.88 GOPS
+209   72.62 ms run,    2.74 ms python,   69.88 ms CUDA,  701.33 loss, 0.003139 LR, 2.89 GB used,   9018.13 GFLOPS,    654.88 GOPS
+210   72.55 ms run,    2.72 ms python,   69.83 ms CUDA,  653.25 loss, 0.003154 LR, 2.89 GB used,   9026.90 GFLOPS,    654.88 GOPS
+211   72.93 ms run,    2.48 ms python,   70.45 ms CUDA,  670.84 loss, 0.003168 LR, 2.89 GB used,   8979.25 GFLOPS,    654.88 GOPS
+212   72.10 ms run,    2.72 ms python,   69.37 ms CUDA,  656.70 loss, 0.003183 LR, 2.89 GB used,   9083.46 GFLOPS,    654.88 GOPS
+213   72.44 ms run,    2.61 ms python,   69.84 ms CUDA,  646.78 loss, 0.003198 LR, 2.89 GB used,   9040.04 GFLOPS,    654.88 GOPS
+214   74.24 ms run,    2.62 ms python,   71.62 ms CUDA,  659.34 loss, 0.003213 LR, 2.89 GB used,   8821.05 GFLOPS,    654.88 GOPS
+215   72.76 ms run,    2.53 ms python,   70.23 ms CUDA,  622.12 loss, 0.003228 LR, 2.89 GB used,   9000.63 GFLOPS,    654.88 GOPS
+216   73.29 ms run,    2.60 ms python,   70.69 ms CUDA,  634.07 loss, 0.003243 LR, 2.89 GB used,   8934.86 GFLOPS,    654.88 GOPS
+217   74.30 ms run,    2.64 ms python,   71.67 ms CUDA,  609.18 loss, 0.003258 LR, 2.89 GB used,   8813.45 GFLOPS,    654.88 GOPS
+218   72.95 ms run,    2.47 ms python,   70.48 ms CUDA,  644.37 loss, 0.003273 LR, 2.89 GB used,   8977.28 GFLOPS,    654.88 GOPS
+219   76.54 ms run,    7.47 ms python,   69.08 ms CUDA,  636.00 loss, 0.003288 LR, 2.89 GB used,   8555.64 GFLOPS,    654.88 GOPS
+220   73.16 ms run,    2.45 ms python,   70.70 ms CUDA,  655.47 loss, 0.003303 LR, 2.89 GB used,   8951.71 GFLOPS,    654.88 GOPS
+221   72.79 ms run,    2.64 ms python,   70.15 ms CUDA,  664.49 loss, 0.003318 LR, 2.89 GB used,   8997.39 GFLOPS,    654.88 GOPS
+222   72.27 ms run,    2.48 ms python,   69.80 ms CUDA,  657.69 loss, 0.003333 LR, 2.89 GB used,   9060.95 GFLOPS,    654.88 GOPS
+223   72.84 ms run,    2.55 ms python,   70.29 ms CUDA,  646.81 loss, 0.003348 LR, 2.89 GB used,   8990.89 GFLOPS,    654.88 GOPS
+224   72.01 ms run,    2.33 ms python,   69.69 ms CUDA,  661.95 loss, 0.003363 LR, 2.89 GB used,   9093.78 GFLOPS,    654.88 GOPS
+225   72.96 ms run,    2.49 ms python,   70.47 ms CUDA,  651.58 loss, 0.003378 LR, 2.89 GB used,   8976.10 GFLOPS,    654.88 GOPS
+226   73.86 ms run,    2.51 ms python,   71.35 ms CUDA,  642.51 loss, 0.003393 LR, 2.89 GB used,   8866.34 GFLOPS,    654.88 GOPS
+227   72.55 ms run,    2.54 ms python,   70.01 ms CUDA,  655.75 loss, 0.003408 LR, 2.89 GB used,   9026.96 GFLOPS,    654.88 GOPS
+228   73.05 ms run,    2.55 ms python,   70.50 ms CUDA,  625.09 loss, 0.003423 LR, 2.89 GB used,   8964.48 GFLOPS,    654.88 GOPS
+229   74.61 ms run,    2.50 ms python,   72.11 ms CUDA,  634.61 loss, 0.003437 LR, 2.89 GB used,   8777.86 GFLOPS,    654.88 GOPS
+230   72.63 ms run,    2.42 ms python,   70.21 ms CUDA,  626.83 loss, 0.003433 LR, 2.89 GB used,   9017.14 GFLOPS,    654.88 GOPS
+231   72.68 ms run,    2.51 ms python,   70.17 ms CUDA,  635.11 loss, 0.003429 LR, 2.89 GB used,   9009.96 GFLOPS,    654.88 GOPS
+232   74.39 ms run,    2.44 ms python,   71.95 ms CUDA,  653.12 loss, 0.003424 LR, 2.89 GB used,   8803.64 GFLOPS,    654.88 GOPS
+233   72.94 ms run,    2.52 ms python,   70.41 ms CUDA,  667.25 loss, 0.003420 LR, 2.89 GB used,   8978.76 GFLOPS,    654.88 GOPS
+234   72.69 ms run,    2.51 ms python,   70.18 ms CUDA,  644.99 loss, 0.003416 LR, 2.89 GB used,   9009.28 GFLOPS,    654.88 GOPS
+235   74.27 ms run,    2.45 ms python,   71.82 ms CUDA,  643.51 loss, 0.003411 LR, 2.89 GB used,   8817.24 GFLOPS,    654.88 GOPS
+236   72.48 ms run,    2.39 ms python,   70.08 ms CUDA,  645.03 loss, 0.003407 LR, 2.89 GB used,   9035.83 GFLOPS,    654.88 GOPS
+237   72.84 ms run,    2.52 ms python,   70.33 ms CUDA,  653.75 loss, 0.003403 LR, 2.89 GB used,   8990.23 GFLOPS,    654.88 GOPS
+238   74.18 ms run,    2.51 ms python,   71.67 ms CUDA,  648.87 loss, 0.003398 LR, 2.89 GB used,   8828.05 GFLOPS,    654.88 GOPS
+239   72.39 ms run,    2.40 ms python,   70.00 ms CUDA,  685.25 loss, 0.003394 LR, 2.89 GB used,   9046.09 GFLOPS,    654.88 GOPS
+240   73.43 ms run,    2.53 ms python,   70.90 ms CUDA,  653.90 loss, 0.003390 LR, 2.89 GB used,   8918.41 GFLOPS,    654.88 GOPS
+241   74.81 ms run,    2.59 ms python,   72.21 ms CUDA,  625.40 loss, 0.003385 LR, 2.89 GB used,   8754.46 GFLOPS,    654.88 GOPS
+242   73.00 ms run,    2.66 ms python,   70.34 ms CUDA,  616.22 loss, 0.003381 LR, 2.89 GB used,   8971.50 GFLOPS,    654.88 GOPS
+243   72.76 ms run,    2.58 ms python,   70.18 ms CUDA,  642.71 loss, 0.003377 LR, 2.89 GB used,   9000.37 GFLOPS,    654.88 GOPS
+244   74.25 ms run,    2.52 ms python,   71.73 ms CUDA,  642.45 loss, 0.003372 LR, 2.89 GB used,   8819.38 GFLOPS,    654.88 GOPS
+245   72.70 ms run,    2.50 ms python,   70.20 ms CUDA,  640.74 loss, 0.003368 LR, 2.89 GB used,   9007.87 GFLOPS,    654.88 GOPS
+246   72.94 ms run,    2.44 ms python,   70.50 ms CUDA,  644.86 loss, 0.003364 LR, 2.89 GB used,   8977.77 GFLOPS,    654.88 GOPS
+247   74.47 ms run,    2.66 ms python,   71.80 ms CUDA,  648.01 loss, 0.003359 LR, 2.89 GB used,   8794.18 GFLOPS,    654.88 GOPS
+248   72.41 ms run,    2.34 ms python,   70.08 ms CUDA,  631.67 loss, 0.003355 LR, 2.89 GB used,   9043.45 GFLOPS,    654.88 GOPS
+249   72.85 ms run,    2.55 ms python,   70.30 ms CUDA,  638.41 loss, 0.003350 LR, 2.89 GB used,   8989.35 GFLOPS,    654.88 GOPS
+250   74.44 ms run,    2.35 ms python,   72.08 ms CUDA,  657.95 loss, 0.003346 LR, 2.89 GB used,   8797.90 GFLOPS,    654.88 GOPS
+251   72.76 ms run,    2.54 ms python,   70.23 ms CUDA,  635.82 loss, 0.003342 LR, 2.89 GB used,   8999.96 GFLOPS,    654.88 GOPS
+252   73.08 ms run,    2.59 ms python,   70.49 ms CUDA,  642.93 loss, 0.003337 LR, 2.89 GB used,   8960.73 GFLOPS,    654.88 GOPS
+253   74.05 ms run,    2.65 ms python,   71.40 ms CUDA,  646.35 loss, 0.003333 LR, 2.89 GB used,   8843.48 GFLOPS,    654.88 GOPS
+254   72.92 ms run,    2.58 ms python,   70.33 ms CUDA,  633.03 loss, 0.003329 LR, 2.89 GB used,   8981.18 GFLOPS,    654.88 GOPS
+255   73.09 ms run,    2.53 ms python,   70.56 ms CUDA,  601.26 loss, 0.003324 LR, 2.89 GB used,   8960.48 GFLOPS,    654.88 GOPS
+256   74.39 ms run,    2.57 ms python,   71.82 ms CUDA,  607.96 loss, 0.003320 LR, 2.89 GB used,   8803.33 GFLOPS,    654.88 GOPS
+257   72.77 ms run,    2.55 ms python,   70.22 ms CUDA,  632.89 loss, 0.003316 LR, 2.89 GB used,   8999.59 GFLOPS,    654.88 GOPS
+258   72.69 ms run,    2.51 ms python,   70.18 ms CUDA,  638.15 loss, 0.003311 LR, 2.89 GB used,   9009.22 GFLOPS,    654.88 GOPS
+259   74.15 ms run,    2.51 ms python,   71.64 ms CUDA,  662.76 loss, 0.003307 LR, 2.89 GB used,   8831.81 GFLOPS,    654.88 GOPS
+260   72.37 ms run,    2.53 ms python,   69.83 ms CUDA,  645.36 loss, 0.003303 LR, 2.89 GB used,   9049.57 GFLOPS,    654.88 GOPS
+261   72.74 ms run,    2.49 ms python,   70.25 ms CUDA,  622.65 loss, 0.003298 LR, 2.89 GB used,   9002.88 GFLOPS,    654.88 GOPS
+262   74.74 ms run,    2.52 ms python,   72.22 ms CUDA,  619.47 loss, 0.003294 LR, 2.89 GB used,   8761.80 GFLOPS,    654.88 GOPS
+263   72.81 ms run,    2.41 ms python,   70.40 ms CUDA,  645.66 loss, 0.003290 LR, 2.89 GB used,   8994.17 GFLOPS,    654.88 GOPS
+264   72.80 ms run,    2.53 ms python,   70.27 ms CUDA,  671.79 loss, 0.003285 LR, 2.89 GB used,   8995.89 GFLOPS,    654.88 GOPS
+265   74.23 ms run,    2.45 ms python,   71.77 ms CUDA,  624.64 loss, 0.003281 LR, 2.89 GB used,   8822.56 GFLOPS,    654.88 GOPS
+266   72.78 ms run,    2.50 ms python,   70.27 ms CUDA,  645.96 loss, 0.003276 LR, 2.89 GB used,   8998.30 GFLOPS,    654.88 GOPS
+267   72.76 ms run,    2.57 ms python,   70.20 ms CUDA,  671.58 loss, 0.003272 LR, 2.89 GB used,   8999.96 GFLOPS,    654.88 GOPS
+268   74.21 ms run,    2.61 ms python,   71.61 ms CUDA,  629.78 loss, 0.003268 LR, 2.89 GB used,   8824.34 GFLOPS,    654.88 GOPS
+269   72.59 ms run,    2.51 ms python,   70.07 ms CUDA,  615.26 loss, 0.003263 LR, 2.89 GB used,   9021.94 GFLOPS,    654.88 GOPS
+270   73.08 ms run,    2.54 ms python,   70.54 ms CUDA,  620.92 loss, 0.003259 LR, 2.89 GB used,   8961.26 GFLOPS,    654.88 GOPS
+271   74.43 ms run,    2.58 ms python,   71.85 ms CUDA,  616.44 loss, 0.003255 LR, 2.89 GB used,   8798.68 GFLOPS,    654.88 GOPS
+272   73.13 ms run,    2.53 ms python,   70.59 ms CUDA,  613.67 loss, 0.003250 LR, 2.89 GB used,   8955.60 GFLOPS,    654.88 GOPS
+273   72.87 ms run,    2.56 ms python,   70.32 ms CUDA,  604.82 loss, 0.003246 LR, 2.89 GB used,   8986.56 GFLOPS,    654.88 GOPS
+274   74.18 ms run,    2.53 ms python,   71.64 ms CUDA,  629.60 loss, 0.003242 LR, 2.89 GB used,   8828.81 GFLOPS,    654.88 GOPS
+275   72.91 ms run,    2.52 ms python,   70.39 ms CUDA,  629.59 loss, 0.003237 LR, 2.89 GB used,   8982.24 GFLOPS,    654.88 GOPS
+276   73.23 ms run,    2.51 ms python,   70.72 ms CUDA,  600.92 loss, 0.003233 LR, 2.89 GB used,   8942.55 GFLOPS,    654.88 GOPS
+277   74.20 ms run,    2.46 ms python,   71.74 ms CUDA,  614.05 loss, 0.003229 LR, 2.89 GB used,   8825.91 GFLOPS,    654.88 GOPS
+278   72.80 ms run,    2.47 ms python,   70.33 ms CUDA,  616.54 loss, 0.003224 LR, 2.89 GB used,   8995.69 GFLOPS,    654.88 GOPS
+279   72.90 ms run,    2.40 ms python,   70.51 ms CUDA,  626.12 loss, 0.003220 LR, 2.89 GB used,   8982.66 GFLOPS,    654.88 GOPS
+280   74.05 ms run,    2.40 ms python,   71.65 ms CUDA,  634.32 loss, 0.003216 LR, 2.89 GB used,   8844.10 GFLOPS,    654.88 GOPS
+281   72.22 ms run,    2.52 ms python,   69.70 ms CUDA,  616.06 loss, 0.003211 LR, 2.89 GB used,   9067.48 GFLOPS,    654.88 GOPS
+282   72.80 ms run,    2.29 ms python,   70.51 ms CUDA,  607.48 loss, 0.003207 LR, 2.89 GB used,   8995.32 GFLOPS,    654.88 GOPS
+283   74.53 ms run,    2.58 ms python,   71.95 ms CUDA,  609.53 loss, 0.003202 LR, 2.89 GB used,   8787.20 GFLOPS,    654.88 GOPS
+284   72.51 ms run,    2.34 ms python,   70.17 ms CUDA,  602.35 loss, 0.003198 LR, 2.89 GB used,   9032.08 GFLOPS,    654.88 GOPS
+285   72.70 ms run,    2.56 ms python,   70.13 ms CUDA,  625.76 loss, 0.003194 LR, 2.89 GB used,   9008.38 GFLOPS,    654.88 GOPS
+286   74.66 ms run,    2.50 ms python,   72.16 ms CUDA,  617.29 loss, 0.003189 LR, 2.89 GB used,   8770.93 GFLOPS,    654.88 GOPS
+287   72.84 ms run,    2.51 ms python,   70.33 ms CUDA,  648.32 loss, 0.003185 LR, 2.89 GB used,   8990.34 GFLOPS,    654.88 GOPS
+288   73.08 ms run,    2.57 ms python,   70.51 ms CUDA,  653.02 loss, 0.003181 LR, 2.89 GB used,   8961.10 GFLOPS,    654.88 GOPS
+289   74.12 ms run,    2.48 ms python,   71.64 ms CUDA,  640.75 loss, 0.003176 LR, 2.89 GB used,   8835.14 GFLOPS,    654.88 GOPS
+290   72.58 ms run,    2.48 ms python,   70.10 ms CUDA,  612.99 loss, 0.003172 LR, 2.89 GB used,   9022.68 GFLOPS,    654.88 GOPS
+291   72.97 ms run,    2.49 ms python,   70.49 ms CUDA,  633.08 loss, 0.003168 LR, 2.89 GB used,   8974.32 GFLOPS,    654.88 GOPS
+292   74.27 ms run,    2.55 ms python,   71.72 ms CUDA,  637.28 loss, 0.003163 LR, 2.89 GB used,   8817.66 GFLOPS,    654.88 GOPS
+293   73.00 ms run,    2.33 ms python,   70.66 ms CUDA,  612.09 loss, 0.003159 LR, 2.89 GB used,   8971.01 GFLOPS,    654.88 GOPS
+shuffling training dataset in 76.15 ms (epoch=3)
+294  357.79 ms run,  290.07 ms python,   67.72 ms CUDA,  595.92 loss, 0.003155 LR, 2.89 GB used,   1976.64 GFLOPS,    707.21 GOPS
+295   70.00 ms run,    2.64 ms python,   67.37 ms CUDA,  626.06 loss, 0.003150 LR, 2.89 GB used,   9354.82 GFLOPS,    654.88 GOPS
+296   71.90 ms run,    2.53 ms python,   69.38 ms CUDA,  618.74 loss, 0.003146 LR, 2.89 GB used,   9107.87 GFLOPS,    654.88 GOPS
+297   72.75 ms run,    2.50 ms python,   70.25 ms CUDA,  616.05 loss, 0.003142 LR, 2.89 GB used,   9001.87 GFLOPS,    654.88 GOPS
+298   74.18 ms run,    2.28 ms python,   71.90 ms CUDA,  593.68 loss, 0.003137 LR, 2.89 GB used,   8828.10 GFLOPS,    654.88 GOPS
+299   72.89 ms run,    2.67 ms python,   70.22 ms CUDA,  603.70 loss, 0.003133 LR, 2.89 GB used,   8984.84 GFLOPS,    654.88 GOPS
+300   73.52 ms run,    2.64 ms python,   70.88 ms CUDA,  616.18 loss, 0.003128 LR, 2.89 GB used,   8907.09 GFLOPS,    654.88 GOPS
+301   74.08 ms run,    2.57 ms python,   71.51 ms CUDA,  613.58 loss, 0.003124 LR, 2.89 GB used,   8839.76 GFLOPS,    654.88 GOPS
+302   72.88 ms run,    2.46 ms python,   70.42 ms CUDA,  613.54 loss, 0.003120 LR, 2.89 GB used,   8985.84 GFLOPS,    654.88 GOPS
+303   73.32 ms run,    2.59 ms python,   70.72 ms CUDA,  606.35 loss, 0.003115 LR, 2.89 GB used,   8932.37 GFLOPS,    654.88 GOPS
+304   77.29 ms run,    7.94 ms python,   69.35 ms CUDA,  591.48 loss, 0.003111 LR, 2.89 GB used,   8473.24 GFLOPS,    654.88 GOPS
+305   74.09 ms run,    2.66 ms python,   71.43 ms CUDA,  619.96 loss, 0.003107 LR, 2.89 GB used,   8839.54 GFLOPS,    654.88 GOPS
+306   72.67 ms run,    2.48 ms python,   70.18 ms CUDA,  598.54 loss, 0.003102 LR, 2.89 GB used,   9012.00 GFLOPS,    654.88 GOPS
+307   73.08 ms run,    2.46 ms python,   70.62 ms CUDA,  613.82 loss, 0.003098 LR, 2.89 GB used,   8961.68 GFLOPS,    654.88 GOPS
+308   74.50 ms run,    2.53 ms python,   71.97 ms CUDA,  618.16 loss, 0.003094 LR, 2.89 GB used,   8789.85 GFLOPS,    654.88 GOPS
+309   72.55 ms run,    2.53 ms python,   70.01 ms CUDA,  589.72 loss, 0.003089 LR, 2.89 GB used,   9026.94 GFLOPS,    654.88 GOPS
+310   73.40 ms run,    2.52 ms python,   70.88 ms CUDA,  617.42 loss, 0.003085 LR, 2.89 GB used,   8921.45 GFLOPS,    654.88 GOPS
+311   74.75 ms run,    2.50 ms python,   72.26 ms CUDA,  634.29 loss, 0.003081 LR, 2.89 GB used,   8760.50 GFLOPS,    654.88 GOPS
+312   72.58 ms run,    2.44 ms python,   70.14 ms CUDA,  628.66 loss, 0.003076 LR, 2.89 GB used,   9023.04 GFLOPS,    654.88 GOPS
+313   73.27 ms run,    2.45 ms python,   70.82 ms CUDA,  611.29 loss, 0.003072 LR, 2.89 GB used,   8937.97 GFLOPS,    654.88 GOPS
+314   75.16 ms run,    2.52 ms python,   72.63 ms CUDA,  611.33 loss, 0.003068 LR, 2.89 GB used,   8713.58 GFLOPS,    654.88 GOPS
+315   72.69 ms run,    2.42 ms python,   70.27 ms CUDA,  606.03 loss, 0.003063 LR, 2.89 GB used,   9009.43 GFLOPS,    654.88 GOPS
+316   73.28 ms run,    2.50 ms python,   70.78 ms CUDA,  620.45 loss, 0.003059 LR, 2.89 GB used,   8936.53 GFLOPS,    654.88 GOPS
+317   74.57 ms run,    2.55 ms python,   72.03 ms CUDA,  624.90 loss, 0.003054 LR, 2.89 GB used,   8781.77 GFLOPS,    654.88 GOPS
+318   72.04 ms run,    2.51 ms python,   69.53 ms CUDA,  616.13 loss, 0.003050 LR, 2.89 GB used,   9090.71 GFLOPS,    654.88 GOPS
+319   72.93 ms run,    2.36 ms python,   70.57 ms CUDA,  600.00 loss, 0.003046 LR, 2.89 GB used,   8978.98 GFLOPS,    654.88 GOPS
+320   74.12 ms run,    2.51 ms python,   71.61 ms CUDA,  596.37 loss, 0.003041 LR, 2.89 GB used,   8835.77 GFLOPS,    654.88 GOPS
+321   72.91 ms run,    2.44 ms python,   70.47 ms CUDA,  581.14 loss, 0.003037 LR, 2.89 GB used,   8981.44 GFLOPS,    654.88 GOPS
+322   73.20 ms run,    2.54 ms python,   70.66 ms CUDA,  584.11 loss, 0.003033 LR, 2.89 GB used,   8946.28 GFLOPS,    654.88 GOPS
+323   74.43 ms run,    2.53 ms python,   71.90 ms CUDA,  595.56 loss, 0.003028 LR, 2.89 GB used,   8798.81 GFLOPS,    654.88 GOPS
+324   73.06 ms run,    2.56 ms python,   70.49 ms CUDA,  608.52 loss, 0.003024 LR, 2.89 GB used,   8964.11 GFLOPS,    654.88 GOPS
+325   73.05 ms run,    2.52 ms python,   70.54 ms CUDA,  604.61 loss, 0.003020 LR, 2.89 GB used,   8964.41 GFLOPS,    654.88 GOPS
+326   73.81 ms run,    2.56 ms python,   71.25 ms CUDA,  614.76 loss, 0.003015 LR, 2.89 GB used,   8872.46 GFLOPS,    654.88 GOPS
+327   72.43 ms run,    2.55 ms python,   69.88 ms CUDA,  607.13 loss, 0.003011 LR, 2.89 GB used,   9041.58 GFLOPS,    654.88 GOPS
+328   72.90 ms run,    2.37 ms python,   70.53 ms CUDA,  612.60 loss, 0.003007 LR, 2.89 GB used,   8983.57 GFLOPS,    654.88 GOPS
+329   74.62 ms run,    2.54 ms python,   72.09 ms CUDA,  597.70 loss, 0.003002 LR, 2.89 GB used,   8776.08 GFLOPS,    654.88 GOPS
+330   73.02 ms run,    2.28 ms python,   70.74 ms CUDA,  594.61 loss, 0.002998 LR, 2.89 GB used,   8968.49 GFLOPS,    654.88 GOPS
+331   73.48 ms run,    2.52 ms python,   70.96 ms CUDA,  610.67 loss, 0.002994 LR, 2.89 GB used,   8912.27 GFLOPS,    654.88 GOPS
+332   73.88 ms run,    2.29 ms python,   71.59 ms CUDA,  615.93 loss, 0.002989 LR, 2.89 GB used,   8864.34 GFLOPS,    654.88 GOPS
+333   72.54 ms run,    2.52 ms python,   70.02 ms CUDA,  607.80 loss, 0.002985 LR, 2.89 GB used,   9027.73 GFLOPS,    654.88 GOPS
+334   73.31 ms run,    2.38 ms python,   70.93 ms CUDA,  590.91 loss, 0.002980 LR, 2.89 GB used,   8932.89 GFLOPS,    654.88 GOPS
+335   74.06 ms run,    2.42 ms python,   71.64 ms CUDA,  604.12 loss, 0.002976 LR, 2.89 GB used,   8842.75 GFLOPS,    654.88 GOPS
+336   72.98 ms run,    3.49 ms python,   69.48 ms CUDA,  618.17 loss, 0.002972 LR, 2.89 GB used,   8973.93 GFLOPS,    654.88 GOPS
+337   72.81 ms run,    2.56 ms python,   70.25 ms CUDA,  600.99 loss, 0.002967 LR, 2.89 GB used,   8994.21 GFLOPS,    654.88 GOPS
+338   74.00 ms run,    2.75 ms python,   71.25 ms CUDA,  615.22 loss, 0.002963 LR, 2.89 GB used,   8850.19 GFLOPS,    654.88 GOPS
+339   72.35 ms run,    2.62 ms python,   69.72 ms CUDA,  597.27 loss, 0.002959 LR, 2.89 GB used,   9051.70 GFLOPS,    654.88 GOPS
+340   72.67 ms run,    2.59 ms python,   70.08 ms CUDA,  609.55 loss, 0.002954 LR, 2.89 GB used,   9012.26 GFLOPS,    654.88 GOPS
+341   74.45 ms run,    2.42 ms python,   72.03 ms CUDA,  593.95 loss, 0.002950 LR, 2.89 GB used,   8796.60 GFLOPS,    654.88 GOPS
+342   72.92 ms run,    2.57 ms python,   70.35 ms CUDA,  624.93 loss, 0.002946 LR, 2.89 GB used,   8980.32 GFLOPS,    654.88 GOPS
+343   72.83 ms run,    2.48 ms python,   70.35 ms CUDA,  604.71 loss, 0.002941 LR, 2.89 GB used,   8991.40 GFLOPS,    654.88 GOPS
+344   74.49 ms run,    2.53 ms python,   71.96 ms CUDA,  614.06 loss, 0.002937 LR, 2.89 GB used,   8791.37 GFLOPS,    654.88 GOPS
+345   72.57 ms run,    2.63 ms python,   69.94 ms CUDA,  594.31 loss, 0.002933 LR, 2.89 GB used,   9024.19 GFLOPS,    654.88 GOPS
+346   73.20 ms run,    2.45 ms python,   70.75 ms CUDA,  602.83 loss, 0.002928 LR, 2.89 GB used,   8946.80 GFLOPS,    654.88 GOPS
+347   74.32 ms run,    2.38 ms python,   71.94 ms CUDA,  600.71 loss, 0.002924 LR, 2.89 GB used,   8811.61 GFLOPS,    654.88 GOPS
+348   72.76 ms run,    2.55 ms python,   70.21 ms CUDA,  610.13 loss, 0.002920 LR, 2.89 GB used,   9000.77 GFLOPS,    654.88 GOPS
+349   73.49 ms run,    2.37 ms python,   71.12 ms CUDA,  629.32 loss, 0.002915 LR, 2.89 GB used,   8910.86 GFLOPS,    654.88 GOPS
+350   73.99 ms run,    2.65 ms python,   71.33 ms CUDA,  607.68 loss, 0.002911 LR, 2.89 GB used,   8851.07 GFLOPS,    654.88 GOPS
+351   72.47 ms run,    2.61 ms python,   69.86 ms CUDA,  615.78 loss, 0.002906 LR, 2.89 GB used,   9035.94 GFLOPS,    654.88 GOPS
+352   73.48 ms run,    2.65 ms python,   70.84 ms CUDA,  605.01 loss, 0.002902 LR, 2.89 GB used,   8911.75 GFLOPS,    654.88 GOPS
+353   73.68 ms run,    2.60 ms python,   71.08 ms CUDA,  604.62 loss, 0.002898 LR, 2.89 GB used,   8888.27 GFLOPS,    654.88 GOPS
+354   72.58 ms run,    2.55 ms python,   70.02 ms CUDA,  611.79 loss, 0.002893 LR, 2.89 GB used,   9023.19 GFLOPS,    654.88 GOPS
+355   73.17 ms run,    2.60 ms python,   70.57 ms CUDA,  629.96 loss, 0.002889 LR, 2.89 GB used,   8949.52 GFLOPS,    654.88 GOPS
+356   74.22 ms run,    2.45 ms python,   71.77 ms CUDA,  611.04 loss, 0.002885 LR, 2.89 GB used,   8823.38 GFLOPS,    654.88 GOPS
+357   72.75 ms run,    2.55 ms python,   70.19 ms CUDA,  592.37 loss, 0.002880 LR, 2.89 GB used,   9002.31 GFLOPS,    654.88 GOPS
+358   73.30 ms run,    2.50 ms python,   70.81 ms CUDA,  603.23 loss, 0.002876 LR, 2.89 GB used,   8934.03 GFLOPS,    654.88 GOPS
+359   73.88 ms run,    2.66 ms python,   71.22 ms CUDA,  618.62 loss, 0.002872 LR, 2.89 GB used,   8863.78 GFLOPS,    654.88 GOPS
+360   72.24 ms run,    2.43 ms python,   69.80 ms CUDA,  611.85 loss, 0.002867 LR, 2.89 GB used,   9065.92 GFLOPS,    654.88 GOPS
+361   73.09 ms run,    2.62 ms python,   70.47 ms CUDA,  646.46 loss, 0.002863 LR, 2.89 GB used,   8959.43 GFLOPS,    654.88 GOPS
+362   74.37 ms run,    2.44 ms python,   71.93 ms CUDA,  613.12 loss, 0.002859 LR, 2.89 GB used,   8805.47 GFLOPS,    654.88 GOPS
+363   72.27 ms run,    2.58 ms python,   69.68 ms CUDA,  628.38 loss, 0.002854 LR, 2.89 GB used,   9061.87 GFLOPS,    654.88 GOPS
+364   73.20 ms run,    2.54 ms python,   70.66 ms CUDA,  621.89 loss, 0.002850 LR, 2.89 GB used,   8945.97 GFLOPS,    654.88 GOPS
+365   74.16 ms run,    2.64 ms python,   71.52 ms CUDA,  614.09 loss, 0.002846 LR, 2.89 GB used,   8830.06 GFLOPS,    654.88 GOPS
+366   72.85 ms run,    2.62 ms python,   70.23 ms CUDA,  603.55 loss, 0.002841 LR, 2.89 GB used,   8989.45 GFLOPS,    654.88 GOPS
+367   73.52 ms run,    2.64 ms python,   70.88 ms CUDA,  592.03 loss, 0.002837 LR, 2.89 GB used,   8907.51 GFLOPS,    654.88 GOPS
+368   74.15 ms run,    2.63 ms python,   71.52 ms CUDA,  603.41 loss, 0.002832 LR, 2.89 GB used,   8831.33 GFLOPS,    654.88 GOPS
+369   72.75 ms run,    2.64 ms python,   70.11 ms CUDA,  605.34 loss, 0.002828 LR, 2.89 GB used,   9002.30 GFLOPS,    654.88 GOPS
+370   73.12 ms run,    2.62 ms python,   70.51 ms CUDA,  583.43 loss, 0.002824 LR, 2.89 GB used,   8955.65 GFLOPS,    654.88 GOPS
+371   74.09 ms run,    2.58 ms python,   71.52 ms CUDA,  597.96 loss, 0.002819 LR, 2.89 GB used,   8838.45 GFLOPS,    654.88 GOPS
+372   72.57 ms run,    2.83 ms python,   69.74 ms CUDA,  610.35 loss, 0.002815 LR, 2.89 GB used,   9024.70 GFLOPS,    654.88 GOPS
+373   73.11 ms run,    2.63 ms python,   70.48 ms CUDA,  611.26 loss, 0.002811 LR, 2.89 GB used,   8957.02 GFLOPS,    654.88 GOPS
+374   74.20 ms run,    2.56 ms python,   71.64 ms CUDA,  616.64 loss, 0.002806 LR, 2.89 GB used,   8826.02 GFLOPS,    654.88 GOPS
+375   72.57 ms run,    2.46 ms python,   70.11 ms CUDA,  601.88 loss, 0.002802 LR, 2.89 GB used,   9023.59 GFLOPS,    654.88 GOPS
+376   72.97 ms run,    2.56 ms python,   70.41 ms CUDA,  598.17 loss, 0.002798 LR, 2.89 GB used,   8974.41 GFLOPS,    654.88 GOPS
+377   74.42 ms run,    2.65 ms python,   71.77 ms CUDA,  593.11 loss, 0.002793 LR, 2.89 GB used,   8800.05 GFLOPS,    654.88 GOPS
+378   72.59 ms run,    2.63 ms python,   69.95 ms CUDA,  586.85 loss, 0.002789 LR, 2.89 GB used,   9021.89 GFLOPS,    654.88 GOPS
+379   73.41 ms run,    2.47 ms python,   70.93 ms CUDA,  605.80 loss, 0.002785 LR, 2.89 GB used,   8921.32 GFLOPS,    654.88 GOPS
+380   74.07 ms run,    2.70 ms python,   71.38 ms CUDA,  584.89 loss, 0.002780 LR, 2.89 GB used,   8840.82 GFLOPS,    654.88 GOPS
+381   72.39 ms run,    2.77 ms python,   69.62 ms CUDA,  612.22 loss, 0.002776 LR, 2.89 GB used,   9046.04 GFLOPS,    654.88 GOPS
+382   73.15 ms run,    2.63 ms python,   70.52 ms CUDA,  606.43 loss, 0.002772 LR, 2.89 GB used,   8952.27 GFLOPS,    654.88 GOPS
+383   74.15 ms run,    2.55 ms python,   71.60 ms CUDA,  578.78 loss, 0.002767 LR, 2.89 GB used,   8831.44 GFLOPS,    654.88 GOPS
+384   72.76 ms run,    2.51 ms python,   70.25 ms CUDA,  590.03 loss, 0.002763 LR, 2.89 GB used,   9000.95 GFLOPS,    654.88 GOPS
+385   73.20 ms run,    2.54 ms python,   70.66 ms CUDA,  588.74 loss, 0.002758 LR, 2.89 GB used,   8946.68 GFLOPS,    654.88 GOPS
+386   73.91 ms run,    2.49 ms python,   71.41 ms CUDA,  626.37 loss, 0.002754 LR, 2.89 GB used,   8860.97 GFLOPS,    654.88 GOPS
+387   72.61 ms run,    2.56 ms python,   70.05 ms CUDA,  586.31 loss, 0.002750 LR, 2.89 GB used,   9019.31 GFLOPS,    654.88 GOPS
+388   73.31 ms run,    2.56 ms python,   70.75 ms CUDA,  594.60 loss, 0.002745 LR, 2.89 GB used,   8932.80 GFLOPS,    654.88 GOPS
+389   73.95 ms run,    2.41 ms python,   71.54 ms CUDA,  614.12 loss, 0.002741 LR, 2.89 GB used,   8855.68 GFLOPS,    654.88 GOPS
+390   72.79 ms run,    2.31 ms python,   70.48 ms CUDA,  610.20 loss, 0.002737 LR, 2.89 GB used,   8997.11 GFLOPS,    654.88 GOPS
+391   73.33 ms run,    2.57 ms python,   70.77 ms CUDA,  583.78 loss, 0.002732 LR, 2.89 GB used,   8930.38 GFLOPS,    654.88 GOPS
+shuffling training dataset in 77.15 ms (epoch=4)
+392  494.36 ms run,  424.52 ms python,   69.84 ms CUDA,  560.15 loss, 0.002728 LR, 2.89 GB used,   1430.58 GFLOPS,    707.21 GOPS
+393   72.11 ms run,    2.50 ms python,   69.61 ms CUDA,  570.39 loss, 0.002724 LR, 2.89 GB used,   9081.75 GFLOPS,    654.88 GOPS
+394   72.65 ms run,    2.51 ms python,   70.14 ms CUDA,  587.72 loss, 0.002719 LR, 2.89 GB used,   9013.99 GFLOPS,    654.88 GOPS
+395   74.25 ms run,    2.53 ms python,   71.73 ms CUDA,  598.21 loss, 0.002715 LR, 2.89 GB used,   8819.51 GFLOPS,    654.88 GOPS
+396   72.95 ms run,    2.46 ms python,   70.49 ms CUDA,  609.47 loss, 0.002711 LR, 2.89 GB used,   8977.17 GFLOPS,    654.88 GOPS
+397   73.08 ms run,    2.47 ms python,   70.61 ms CUDA,  598.05 loss, 0.002706 LR, 2.89 GB used,   8960.68 GFLOPS,    654.88 GOPS
+398   73.92 ms run,    2.46 ms python,   71.46 ms CUDA,  583.79 loss, 0.002702 LR, 2.89 GB used,   8859.63 GFLOPS,    654.88 GOPS
+399   72.62 ms run,    2.51 ms python,   70.11 ms CUDA,  585.33 loss, 0.002698 LR, 2.89 GB used,   9017.56 GFLOPS,    654.88 GOPS
+400   73.13 ms run,    2.42 ms python,   70.71 ms CUDA,  600.45 loss, 0.002693 LR, 2.89 GB used,   8954.78 GFLOPS,    654.88 GOPS
+401   74.35 ms run,    2.64 ms python,   71.71 ms CUDA,  596.93 loss, 0.002689 LR, 2.89 GB used,   8808.20 GFLOPS,    654.88 GOPS
+402   72.93 ms run,    2.47 ms python,   70.46 ms CUDA,  583.35 loss, 0.002684 LR, 2.89 GB used,   8979.94 GFLOPS,    654.88 GOPS
+403   73.65 ms run,    2.60 ms python,   71.05 ms CUDA,  591.19 loss, 0.002680 LR, 2.89 GB used,   8891.88 GFLOPS,    654.88 GOPS
+404   73.75 ms run,    2.55 ms python,   71.20 ms CUDA,  584.44 loss, 0.002676 LR, 2.89 GB used,   8880.14 GFLOPS,    654.88 GOPS
+405   72.15 ms run,    2.57 ms python,   69.58 ms CUDA,  581.47 loss, 0.002671 LR, 2.89 GB used,   9076.82 GFLOPS,    654.88 GOPS
+406   72.73 ms run,    2.49 ms python,   70.24 ms CUDA,  580.39 loss, 0.002667 LR, 2.89 GB used,   9003.76 GFLOPS,    654.88 GOPS
+407   74.16 ms run,    2.51 ms python,   71.65 ms CUDA,  596.01 loss, 0.002663 LR, 2.89 GB used,   8830.58 GFLOPS,    654.88 GOPS
+408   72.80 ms run,    2.56 ms python,   70.24 ms CUDA,  600.04 loss, 0.002658 LR, 2.89 GB used,   8995.97 GFLOPS,    654.88 GOPS
+409   73.34 ms run,    2.55 ms python,   70.80 ms CUDA,  568.64 loss, 0.002654 LR, 2.89 GB used,   8928.91 GFLOPS,    654.88 GOPS
+410   74.34 ms run,    2.52 ms python,   71.82 ms CUDA,  593.19 loss, 0.002650 LR, 2.89 GB used,   8808.76 GFLOPS,    654.88 GOPS
+411   72.73 ms run,    2.54 ms python,   70.19 ms CUDA,  584.20 loss, 0.002645 LR, 2.89 GB used,   9004.21 GFLOPS,    654.88 GOPS
+412   73.01 ms run,    2.53 ms python,   70.48 ms CUDA,  589.27 loss, 0.002641 LR, 2.89 GB used,   8969.69 GFLOPS,    654.88 GOPS
+413   74.29 ms run,    2.56 ms python,   71.73 ms CUDA,  571.51 loss, 0.002637 LR, 2.89 GB used,   8815.35 GFLOPS,    654.88 GOPS
+414   72.20 ms run,    2.44 ms python,   69.76 ms CUDA,  614.01 loss, 0.002632 LR, 2.89 GB used,   9070.05 GFLOPS,    654.88 GOPS
+415   72.76 ms run,    2.48 ms python,   70.28 ms CUDA,  600.79 loss, 0.002628 LR, 2.89 GB used,   9000.29 GFLOPS,    654.88 GOPS
+416   74.40 ms run,    2.61 ms python,   71.79 ms CUDA,  596.88 loss, 0.002624 LR, 2.89 GB used,   8802.49 GFLOPS,    654.88 GOPS
+417   72.82 ms run,    2.42 ms python,   70.40 ms CUDA,  571.36 loss, 0.002619 LR, 2.89 GB used,   8993.09 GFLOPS,    654.88 GOPS
+418   72.97 ms run,    2.61 ms python,   70.36 ms CUDA,  578.92 loss, 0.002615 LR, 2.89 GB used,   8974.38 GFLOPS,    654.88 GOPS
+419   74.65 ms run,    2.75 ms python,   71.90 ms CUDA,  575.34 loss, 0.002610 LR, 2.89 GB used,   8772.46 GFLOPS,    654.88 GOPS
+420   72.54 ms run,    2.86 ms python,   69.68 ms CUDA,  592.26 loss, 0.002606 LR, 2.89 GB used,   9027.94 GFLOPS,    654.88 GOPS
+421   72.83 ms run,    2.71 ms python,   70.12 ms CUDA,  592.01 loss, 0.002602 LR, 2.89 GB used,   8991.40 GFLOPS,    654.88 GOPS
+422   74.08 ms run,    2.53 ms python,   71.55 ms CUDA,  595.91 loss, 0.002597 LR, 2.89 GB used,   8840.59 GFLOPS,    654.88 GOPS
+423   72.91 ms run,    2.46 ms python,   70.45 ms CUDA,  569.18 loss, 0.002593 LR, 2.89 GB used,   8982.25 GFLOPS,    654.88 GOPS
+424   73.08 ms run,    2.52 ms python,   70.56 ms CUDA,  571.77 loss, 0.002589 LR, 2.89 GB used,   8961.48 GFLOPS,    654.88 GOPS
+425   74.28 ms run,    2.48 ms python,   71.80 ms CUDA,  576.09 loss, 0.002584 LR, 2.89 GB used,   8816.89 GFLOPS,    654.88 GOPS
+426   73.01 ms run,    2.52 ms python,   70.49 ms CUDA,  587.15 loss, 0.002580 LR, 2.89 GB used,   8969.75 GFLOPS,    654.88 GOPS
+427   73.12 ms run,    2.47 ms python,   70.65 ms CUDA,  571.61 loss, 0.002576 LR, 2.89 GB used,   8955.94 GFLOPS,    654.88 GOPS
+428   74.22 ms run,    2.50 ms python,   71.72 ms CUDA,  588.60 loss, 0.002571 LR, 2.89 GB used,   8823.53 GFLOPS,    654.88 GOPS
+429   72.82 ms run,    2.60 ms python,   70.22 ms CUDA,  576.92 loss, 0.002567 LR, 2.89 GB used,   8993.43 GFLOPS,    654.88 GOPS
+430   73.25 ms run,    2.37 ms python,   70.88 ms CUDA,  607.21 loss, 0.002563 LR, 2.89 GB used,   8940.37 GFLOPS,    654.88 GOPS
+431   74.08 ms run,    2.64 ms python,   71.44 ms CUDA,  588.29 loss, 0.002558 LR, 2.89 GB used,   8840.11 GFLOPS,    654.88 GOPS
+432   72.46 ms run,    2.57 ms python,   69.89 ms CUDA,  577.25 loss, 0.002554 LR, 2.89 GB used,   9037.76 GFLOPS,    654.88 GOPS
+433   73.22 ms run,    2.56 ms python,   70.66 ms CUDA,  565.41 loss, 0.002550 LR, 2.89 GB used,   8944.17 GFLOPS,    654.88 GOPS
+434   74.11 ms run,    2.42 ms python,   71.68 ms CUDA,  585.79 loss, 0.002545 LR, 2.89 GB used,   8836.94 GFLOPS,    654.88 GOPS
+435   72.35 ms run,    2.58 ms python,   69.77 ms CUDA,  606.64 loss, 0.002541 LR, 2.89 GB used,   9051.72 GFLOPS,    654.88 GOPS
+436   73.46 ms run,    2.54 ms python,   70.91 ms CUDA,  592.38 loss, 0.002536 LR, 2.89 GB used,   8915.04 GFLOPS,    654.88 GOPS
+437   74.11 ms run,    2.57 ms python,   71.54 ms CUDA,  577.31 loss, 0.002532 LR, 2.89 GB used,   8837.06 GFLOPS,    654.88 GOPS
+438   72.45 ms run,    2.61 ms python,   69.84 ms CUDA,  599.46 loss, 0.002528 LR, 2.89 GB used,   9039.39 GFLOPS,    654.88 GOPS
+439   73.39 ms run,    2.55 ms python,   70.85 ms CUDA,  584.89 loss, 0.002523 LR, 2.89 GB used,   8923.21 GFLOPS,    654.88 GOPS
+440   74.17 ms run,    2.59 ms python,   71.58 ms CUDA,  587.09 loss, 0.002519 LR, 2.89 GB used,   8829.96 GFLOPS,    654.88 GOPS
+441   72.63 ms run,    2.40 ms python,   70.23 ms CUDA,  586.19 loss, 0.002515 LR, 2.89 GB used,   9016.28 GFLOPS,    654.88 GOPS
+442   73.24 ms run,    2.60 ms python,   70.64 ms CUDA,  587.62 loss, 0.002510 LR, 2.89 GB used,   8941.36 GFLOPS,    654.88 GOPS
+443   73.61 ms run,    2.46 ms python,   71.15 ms CUDA,  598.28 loss, 0.002506 LR, 2.89 GB used,   8896.24 GFLOPS,    654.88 GOPS
+444   72.70 ms run,    2.58 ms python,   70.12 ms CUDA,  588.29 loss, 0.002502 LR, 2.89 GB used,   9008.16 GFLOPS,    654.88 GOPS
+445   73.44 ms run,    2.44 ms python,   71.00 ms CUDA,  590.50 loss, 0.002497 LR, 2.89 GB used,   8917.05 GFLOPS,    654.88 GOPS
+446   74.07 ms run,    2.56 ms python,   71.51 ms CUDA,  593.09 loss, 0.002493 LR, 2.89 GB used,   8841.68 GFLOPS,    654.88 GOPS
+447   72.79 ms run,    2.53 ms python,   70.25 ms CUDA,  595.24 loss, 0.002489 LR, 2.89 GB used,   8997.33 GFLOPS,    654.88 GOPS
+448   73.29 ms run,    2.60 ms python,   70.69 ms CUDA,  588.82 loss, 0.002484 LR, 2.89 GB used,   8934.93 GFLOPS,    654.88 GOPS
+449   73.96 ms run,    2.44 ms python,   71.53 ms CUDA,  586.61 loss, 0.002480 LR, 2.89 GB used,   8854.25 GFLOPS,    654.88 GOPS
+450   72.61 ms run,    2.57 ms python,   70.04 ms CUDA,  566.53 loss, 0.002476 LR, 2.89 GB used,   9019.45 GFLOPS,    654.88 GOPS
+451   73.18 ms run,    2.43 ms python,   70.75 ms CUDA,  615.52 loss, 0.002471 LR, 2.89 GB used,   8948.72 GFLOPS,    654.88 GOPS
+452   73.78 ms run,    2.53 ms python,   71.25 ms CUDA,  577.66 loss, 0.002467 LR, 2.89 GB used,   8876.26 GFLOPS,    654.88 GOPS
+453   72.54 ms run,    2.47 ms python,   70.07 ms CUDA,  603.38 loss, 0.002463 LR, 2.89 GB used,   9027.33 GFLOPS,    654.88 GOPS
+454   73.62 ms run,    2.60 ms python,   71.02 ms CUDA,  612.37 loss, 0.002458 LR, 2.89 GB used,   8894.90 GFLOPS,    654.88 GOPS
+455   74.07 ms run,    2.48 ms python,   71.59 ms CUDA,  595.79 loss, 0.002454 LR, 2.89 GB used,   8841.49 GFLOPS,    654.88 GOPS
+456   72.86 ms run,    2.60 ms python,   70.26 ms CUDA,  583.28 loss, 0.002449 LR, 2.89 GB used,   8987.64 GFLOPS,    654.88 GOPS
+457   73.29 ms run,    2.59 ms python,   70.71 ms CUDA,  605.78 loss, 0.002445 LR, 2.89 GB used,   8935.03 GFLOPS,    654.88 GOPS
+458   73.97 ms run,    2.56 ms python,   71.41 ms CUDA,  577.02 loss, 0.002441 LR, 2.89 GB used,   8853.32 GFLOPS,    654.88 GOPS
+459   72.25 ms run,    2.58 ms python,   69.67 ms CUDA,  599.73 loss, 0.002436 LR, 2.89 GB used,   9063.79 GFLOPS,    654.88 GOPS
+460   73.15 ms run,    2.60 ms python,   70.55 ms CUDA,  596.94 loss, 0.002432 LR, 2.89 GB used,   8952.05 GFLOPS,    654.88 GOPS
+461   74.18 ms run,    2.63 ms python,   71.55 ms CUDA,  585.93 loss, 0.002428 LR, 2.89 GB used,   8828.80 GFLOPS,    654.88 GOPS
+462   72.90 ms run,    2.60 ms python,   70.30 ms CUDA,  606.02 loss, 0.002423 LR, 2.89 GB used,   8982.89 GFLOPS,    654.88 GOPS
+463   73.65 ms run,    2.65 ms python,   71.00 ms CUDA,  604.89 loss, 0.002419 LR, 2.89 GB used,   8891.34 GFLOPS,    654.88 GOPS
+464   73.72 ms run,    2.65 ms python,   71.07 ms CUDA,  584.11 loss, 0.002415 LR, 2.89 GB used,   8883.44 GFLOPS,    654.88 GOPS
+465   72.51 ms run,    2.54 ms python,   69.97 ms CUDA,  588.95 loss, 0.002410 LR, 2.89 GB used,   9030.95 GFLOPS,    654.88 GOPS
+466   73.42 ms run,    2.39 ms python,   71.03 ms CUDA,  594.43 loss, 0.002406 LR, 2.89 GB used,   8919.39 GFLOPS,    654.88 GOPS
+467   73.77 ms run,    2.52 ms python,   71.25 ms CUDA,  601.63 loss, 0.002402 LR, 2.89 GB used,   8877.79 GFLOPS,    654.88 GOPS
+468   72.35 ms run,    2.55 ms python,   69.80 ms CUDA,  582.48 loss, 0.002397 LR, 2.89 GB used,   9051.57 GFLOPS,    654.88 GOPS
+469   72.90 ms run,    2.52 ms python,   70.38 ms CUDA,  584.72 loss, 0.002393 LR, 2.89 GB used,   8982.91 GFLOPS,    654.88 GOPS
+470   74.51 ms run,    2.51 ms python,   71.99 ms CUDA,  588.27 loss, 0.002389 LR, 2.89 GB used,   8789.50 GFLOPS,    654.88 GOPS
+471   72.84 ms run,    2.53 ms python,   70.31 ms CUDA,  593.88 loss, 0.002384 LR, 2.89 GB used,   8990.09 GFLOPS,    654.88 GOPS
+472   73.34 ms run,    2.56 ms python,   70.78 ms CUDA,  592.10 loss, 0.002380 LR, 2.89 GB used,   8929.85 GFLOPS,    654.88 GOPS
+473   73.90 ms run,    2.39 ms python,   71.52 ms CUDA,  576.96 loss, 0.002375 LR, 2.89 GB used,   8861.16 GFLOPS,    654.88 GOPS
+474   72.58 ms run,    2.47 ms python,   70.11 ms CUDA,  604.18 loss, 0.002371 LR, 2.89 GB used,   9023.46 GFLOPS,    654.88 GOPS
+475   73.22 ms run,    2.50 ms python,   70.72 ms CUDA,  572.50 loss, 0.002367 LR, 2.89 GB used,   8943.49 GFLOPS,    654.88 GOPS
+476   74.18 ms run,    2.55 ms python,   71.63 ms CUDA,  590.75 loss, 0.002362 LR, 2.89 GB used,   8828.58 GFLOPS,    654.88 GOPS
+477   72.21 ms run,    2.47 ms python,   69.74 ms CUDA,  573.18 loss, 0.002358 LR, 2.89 GB used,   9068.94 GFLOPS,    654.88 GOPS
+478   73.54 ms run,    2.54 ms python,   71.00 ms CUDA,  594.77 loss, 0.002354 LR, 2.89 GB used,   8904.81 GFLOPS,    654.88 GOPS
+479   73.97 ms run,    2.63 ms python,   71.34 ms CUDA,  596.99 loss, 0.002349 LR, 2.89 GB used,   8853.05 GFLOPS,    654.88 GOPS
+480   72.82 ms run,    2.54 ms python,   70.28 ms CUDA,  572.73 loss, 0.002345 LR, 2.89 GB used,   8992.99 GFLOPS,    654.88 GOPS
+481   73.35 ms run,    2.54 ms python,   70.80 ms CUDA,  568.24 loss, 0.002341 LR, 2.89 GB used,   8928.72 GFLOPS,    654.88 GOPS
+482   74.06 ms run,    2.59 ms python,   71.47 ms CUDA,  570.91 loss, 0.002336 LR, 2.89 GB used,   8842.24 GFLOPS,    654.88 GOPS
+483   72.66 ms run,    2.72 ms python,   69.94 ms CUDA,  571.62 loss, 0.002332 LR, 2.89 GB used,   9013.04 GFLOPS,    654.88 GOPS
+484   73.47 ms run,    2.54 ms python,   70.93 ms CUDA,  592.41 loss, 0.002328 LR, 2.89 GB used,   8913.58 GFLOPS,    654.88 GOPS
+485   73.98 ms run,    2.49 ms python,   71.49 ms CUDA,  592.75 loss, 0.002323 LR, 2.89 GB used,   8851.99 GFLOPS,    654.88 GOPS
+486   72.01 ms run,    2.57 ms python,   69.44 ms CUDA,  582.46 loss, 0.002319 LR, 2.89 GB used,   9094.90 GFLOPS,    654.88 GOPS
+487   72.95 ms run,    2.49 ms python,   70.45 ms CUDA,  580.73 loss, 0.002315 LR, 2.89 GB used,   8977.43 GFLOPS,    654.88 GOPS
+488   74.35 ms run,    2.48 ms python,   71.87 ms CUDA,  576.83 loss, 0.002310 LR, 2.89 GB used,   8808.35 GFLOPS,    654.88 GOPS
+489   72.92 ms run,    2.57 ms python,   70.35 ms CUDA,  552.94 loss, 0.002306 LR, 2.89 GB used,   8981.16 GFLOPS,    654.88 GOPS
+shuffling training dataset in 76.54 ms (epoch=5)
+490  358.70 ms run,  287.62 ms python,   71.09 ms CUDA,  575.88 loss, 0.002301 LR, 2.89 GB used,   1971.59 GFLOPS,    707.21 GOPS
+491   72.27 ms run,    2.61 ms python,   69.67 ms CUDA,  583.13 loss, 0.002297 LR, 2.89 GB used,   9061.14 GFLOPS,    654.88 GOPS
+492   74.58 ms run,    2.43 ms python,   72.14 ms CUDA,  582.36 loss, 0.002293 LR, 2.89 GB used,   8781.26 GFLOPS,    654.88 GOPS
+493   73.14 ms run,    2.50 ms python,   70.65 ms CUDA,  566.83 loss, 0.002288 LR, 2.89 GB used,   8953.44 GFLOPS,    654.88 GOPS
+494   73.39 ms run,    2.50 ms python,   70.88 ms CUDA,  556.62 loss, 0.002284 LR, 2.89 GB used,   8923.73 GFLOPS,    654.88 GOPS
+495   74.43 ms run,    2.38 ms python,   72.04 ms CUDA,  567.48 loss, 0.002280 LR, 2.89 GB used,   8798.95 GFLOPS,    654.88 GOPS
+496   73.02 ms run,    2.51 ms python,   70.51 ms CUDA,  571.10 loss, 0.002275 LR, 2.89 GB used,   8967.99 GFLOPS,    654.88 GOPS
+497   73.30 ms run,    2.35 ms python,   70.95 ms CUDA,  557.78 loss, 0.002271 LR, 2.89 GB used,   8934.75 GFLOPS,    654.88 GOPS
+498   74.26 ms run,    2.48 ms python,   71.78 ms CUDA,  574.31 loss, 0.002267 LR, 2.89 GB used,   8818.72 GFLOPS,    654.88 GOPS
+499   72.19 ms run,    2.49 ms python,   69.69 ms CUDA,  556.88 loss, 0.002262 LR, 2.89 GB used,   9072.18 GFLOPS,    654.88 GOPS
+500   73.41 ms run,    2.47 ms python,   70.94 ms CUDA,  562.12 loss, 0.002258 LR, 2.89 GB used,   8920.78 GFLOPS,    654.88 GOPS
+501   74.34 ms run,    2.55 ms python,   71.80 ms CUDA,  568.07 loss, 0.002254 LR, 2.89 GB used,   8809.14 GFLOPS,    654.88 GOPS
+502   73.11 ms run,    2.72 ms python,   70.39 ms CUDA,  577.51 loss, 0.002249 LR, 2.89 GB used,   8956.90 GFLOPS,    654.88 GOPS
+503   73.70 ms run,    2.52 ms python,   71.19 ms CUDA,  567.63 loss, 0.002245 LR, 2.89 GB used,   8885.30 GFLOPS,    654.88 GOPS
+504   73.53 ms run,    2.55 ms python,   70.98 ms CUDA,  568.71 loss, 0.002241 LR, 2.89 GB used,   8905.98 GFLOPS,    654.88 GOPS
+505   72.23 ms run,    2.56 ms python,   69.67 ms CUDA,  562.69 loss, 0.002236 LR, 2.89 GB used,   9066.33 GFLOPS,    654.88 GOPS
+506   73.35 ms run,    2.45 ms python,   70.90 ms CUDA,  576.29 loss, 0.002232 LR, 2.89 GB used,   8928.29 GFLOPS,    654.88 GOPS
+507   73.98 ms run,    2.51 ms python,   71.47 ms CUDA,  569.97 loss, 0.002227 LR, 2.89 GB used,   8852.01 GFLOPS,    654.88 GOPS
+508   72.57 ms run,    2.51 ms python,   70.07 ms CUDA,  564.91 loss, 0.002223 LR, 2.89 GB used,   9023.69 GFLOPS,    654.88 GOPS
+509   73.51 ms run,    2.53 ms python,   70.98 ms CUDA,  561.21 loss, 0.002219 LR, 2.89 GB used,   8908.56 GFLOPS,    654.88 GOPS
+510   73.91 ms run,    2.32 ms python,   71.58 ms CUDA,  554.05 loss, 0.002214 LR, 2.89 GB used,   8861.01 GFLOPS,    654.88 GOPS
+511   72.57 ms run,    2.49 ms python,   70.08 ms CUDA,  574.43 loss, 0.002210 LR, 2.89 GB used,   9023.98 GFLOPS,    654.88 GOPS
+512   73.74 ms run,    2.49 ms python,   71.25 ms CUDA,  588.21 loss, 0.002206 LR, 2.89 GB used,   8880.50 GFLOPS,    654.88 GOPS
+513   73.76 ms run,    2.53 ms python,   71.23 ms CUDA,  564.79 loss, 0.002201 LR, 2.89 GB used,   8878.16 GFLOPS,    654.88 GOPS
+514   72.77 ms run,    2.60 ms python,   70.18 ms CUDA,  571.70 loss, 0.002197 LR, 2.89 GB used,   8998.99 GFLOPS,    654.88 GOPS
+515   73.74 ms run,    2.53 ms python,   71.21 ms CUDA,  573.75 loss, 0.002193 LR, 2.89 GB used,   8881.37 GFLOPS,    654.88 GOPS
+516   73.77 ms run,    2.34 ms python,   71.43 ms CUDA,  578.37 loss, 0.002188 LR, 2.89 GB used,   8877.43 GFLOPS,    654.88 GOPS
+517   72.37 ms run,    2.50 ms python,   69.87 ms CUDA,  560.16 loss, 0.002184 LR, 2.89 GB used,   9049.26 GFLOPS,    654.88 GOPS
+518   73.16 ms run,    2.53 ms python,   70.64 ms CUDA,  576.09 loss, 0.002180 LR, 2.89 GB used,   8950.86 GFLOPS,    654.88 GOPS
+519   73.65 ms run,    2.53 ms python,   71.12 ms CUDA,  594.90 loss, 0.002175 LR, 2.89 GB used,   8891.26 GFLOPS,    654.88 GOPS
+520   72.65 ms run,    2.53 ms python,   70.12 ms CUDA,  561.14 loss, 0.002171 LR, 2.89 GB used,   9014.75 GFLOPS,    654.88 GOPS
+521   73.71 ms run,    2.47 ms python,   71.25 ms CUDA,  559.05 loss, 0.002167 LR, 2.89 GB used,   8883.94 GFLOPS,    654.88 GOPS
+522   73.94 ms run,    2.45 ms python,   71.49 ms CUDA,  570.07 loss, 0.002162 LR, 2.89 GB used,   8856.89 GFLOPS,    654.88 GOPS
+523   72.71 ms run,    2.53 ms python,   70.18 ms CUDA,  556.42 loss, 0.002158 LR, 2.89 GB used,   9006.17 GFLOPS,    654.88 GOPS
+524   73.45 ms run,    2.55 ms python,   70.90 ms CUDA,  575.16 loss, 0.002153 LR, 2.89 GB used,   8915.81 GFLOPS,    654.88 GOPS
+525   73.91 ms run,    2.36 ms python,   71.55 ms CUDA,  592.79 loss, 0.002149 LR, 2.89 GB used,   8860.22 GFLOPS,    654.88 GOPS
+526   72.72 ms run,    2.50 ms python,   70.21 ms CUDA,  593.24 loss, 0.002145 LR, 2.89 GB used,   9005.59 GFLOPS,    654.88 GOPS
+527   73.16 ms run,    2.31 ms python,   70.86 ms CUDA,  566.14 loss, 0.002140 LR, 2.89 GB used,   8950.78 GFLOPS,    654.88 GOPS
+528   73.96 ms run,    2.54 ms python,   71.42 ms CUDA,  572.48 loss, 0.002136 LR, 2.89 GB used,   8854.86 GFLOPS,    654.88 GOPS
+529   72.54 ms run,    2.28 ms python,   70.26 ms CUDA,  566.89 loss, 0.002132 LR, 2.89 GB used,   9028.45 GFLOPS,    654.88 GOPS
+530   73.67 ms run,    2.51 ms python,   71.16 ms CUDA,  562.18 loss, 0.002127 LR, 2.89 GB used,   8889.24 GFLOPS,    654.88 GOPS
+531   73.81 ms run,    2.29 ms python,   71.52 ms CUDA,  558.31 loss, 0.002123 LR, 2.89 GB used,   8872.53 GFLOPS,    654.88 GOPS
+532   72.39 ms run,    2.38 ms python,   70.02 ms CUDA,  570.47 loss, 0.002119 LR, 2.89 GB used,   9046.10 GFLOPS,    654.88 GOPS
+533   73.64 ms run,    2.44 ms python,   71.20 ms CUDA,  568.35 loss, 0.002114 LR, 2.89 GB used,   8892.99 GFLOPS,    654.88 GOPS
+534   73.89 ms run,    2.53 ms python,   71.35 ms CUDA,  572.60 loss, 0.002110 LR, 2.89 GB used,   8863.43 GFLOPS,    654.88 GOPS
+535   72.50 ms run,    2.62 ms python,   69.88 ms CUDA,  562.64 loss, 0.002106 LR, 2.89 GB used,   9032.45 GFLOPS,    654.88 GOPS
+536   73.51 ms run,    2.41 ms python,   71.10 ms CUDA,  564.85 loss, 0.002101 LR, 2.89 GB used,   8908.43 GFLOPS,    654.88 GOPS
+537   73.98 ms run,    2.47 ms python,   71.52 ms CUDA,  577.06 loss, 0.002097 LR, 2.89 GB used,   8851.93 GFLOPS,    654.88 GOPS
+538   72.60 ms run,    2.46 ms python,   70.14 ms CUDA,  579.09 loss, 0.002093 LR, 2.89 GB used,   9020.35 GFLOPS,    654.88 GOPS
+539   73.66 ms run,    2.47 ms python,   71.19 ms CUDA,  578.19 loss, 0.002088 LR, 2.89 GB used,   8890.71 GFLOPS,    654.88 GOPS
+540   73.77 ms run,    2.53 ms python,   71.23 ms CUDA,  569.33 loss, 0.002084 LR, 2.89 GB used,   8877.54 GFLOPS,    654.88 GOPS
+541   72.43 ms run,    2.50 ms python,   69.93 ms CUDA,  586.62 loss, 0.002079 LR, 2.89 GB used,   9041.42 GFLOPS,    654.88 GOPS
+542   73.27 ms run,    2.51 ms python,   70.76 ms CUDA,  571.50 loss, 0.002075 LR, 2.89 GB used,   8938.01 GFLOPS,    654.88 GOPS
+543   74.16 ms run,    2.52 ms python,   71.63 ms CUDA,  586.83 loss, 0.002071 LR, 2.89 GB used,   8831.20 GFLOPS,    654.88 GOPS
+544   72.59 ms run,    2.48 ms python,   70.10 ms CUDA,  564.50 loss, 0.002066 LR, 2.89 GB used,   9022.09 GFLOPS,    654.88 GOPS
+545   73.68 ms run,    2.59 ms python,   71.09 ms CUDA,  567.99 loss, 0.002062 LR, 2.89 GB used,   8888.36 GFLOPS,    654.88 GOPS
+546   73.90 ms run,    2.54 ms python,   71.36 ms CUDA,  556.79 loss, 0.002058 LR, 2.89 GB used,   8861.12 GFLOPS,    654.88 GOPS
+547   72.48 ms run,    2.55 ms python,   69.93 ms CUDA,  564.95 loss, 0.002053 LR, 2.89 GB used,   9035.51 GFLOPS,    654.88 GOPS
+548   73.46 ms run,    2.59 ms python,   70.87 ms CUDA,  585.79 loss, 0.002049 LR, 2.89 GB used,   8915.06 GFLOPS,    654.88 GOPS
+549   73.51 ms run,    2.58 ms python,   70.93 ms CUDA,  568.15 loss, 0.002045 LR, 2.89 GB used,   8908.79 GFLOPS,    654.88 GOPS
+550   72.38 ms run,    2.51 ms python,   69.87 ms CUDA,  573.24 loss, 0.002040 LR, 2.89 GB used,   9047.60 GFLOPS,    654.88 GOPS
+551   73.38 ms run,    2.53 ms python,   70.85 ms CUDA,  574.25 loss, 0.002036 LR, 2.89 GB used,   8924.57 GFLOPS,    654.88 GOPS
+552   74.11 ms run,    2.41 ms python,   71.70 ms CUDA,  572.37 loss, 0.002032 LR, 2.89 GB used,   8836.44 GFLOPS,    654.88 GOPS
+553   73.12 ms run,    2.52 ms python,   70.59 ms CUDA,  566.08 loss, 0.002027 LR, 2.89 GB used,   8956.69 GFLOPS,    654.88 GOPS
+554   73.50 ms run,    2.49 ms python,   71.01 ms CUDA,  561.90 loss, 0.002023 LR, 2.89 GB used,   8910.35 GFLOPS,    654.88 GOPS
+555   73.69 ms run,    2.37 ms python,   71.32 ms CUDA,  572.35 loss, 0.002019 LR, 2.89 GB used,   8886.97 GFLOPS,    654.88 GOPS
+556   72.73 ms run,    2.53 ms python,   70.20 ms CUDA,  582.57 loss, 0.002014 LR, 2.89 GB used,   9004.24 GFLOPS,    654.88 GOPS
+557   73.33 ms run,    2.36 ms python,   70.96 ms CUDA,  588.00 loss, 0.002010 LR, 2.89 GB used,   8930.83 GFLOPS,    654.88 GOPS
+558   73.84 ms run,    2.49 ms python,   71.35 ms CUDA,  571.71 loss, 0.002005 LR, 2.89 GB used,   8868.72 GFLOPS,    654.88 GOPS
+559   72.54 ms run,    2.39 ms python,   70.15 ms CUDA,  563.25 loss, 0.002001 LR, 2.89 GB used,   9028.02 GFLOPS,    654.88 GOPS
+560   73.61 ms run,    2.49 ms python,   71.12 ms CUDA,  571.09 loss, 0.001997 LR, 2.89 GB used,   8896.46 GFLOPS,    654.88 GOPS
+561   73.71 ms run,    2.41 ms python,   71.30 ms CUDA,  594.87 loss, 0.001992 LR, 2.89 GB used,   8884.49 GFLOPS,    654.88 GOPS
+562   72.51 ms run,    2.58 ms python,   69.93 ms CUDA,  569.98 loss, 0.001988 LR, 2.89 GB used,   9031.63 GFLOPS,    654.88 GOPS
+563   73.70 ms run,    2.52 ms python,   71.18 ms CUDA,  565.86 loss, 0.001984 LR, 2.89 GB used,   8885.86 GFLOPS,    654.88 GOPS
+564   73.83 ms run,    2.52 ms python,   71.30 ms CUDA,  579.60 loss, 0.001979 LR, 2.89 GB used,   8870.39 GFLOPS,    654.88 GOPS
+565   72.72 ms run,    2.43 ms python,   70.29 ms CUDA,  581.62 loss, 0.001975 LR, 2.89 GB used,   9005.40 GFLOPS,    654.88 GOPS
+566   73.43 ms run,    2.39 ms python,   71.04 ms CUDA,  585.01 loss, 0.001971 LR, 2.89 GB used,   8918.82 GFLOPS,    654.88 GOPS
+567   73.96 ms run,    2.53 ms python,   71.42 ms CUDA,  580.79 loss, 0.001966 LR, 2.89 GB used,   8854.90 GFLOPS,    654.88 GOPS
+568   73.03 ms run,    2.49 ms python,   70.54 ms CUDA,  573.75 loss, 0.001962 LR, 2.89 GB used,   8966.76 GFLOPS,    654.88 GOPS
+569   73.51 ms run,    2.54 ms python,   70.98 ms CUDA,  577.21 loss, 0.001958 LR, 2.89 GB used,   8908.31 GFLOPS,    654.88 GOPS
+570   73.69 ms run,    2.54 ms python,   71.16 ms CUDA,  576.29 loss, 0.001953 LR, 2.89 GB used,   8886.61 GFLOPS,    654.88 GOPS
+571   72.69 ms run,    2.72 ms python,   69.96 ms CUDA,  575.99 loss, 0.001949 LR, 2.89 GB used,   9009.44 GFLOPS,    654.88 GOPS
+572   73.10 ms run,    2.39 ms python,   70.71 ms CUDA,  589.78 loss, 0.001945 LR, 2.89 GB used,   8958.97 GFLOPS,    654.88 GOPS
+573   73.67 ms run,    2.53 ms python,   71.14 ms CUDA,  562.36 loss, 0.001940 LR, 2.89 GB used,   8888.92 GFLOPS,    654.88 GOPS
+574   72.63 ms run,    2.28 ms python,   70.35 ms CUDA,  574.30 loss, 0.001936 LR, 2.89 GB used,   9017.21 GFLOPS,    654.88 GOPS
+575   73.62 ms run,    2.50 ms python,   71.12 ms CUDA,  572.63 loss, 0.001931 LR, 2.89 GB used,   8895.12 GFLOPS,    654.88 GOPS
+576   73.59 ms run,    2.36 ms python,   71.22 ms CUDA,  571.28 loss, 0.001927 LR, 2.89 GB used,   8899.49 GFLOPS,    654.88 GOPS
+577   72.64 ms run,    2.52 ms python,   70.13 ms CUDA,  569.87 loss, 0.001923 LR, 2.89 GB used,   9015.00 GFLOPS,    654.88 GOPS
+578   73.56 ms run,    2.54 ms python,   71.02 ms CUDA,  578.10 loss, 0.001918 LR, 2.89 GB used,   8902.57 GFLOPS,    654.88 GOPS
+579   73.94 ms run,    2.49 ms python,   71.45 ms CUDA,  566.75 loss, 0.001914 LR, 2.89 GB used,   8857.44 GFLOPS,    654.88 GOPS
+580   72.73 ms run,    2.50 ms python,   70.24 ms CUDA,  560.27 loss, 0.001910 LR, 2.89 GB used,   9003.93 GFLOPS,    654.88 GOPS
+581   73.75 ms run,    2.47 ms python,   71.28 ms CUDA,  581.31 loss, 0.001905 LR, 2.89 GB used,   8879.85 GFLOPS,    654.88 GOPS
+582   73.61 ms run,    2.36 ms python,   71.25 ms CUDA,  569.88 loss, 0.001901 LR, 2.89 GB used,   8896.30 GFLOPS,    654.88 GOPS
+583   72.60 ms run,    2.53 ms python,   70.07 ms CUDA,  561.17 loss, 0.001897 LR, 2.89 GB used,   9020.48 GFLOPS,    654.88 GOPS
+584   73.36 ms run,    2.50 ms python,   70.86 ms CUDA,  568.17 loss, 0.001892 LR, 2.89 GB used,   8926.95 GFLOPS,    654.88 GOPS
+585   73.62 ms run,    2.45 ms python,   71.17 ms CUDA,  567.55 loss, 0.001888 LR, 2.89 GB used,   8895.12 GFLOPS,    654.88 GOPS
+586   72.49 ms run,    2.40 ms python,   70.09 ms CUDA,  577.06 loss, 0.001884 LR, 2.89 GB used,   9034.60 GFLOPS,    654.88 GOPS
+587   73.68 ms run,    2.48 ms python,   71.21 ms CUDA,  530.97 loss, 0.001879 LR, 2.89 GB used,   8887.73 GFLOPS,    654.88 GOPS
+shuffling training dataset in 291.73 ms (epoch=6)
+588 3101.68 ms run, 3015.94 ms python,   85.74 ms CUDA,  582.18 loss, 0.001875 LR, 2.89 GB used,   6846.31 GFLOPS,  21235.07 GOPS
+589   74.46 ms run,    2.71 ms python,   71.75 ms CUDA,  583.75 loss, 0.001871 LR, 2.89 GB used,   8795.22 GFLOPS,    654.88 GOPS
+590   75.15 ms run,    2.58 ms python,   72.57 ms CUDA,  560.53 loss, 0.001866 LR, 2.89 GB used,   8714.02 GFLOPS,    654.88 GOPS
+591   73.77 ms run,    2.61 ms python,   71.16 ms CUDA,  582.74 loss, 0.001862 LR, 2.89 GB used,   8877.57 GFLOPS,    654.88 GOPS
+592   74.02 ms run,    2.61 ms python,   71.41 ms CUDA,  587.78 loss, 0.001857 LR, 2.89 GB used,   8847.54 GFLOPS,    654.88 GOPS
+593   73.85 ms run,    2.55 ms python,   71.30 ms CUDA,  583.06 loss, 0.001853 LR, 2.89 GB used,   8867.45 GFLOPS,    654.88 GOPS
+594   72.55 ms run,    2.56 ms python,   70.00 ms CUDA,  574.53 loss, 0.001849 LR, 2.89 GB used,   9026.04 GFLOPS,    654.88 GOPS
+595   73.50 ms run,    2.59 ms python,   70.91 ms CUDA,  567.19 loss, 0.001844 LR, 2.89 GB used,   8910.28 GFLOPS,    654.88 GOPS
+596   73.77 ms run,    2.55 ms python,   71.22 ms CUDA,  574.41 loss, 0.001840 LR, 2.89 GB used,   8877.40 GFLOPS,    654.88 GOPS
+597   72.63 ms run,    2.55 ms python,   70.09 ms CUDA,  573.58 loss, 0.001836 LR, 2.89 GB used,   9016.28 GFLOPS,    654.88 GOPS
+598   73.70 ms run,    2.56 ms python,   71.13 ms CUDA,  571.32 loss, 0.001831 LR, 2.89 GB used,   8886.24 GFLOPS,    654.88 GOPS
+599   73.86 ms run,    2.58 ms python,   71.28 ms CUDA,  573.53 loss, 0.001827 LR, 2.89 GB used,   8866.87 GFLOPS,    654.88 GOPS
+600   72.75 ms run,    2.40 ms python,   70.35 ms CUDA,  575.57 loss, 0.001823 LR, 2.89 GB used,   9001.50 GFLOPS,    654.88 GOPS
+601   73.23 ms run,    2.53 ms python,   70.70 ms CUDA,  586.29 loss, 0.001818 LR, 2.89 GB used,   8943.32 GFLOPS,    654.88 GOPS
+602   73.48 ms run,    2.56 ms python,   70.92 ms CUDA,  575.05 loss, 0.001814 LR, 2.89 GB used,   8912.18 GFLOPS,    654.88 GOPS
+603   72.34 ms run,    2.47 ms python,   69.88 ms CUDA,  583.70 loss, 0.001810 LR, 2.89 GB used,   9052.33 GFLOPS,    654.88 GOPS
+604   73.66 ms run,    2.54 ms python,   71.12 ms CUDA,  561.16 loss, 0.001805 LR, 2.89 GB used,   8890.03 GFLOPS,    654.88 GOPS
+605   73.81 ms run,    2.32 ms python,   71.49 ms CUDA,  586.69 loss, 0.001801 LR, 2.89 GB used,   8872.53 GFLOPS,    654.88 GOPS
+606   72.83 ms run,    2.55 ms python,   70.28 ms CUDA,  574.46 loss, 0.001797 LR, 2.89 GB used,   8992.31 GFLOPS,    654.88 GOPS
+607   73.63 ms run,    2.47 ms python,   71.16 ms CUDA,  583.33 loss, 0.001792 LR, 2.89 GB used,   8893.71 GFLOPS,    654.88 GOPS
+608   73.67 ms run,    2.52 ms python,   71.15 ms CUDA,  579.41 loss, 0.001788 LR, 2.89 GB used,   8889.57 GFLOPS,    654.88 GOPS
+609   72.24 ms run,    2.35 ms python,   69.88 ms CUDA,  565.66 loss, 0.001783 LR, 2.89 GB used,   9065.84 GFLOPS,    654.88 GOPS
+610   73.02 ms run,    2.50 ms python,   70.52 ms CUDA,  572.79 loss, 0.001779 LR, 2.89 GB used,   8968.13 GFLOPS,    654.88 GOPS
+611   74.21 ms run,    2.52 ms python,   71.68 ms CUDA,  584.61 loss, 0.001775 LR, 2.89 GB used,   8824.72 GFLOPS,    654.88 GOPS
+612   72.78 ms run,    2.52 ms python,   70.26 ms CUDA,  573.57 loss, 0.001770 LR, 2.89 GB used,   8997.94 GFLOPS,    654.88 GOPS
+613   73.81 ms run,    2.53 ms python,   71.28 ms CUDA,  570.74 loss, 0.001766 LR, 2.89 GB used,   8872.27 GFLOPS,    654.88 GOPS
+614   74.05 ms run,    2.59 ms python,   71.46 ms CUDA,  574.06 loss, 0.001762 LR, 2.89 GB used,   8844.31 GFLOPS,    654.88 GOPS
+615   72.56 ms run,    2.55 ms python,   70.01 ms CUDA,  585.91 loss, 0.001757 LR, 2.89 GB used,   9025.01 GFLOPS,    654.88 GOPS
+616   73.38 ms run,    2.52 ms python,   70.86 ms CUDA,  562.22 loss, 0.001753 LR, 2.89 GB used,   8924.64 GFLOPS,    654.88 GOPS
+617   73.73 ms run,    2.52 ms python,   71.21 ms CUDA,  574.14 loss, 0.001749 LR, 2.89 GB used,   8882.10 GFLOPS,    654.88 GOPS
+618   72.42 ms run,    2.54 ms python,   69.89 ms CUDA,  582.58 loss, 0.001744 LR, 2.89 GB used,   9042.67 GFLOPS,    654.88 GOPS
+619   73.67 ms run,    2.55 ms python,   71.12 ms CUDA,  577.16 loss, 0.001740 LR, 2.89 GB used,   8889.64 GFLOPS,    654.88 GOPS
+620   74.00 ms run,    2.56 ms python,   71.44 ms CUDA,  578.30 loss, 0.001736 LR, 2.89 GB used,   8850.29 GFLOPS,    654.88 GOPS
+621   72.67 ms run,    2.50 ms python,   70.17 ms CUDA,  564.32 loss, 0.001731 LR, 2.89 GB used,   9011.65 GFLOPS,    654.88 GOPS
+622   73.28 ms run,    2.43 ms python,   70.85 ms CUDA,  585.64 loss, 0.001727 LR, 2.89 GB used,   8936.57 GFLOPS,    654.88 GOPS
+623   74.01 ms run,    2.57 ms python,   71.44 ms CUDA,  568.05 loss, 0.001723 LR, 2.89 GB used,   8848.98 GFLOPS,    654.88 GOPS
+624   72.89 ms run,    2.54 ms python,   70.36 ms CUDA,  578.46 loss, 0.001718 LR, 2.89 GB used,   8983.95 GFLOPS,    654.88 GOPS
+625   73.63 ms run,    2.52 ms python,   71.11 ms CUDA,  581.81 loss, 0.001714 LR, 2.89 GB used,   8894.00 GFLOPS,    654.88 GOPS
+626   73.53 ms run,    2.28 ms python,   71.24 ms CUDA,  581.16 loss, 0.001709 LR, 2.89 GB used,   8906.72 GFLOPS,    654.88 GOPS
+627   72.46 ms run,    2.54 ms python,   69.92 ms CUDA,  571.57 loss, 0.001705 LR, 2.89 GB used,   9037.56 GFLOPS,    654.88 GOPS
+628   73.48 ms run,    2.55 ms python,   70.93 ms CUDA,  574.78 loss, 0.001701 LR, 2.89 GB used,   8912.50 GFLOPS,    654.88 GOPS
+629   73.84 ms run,    2.54 ms python,   71.30 ms CUDA,  561.47 loss, 0.001696 LR, 2.89 GB used,   8869.46 GFLOPS,    654.88 GOPS
+630   72.52 ms run,    2.55 ms python,   69.98 ms CUDA,  557.31 loss, 0.001692 LR, 2.89 GB used,   9029.76 GFLOPS,    654.88 GOPS
+631   73.65 ms run,    2.54 ms python,   71.11 ms CUDA,  571.93 loss, 0.001688 LR, 2.89 GB used,   8891.61 GFLOPS,    654.88 GOPS
+632   73.91 ms run,    2.49 ms python,   71.42 ms CUDA,  565.84 loss, 0.001683 LR, 2.89 GB used,   8860.15 GFLOPS,    654.88 GOPS
+633   72.91 ms run,    2.39 ms python,   70.51 ms CUDA,  578.46 loss, 0.001679 LR, 2.89 GB used,   8982.28 GFLOPS,    654.88 GOPS
+634   73.69 ms run,    2.47 ms python,   71.22 ms CUDA,  563.97 loss, 0.001675 LR, 2.89 GB used,   8886.62 GFLOPS,    654.88 GOPS
+635   73.19 ms run,    2.51 ms python,   70.68 ms CUDA,  581.75 loss, 0.001670 LR, 2.89 GB used,   8947.62 GFLOPS,    654.88 GOPS
+636   72.47 ms run,    2.55 ms python,   69.92 ms CUDA,  577.55 loss, 0.001666 LR, 2.89 GB used,   9036.89 GFLOPS,    654.88 GOPS
+637   73.65 ms run,    2.37 ms python,   71.28 ms CUDA,  572.91 loss, 0.001662 LR, 2.89 GB used,   8891.87 GFLOPS,    654.88 GOPS
+638   73.82 ms run,    2.52 ms python,   71.30 ms CUDA,  577.79 loss, 0.001657 LR, 2.89 GB used,   8871.43 GFLOPS,    654.88 GOPS
+639   72.60 ms run,    2.53 ms python,   70.07 ms CUDA,  589.02 loss, 0.001653 LR, 2.89 GB used,   9019.94 GFLOPS,    654.88 GOPS
+640   73.45 ms run,    2.57 ms python,   70.88 ms CUDA,  570.04 loss, 0.001649 LR, 2.89 GB used,   8916.45 GFLOPS,    654.88 GOPS
+641   73.70 ms run,    2.46 ms python,   71.24 ms CUDA,  581.61 loss, 0.001644 LR, 2.89 GB used,   8885.50 GFLOPS,    654.88 GOPS
+642   72.76 ms run,    2.49 ms python,   70.27 ms CUDA,  572.00 loss, 0.001640 LR, 2.89 GB used,   9000.05 GFLOPS,    654.88 GOPS
+643   73.94 ms run,    2.56 ms python,   71.38 ms CUDA,  588.13 loss, 0.001635 LR, 2.89 GB used,   8857.00 GFLOPS,    654.88 GOPS
+644   73.56 ms run,    2.57 ms python,   70.98 ms CUDA,  583.07 loss, 0.001631 LR, 2.89 GB used,   8903.25 GFLOPS,    654.88 GOPS
+645   72.63 ms run,    2.53 ms python,   70.09 ms CUDA,  598.75 loss, 0.001627 LR, 2.89 GB used,   9017.22 GFLOPS,    654.88 GOPS
+646   73.72 ms run,    2.43 ms python,   71.28 ms CUDA,  586.49 loss, 0.001622 LR, 2.89 GB used,   8883.46 GFLOPS,    654.88 GOPS
+647   73.72 ms run,    2.55 ms python,   71.17 ms CUDA,  564.93 loss, 0.001618 LR, 2.89 GB used,   8883.19 GFLOPS,    654.88 GOPS
+648   72.80 ms run,    2.43 ms python,   70.38 ms CUDA,  576.13 loss, 0.001614 LR, 2.89 GB used,   8995.11 GFLOPS,    654.88 GOPS
+649   73.46 ms run,    2.51 ms python,   70.95 ms CUDA,  567.80 loss, 0.001609 LR, 2.89 GB used,   8914.81 GFLOPS,    654.88 GOPS
+650   73.60 ms run,    2.48 ms python,   71.12 ms CUDA,  580.29 loss, 0.001605 LR, 2.89 GB used,   8898.23 GFLOPS,    654.88 GOPS
+651   72.62 ms run,    2.53 ms python,   70.09 ms CUDA,  585.53 loss, 0.001601 LR, 2.89 GB used,   9017.29 GFLOPS,    654.88 GOPS
+652   73.36 ms run,    2.49 ms python,   70.87 ms CUDA,  588.06 loss, 0.001596 LR, 2.89 GB used,   8926.87 GFLOPS,    654.88 GOPS
+653   73.86 ms run,    2.52 ms python,   71.34 ms CUDA,  583.70 loss, 0.001592 LR, 2.89 GB used,   8866.35 GFLOPS,    654.88 GOPS
+654   72.89 ms run,    2.31 ms python,   70.58 ms CUDA,  579.78 loss, 0.001588 LR, 2.89 GB used,   8984.63 GFLOPS,    654.88 GOPS
+655   73.75 ms run,    2.55 ms python,   71.20 ms CUDA,  573.20 loss, 0.001583 LR, 2.89 GB used,   8879.48 GFLOPS,    654.88 GOPS
+656   73.64 ms run,    2.49 ms python,   71.15 ms CUDA,  577.08 loss, 0.001579 LR, 2.89 GB used,   8892.98 GFLOPS,    654.88 GOPS
+657   72.75 ms run,    2.57 ms python,   70.18 ms CUDA,  577.83 loss, 0.001575 LR, 2.89 GB used,   9002.30 GFLOPS,    654.88 GOPS
+658   73.27 ms run,    2.48 ms python,   70.79 ms CUDA,  577.39 loss, 0.001570 LR, 2.89 GB used,   8937.93 GFLOPS,    654.88 GOPS
+659   73.58 ms run,    2.53 ms python,   71.05 ms CUDA,  567.07 loss, 0.001566 LR, 2.89 GB used,   8900.38 GFLOPS,    654.88 GOPS
+660   72.69 ms run,    2.47 ms python,   70.23 ms CUDA,  590.09 loss, 0.001561 LR, 2.89 GB used,   9009.07 GFLOPS,    654.88 GOPS
+661   73.76 ms run,    2.51 ms python,   71.25 ms CUDA,  575.49 loss, 0.001557 LR, 2.89 GB used,   8877.95 GFLOPS,    654.88 GOPS
+662   73.81 ms run,    2.51 ms python,   71.30 ms CUDA,  576.39 loss, 0.001553 LR, 2.89 GB used,   8872.58 GFLOPS,    654.88 GOPS
+663   73.07 ms run,    2.42 ms python,   70.66 ms CUDA,  559.78 loss, 0.001548 LR, 2.89 GB used,   8962.02 GFLOPS,    654.88 GOPS
+664   73.35 ms run,    2.48 ms python,   70.87 ms CUDA,  571.16 loss, 0.001544 LR, 2.89 GB used,   8927.70 GFLOPS,    654.88 GOPS
+665   73.64 ms run,    2.28 ms python,   71.36 ms CUDA,  590.11 loss, 0.001540 LR, 2.89 GB used,   8893.48 GFLOPS,    654.88 GOPS
+666   73.14 ms run,    2.49 ms python,   70.65 ms CUDA,  564.05 loss, 0.001535 LR, 2.89 GB used,   8954.34 GFLOPS,    654.88 GOPS
+667   73.29 ms run,    2.40 ms python,   70.89 ms CUDA,  570.92 loss, 0.001531 LR, 2.89 GB used,   8935.33 GFLOPS,    654.88 GOPS
+668   73.38 ms run,    2.51 ms python,   70.87 ms CUDA,  580.83 loss, 0.001527 LR, 2.89 GB used,   8924.89 GFLOPS,    654.88 GOPS
+669   72.81 ms run,    2.29 ms python,   70.53 ms CUDA,  558.59 loss, 0.001522 LR, 2.89 GB used,   8993.90 GFLOPS,    654.88 GOPS
+670   73.20 ms run,    2.52 ms python,   70.68 ms CUDA,  571.23 loss, 0.001518 LR, 2.89 GB used,   8946.74 GFLOPS,    654.88 GOPS
+671   73.55 ms run,    2.36 ms python,   71.19 ms CUDA,  585.14 loss, 0.001514 LR, 2.89 GB used,   8904.22 GFLOPS,    654.88 GOPS
+672   72.76 ms run,    2.52 ms python,   70.24 ms CUDA,  586.53 loss, 0.001509 LR, 2.89 GB used,   9000.43 GFLOPS,    654.88 GOPS
+673   73.41 ms run,    2.54 ms python,   70.87 ms CUDA,  579.50 loss, 0.001505 LR, 2.89 GB used,   8920.96 GFLOPS,    654.88 GOPS
+674   73.59 ms run,    2.52 ms python,   71.07 ms CUDA,  562.53 loss, 0.001501 LR, 2.89 GB used,   8899.58 GFLOPS,    654.88 GOPS
+675   72.91 ms run,    2.49 ms python,   70.42 ms CUDA,  565.53 loss, 0.001496 LR, 2.89 GB used,   8982.24 GFLOPS,    654.88 GOPS
+676   73.72 ms run,    2.49 ms python,   71.23 ms CUDA,  571.97 loss, 0.001492 LR, 2.89 GB used,   8882.86 GFLOPS,    654.88 GOPS
+677   73.73 ms run,    2.50 ms python,   71.23 ms CUDA,  570.36 loss, 0.001488 LR, 2.89 GB used,   8882.30 GFLOPS,    654.88 GOPS
+678   73.07 ms run,    2.55 ms python,   70.52 ms CUDA,  554.81 loss, 0.001483 LR, 2.89 GB used,   8962.35 GFLOPS,    654.88 GOPS
+679   73.19 ms run,    2.51 ms python,   70.68 ms CUDA,  558.38 loss, 0.001479 LR, 2.89 GB used,   8947.60 GFLOPS,    654.88 GOPS
+680   72.22 ms run,    2.29 ms python,   69.94 ms CUDA,  571.39 loss, 0.001474 LR, 2.89 GB used,   9067.58 GFLOPS,    654.88 GOPS
+681   72.95 ms run,    2.50 ms python,   70.44 ms CUDA,  577.83 loss, 0.001470 LR, 2.89 GB used,   8977.55 GFLOPS,    654.88 GOPS
+682   74.27 ms run,    2.32 ms python,   71.95 ms CUDA,  568.01 loss, 0.001466 LR, 2.89 GB used,   8817.05 GFLOPS,    654.88 GOPS
+683   74.07 ms run,    2.56 ms python,   71.51 ms CUDA,  571.89 loss, 0.001461 LR, 2.89 GB used,   8840.80 GFLOPS,    654.88 GOPS
+684   73.27 ms run,    2.64 ms python,   70.62 ms CUDA,  577.33 loss, 0.001457 LR, 2.89 GB used,   8938.23 GFLOPS,    654.88 GOPS
+685   73.46 ms run,    2.57 ms python,   70.89 ms CUDA,  552.85 loss, 0.001453 LR, 2.89 GB used,   8914.73 GFLOPS,    654.88 GOPS
+shuffling training dataset in 151.85 ms (epoch=7)
+686 2872.01 ms run,  715.03 ms python, 2156.98 ms CUDA,  560.05 loss, 0.001448 LR, 2.89 GB used,   7393.79 GFLOPS,  21235.07 GOPS
+687   75.81 ms run,    2.87 ms python,   72.94 ms CUDA,  549.42 loss, 0.001444 LR, 2.89 GB used,   8638.01 GFLOPS,    654.88 GOPS
+688   74.17 ms run,    2.54 ms python,   71.63 ms CUDA,  558.56 loss, 0.001440 LR, 2.89 GB used,   8829.77 GFLOPS,    654.88 GOPS
+689   74.14 ms run,    2.58 ms python,   71.56 ms CUDA,  551.33 loss, 0.001435 LR, 2.89 GB used,   8832.81 GFLOPS,    654.88 GOPS
+690   75.11 ms run,    2.56 ms python,   72.55 ms CUDA,  545.93 loss, 0.001431 LR, 2.89 GB used,   8718.51 GFLOPS,    654.88 GOPS
+691   73.09 ms run,    2.58 ms python,   70.51 ms CUDA,  545.85 loss, 0.001427 LR, 2.89 GB used,   8959.73 GFLOPS,    654.88 GOPS
+692   73.69 ms run,    2.54 ms python,   71.15 ms CUDA,  551.55 loss, 0.001422 LR, 2.89 GB used,   8886.35 GFLOPS,    654.88 GOPS
+693   73.88 ms run,    2.47 ms python,   71.41 ms CUDA,  546.06 loss, 0.001418 LR, 2.89 GB used,   8864.10 GFLOPS,    654.88 GOPS
+694   72.52 ms run,    2.40 ms python,   70.13 ms CUDA,  555.34 loss, 0.001414 LR, 2.89 GB used,   9030.29 GFLOPS,    654.88 GOPS
+695   73.66 ms run,    2.47 ms python,   71.19 ms CUDA,  562.67 loss, 0.001409 LR, 2.89 GB used,   8890.57 GFLOPS,    654.88 GOPS
+696   73.70 ms run,    2.48 ms python,   71.22 ms CUDA,  564.70 loss, 0.001405 LR, 2.89 GB used,   8885.98 GFLOPS,    654.88 GOPS
+697   71.79 ms run,    2.48 ms python,   69.30 ms CUDA,  562.78 loss, 0.001400 LR, 2.89 GB used,   9122.63 GFLOPS,    654.88 GOPS
+698   69.95 ms run,    2.49 ms python,   67.46 ms CUDA,  569.33 loss, 0.001396 LR, 2.89 GB used,   9361.73 GFLOPS,    654.88 GOPS
+699   74.10 ms run,    2.39 ms python,   71.71 ms CUDA,  549.15 loss, 0.001392 LR, 2.89 GB used,   8837.22 GFLOPS,    654.88 GOPS
+700   73.84 ms run,    2.58 ms python,   71.26 ms CUDA,  555.35 loss, 0.001387 LR, 2.89 GB used,   8869.10 GFLOPS,    654.88 GOPS
+701   73.89 ms run,    2.33 ms python,   71.57 ms CUDA,  558.55 loss, 0.001383 LR, 2.89 GB used,   8862.36 GFLOPS,    654.88 GOPS
+702   75.47 ms run,    2.54 ms python,   72.93 ms CUDA,  554.57 loss, 0.001379 LR, 2.89 GB used,   8677.04 GFLOPS,    654.88 GOPS
+703   73.39 ms run,    2.49 ms python,   70.90 ms CUDA,  543.70 loss, 0.001374 LR, 2.89 GB used,   8923.68 GFLOPS,    654.88 GOPS
+704   73.89 ms run,    2.52 ms python,   71.37 ms CUDA,  544.08 loss, 0.001370 LR, 2.89 GB used,   8863.22 GFLOPS,    654.88 GOPS
+705   73.85 ms run,    2.50 ms python,   71.36 ms CUDA,  553.99 loss, 0.001366 LR, 2.89 GB used,   8867.12 GFLOPS,    654.88 GOPS
+706   73.10 ms run,    2.50 ms python,   70.60 ms CUDA,  562.27 loss, 0.001361 LR, 2.89 GB used,   8958.72 GFLOPS,    654.88 GOPS
+707   75.99 ms run,    5.69 ms python,   70.29 ms CUDA,  541.83 loss, 0.001357 LR, 2.89 GB used,   8618.53 GFLOPS,    654.88 GOPS
+708   73.35 ms run,    2.53 ms python,   70.83 ms CUDA,  550.74 loss, 0.001353 LR, 2.89 GB used,   8927.61 GFLOPS,    654.88 GOPS
+709   75.64 ms run,    2.61 ms python,   73.03 ms CUDA,  551.11 loss, 0.001348 LR, 2.89 GB used,   8658.25 GFLOPS,    654.88 GOPS
+710   73.59 ms run,    2.47 ms python,   71.11 ms CUDA,  562.99 loss, 0.001344 LR, 2.89 GB used,   8899.28 GFLOPS,    654.88 GOPS
+711   74.32 ms run,    2.58 ms python,   71.74 ms CUDA,  571.64 loss, 0.001340 LR, 2.89 GB used,   8811.70 GFLOPS,    654.88 GOPS
+712   74.08 ms run,    2.56 ms python,   71.51 ms CUDA,  566.74 loss, 0.001335 LR, 2.89 GB used,   8840.67 GFLOPS,    654.88 GOPS
+713   73.31 ms run,    2.70 ms python,   70.61 ms CUDA,  544.53 loss, 0.001331 LR, 2.89 GB used,   8932.74 GFLOPS,    654.88 GOPS
+714   72.98 ms run,    2.44 ms python,   70.54 ms CUDA,  550.80 loss, 0.001326 LR, 2.89 GB used,   8973.34 GFLOPS,    654.88 GOPS
+715   73.66 ms run,    2.65 ms python,   71.01 ms CUDA,  563.60 loss, 0.001322 LR, 2.89 GB used,   8890.02 GFLOPS,    654.88 GOPS
+716   73.04 ms run,    2.30 ms python,   70.74 ms CUDA,  559.11 loss, 0.001318 LR, 2.89 GB used,   8965.86 GFLOPS,    654.88 GOPS
+717   73.46 ms run,    2.64 ms python,   70.82 ms CUDA,  569.63 loss, 0.001313 LR, 2.89 GB used,   8915.33 GFLOPS,    654.88 GOPS
+718   73.59 ms run,    2.48 ms python,   71.12 ms CUDA,  548.80 loss, 0.001309 LR, 2.89 GB used,   8898.42 GFLOPS,    654.88 GOPS
+719   72.95 ms run,    2.58 ms python,   70.37 ms CUDA,  560.50 loss, 0.001305 LR, 2.89 GB used,   8977.46 GFLOPS,    654.88 GOPS
+720   73.54 ms run,    2.63 ms python,   70.91 ms CUDA,  555.26 loss, 0.001300 LR, 2.89 GB used,   8905.56 GFLOPS,    654.88 GOPS
+721   73.51 ms run,    2.64 ms python,   70.87 ms CUDA,  552.23 loss, 0.001296 LR, 2.89 GB used,   8908.80 GFLOPS,    654.88 GOPS
+722   73.61 ms run,    2.56 ms python,   71.05 ms CUDA,  545.34 loss, 0.001292 LR, 2.89 GB used,   8896.56 GFLOPS,    654.88 GOPS
+723   73.49 ms run,    2.48 ms python,   71.01 ms CUDA,  558.07 loss, 0.001287 LR, 2.89 GB used,   8910.69 GFLOPS,    654.88 GOPS
+724   73.68 ms run,    2.51 ms python,   71.18 ms CUDA,  557.11 loss, 0.001283 LR, 2.89 GB used,   8887.58 GFLOPS,    654.88 GOPS
+725   74.31 ms run,    2.60 ms python,   71.71 ms CUDA,  562.82 loss, 0.001279 LR, 2.89 GB used,   8813.22 GFLOPS,    654.88 GOPS
+726   73.38 ms run,    2.57 ms python,   70.81 ms CUDA,  552.13 loss, 0.001274 LR, 2.89 GB used,   8924.31 GFLOPS,    654.88 GOPS
+727   75.08 ms run,    3.89 ms python,   71.19 ms CUDA,  552.55 loss, 0.001270 LR, 2.89 GB used,   8722.30 GFLOPS,    654.88 GOPS
+728   75.34 ms run,    2.66 ms python,   72.68 ms CUDA,  547.68 loss, 0.001266 LR, 2.89 GB used,   8692.73 GFLOPS,    654.88 GOPS
+729   73.32 ms run,    2.46 ms python,   70.86 ms CUDA,  548.31 loss, 0.001261 LR, 2.89 GB used,   8932.04 GFLOPS,    654.88 GOPS
+730   74.05 ms run,    2.53 ms python,   71.52 ms CUDA,  560.81 loss, 0.001257 LR, 2.89 GB used,   8843.50 GFLOPS,    654.88 GOPS
+731   73.42 ms run,    2.55 ms python,   70.87 ms CUDA,  549.85 loss, 0.001252 LR, 2.89 GB used,   8919.50 GFLOPS,    654.88 GOPS
+732   73.16 ms run,    2.47 ms python,   70.69 ms CUDA,  573.96 loss, 0.001248 LR, 2.89 GB used,   8950.87 GFLOPS,    654.88 GOPS
+733   73.99 ms run,    3.14 ms python,   70.85 ms CUDA,  565.14 loss, 0.001244 LR, 2.89 GB used,   8851.37 GFLOPS,    654.88 GOPS
+734   73.88 ms run,    2.84 ms python,   71.04 ms CUDA,  563.43 loss, 0.001239 LR, 2.89 GB used,   8863.80 GFLOPS,    654.88 GOPS
+735   74.26 ms run,    2.35 ms python,   71.91 ms CUDA,  556.79 loss, 0.001235 LR, 2.89 GB used,   8819.03 GFLOPS,    654.88 GOPS
+736   73.76 ms run,    2.49 ms python,   71.27 ms CUDA,  547.33 loss, 0.001231 LR, 2.89 GB used,   8878.66 GFLOPS,    654.88 GOPS
+737   74.35 ms run,    2.31 ms python,   72.03 ms CUDA,  571.76 loss, 0.001226 LR, 2.89 GB used,   8808.26 GFLOPS,    654.88 GOPS
+738   75.26 ms run,    2.53 ms python,   72.74 ms CUDA,  573.37 loss, 0.001222 LR, 2.89 GB used,   8700.99 GFLOPS,    654.88 GOPS
+739   72.92 ms run,    2.31 ms python,   70.60 ms CUDA,  554.25 loss, 0.001218 LR, 2.89 GB used,   8981.22 GFLOPS,    654.88 GOPS
+740   73.91 ms run,    2.50 ms python,   71.41 ms CUDA,  558.96 loss, 0.001213 LR, 2.89 GB used,   8860.29 GFLOPS,    654.88 GOPS
+741   73.84 ms run,    2.48 ms python,   71.36 ms CUDA,  556.00 loss, 0.001209 LR, 2.89 GB used,   8869.04 GFLOPS,    654.88 GOPS
+742   72.86 ms run,    2.54 ms python,   70.32 ms CUDA,  565.15 loss, 0.001205 LR, 2.89 GB used,   8988.52 GFLOPS,    654.88 GOPS
+743   73.57 ms run,    2.31 ms python,   71.25 ms CUDA,  558.10 loss, 0.001200 LR, 2.89 GB used,   8901.80 GFLOPS,    654.88 GOPS
+744   73.63 ms run,    2.54 ms python,   71.09 ms CUDA,  569.25 loss, 0.001196 LR, 2.89 GB used,   8894.57 GFLOPS,    654.88 GOPS
+745   73.03 ms run,    2.47 ms python,   70.56 ms CUDA,  561.72 loss, 0.001192 LR, 2.89 GB used,   8967.61 GFLOPS,    654.88 GOPS
+746   73.40 ms run,    2.53 ms python,   70.88 ms CUDA,  557.29 loss, 0.001187 LR, 2.89 GB used,   8921.67 GFLOPS,    654.88 GOPS
+747   73.60 ms run,    2.52 ms python,   71.08 ms CUDA,  546.27 loss, 0.001183 LR, 2.89 GB used,   8897.40 GFLOPS,    654.88 GOPS
+748   73.53 ms run,    2.58 ms python,   70.96 ms CUDA,  562.41 loss, 0.001178 LR, 2.89 GB used,   8905.99 GFLOPS,    654.88 GOPS
+749   74.03 ms run,    2.50 ms python,   71.53 ms CUDA,  546.99 loss, 0.001174 LR, 2.89 GB used,   8845.99 GFLOPS,    654.88 GOPS
+750   73.56 ms run,    2.46 ms python,   71.09 ms CUDA,  556.02 loss, 0.001170 LR, 2.89 GB used,   8902.81 GFLOPS,    654.88 GOPS
+751   74.46 ms run,    2.55 ms python,   71.91 ms CUDA,  549.94 loss, 0.001165 LR, 2.89 GB used,   8795.33 GFLOPS,    654.88 GOPS
+752   73.35 ms run,    2.54 ms python,   70.81 ms CUDA,  541.98 loss, 0.001161 LR, 2.89 GB used,   8927.58 GFLOPS,    654.88 GOPS
+753   74.00 ms run,    2.58 ms python,   71.42 ms CUDA,  545.32 loss, 0.001157 LR, 2.89 GB used,   8849.58 GFLOPS,    654.88 GOPS
+754   75.38 ms run,    2.54 ms python,   72.84 ms CUDA,  545.64 loss, 0.001152 LR, 2.89 GB used,   8688.03 GFLOPS,    654.88 GOPS
+755   73.34 ms run,    2.47 ms python,   70.88 ms CUDA,  553.87 loss, 0.001148 LR, 2.89 GB used,   8929.14 GFLOPS,    654.88 GOPS
+756   74.06 ms run,    2.37 ms python,   71.69 ms CUDA,  542.85 loss, 0.001144 LR, 2.89 GB used,   8842.70 GFLOPS,    654.88 GOPS
+757   74.03 ms run,    2.39 ms python,   71.63 ms CUDA,  548.04 loss, 0.001139 LR, 2.89 GB used,   8846.67 GFLOPS,    654.88 GOPS
+758   73.09 ms run,    2.50 ms python,   70.59 ms CUDA,  557.47 loss, 0.001135 LR, 2.89 GB used,   8960.32 GFLOPS,    654.88 GOPS
+759   73.48 ms run,    2.53 ms python,   70.95 ms CUDA,  555.75 loss, 0.001131 LR, 2.89 GB used,   8912.33 GFLOPS,    654.88 GOPS
+760   73.70 ms run,    2.52 ms python,   71.17 ms CUDA,  546.05 loss, 0.001126 LR, 2.89 GB used,   8886.17 GFLOPS,    654.88 GOPS
+761   73.67 ms run,    2.51 ms python,   71.16 ms CUDA,  537.02 loss, 0.001122 LR, 2.89 GB used,   8889.57 GFLOPS,    654.88 GOPS
+762   73.59 ms run,    2.50 ms python,   71.09 ms CUDA,  550.56 loss, 0.001118 LR, 2.89 GB used,   8899.50 GFLOPS,    654.88 GOPS
+763   73.75 ms run,    2.49 ms python,   71.26 ms CUDA,  559.75 loss, 0.001113 LR, 2.89 GB used,   8880.17 GFLOPS,    654.88 GOPS
+764   74.94 ms run,    2.50 ms python,   72.44 ms CUDA,  549.68 loss, 0.001109 LR, 2.89 GB used,   8739.27 GFLOPS,    654.88 GOPS
+765   73.95 ms run,    2.50 ms python,   71.45 ms CUDA,  540.69 loss, 0.001104 LR, 2.89 GB used,   8856.03 GFLOPS,    654.88 GOPS
+766   74.40 ms run,    2.39 ms python,   72.01 ms CUDA,  555.06 loss, 0.001100 LR, 2.89 GB used,   8802.13 GFLOPS,    654.88 GOPS
+767   74.76 ms run,    2.41 ms python,   72.36 ms CUDA,  551.27 loss, 0.001096 LR, 2.89 GB used,   8759.45 GFLOPS,    654.88 GOPS
+768   73.21 ms run,    2.54 ms python,   70.67 ms CUDA,  542.89 loss, 0.001091 LR, 2.89 GB used,   8945.54 GFLOPS,    654.88 GOPS
+769   73.97 ms run,    2.59 ms python,   71.38 ms CUDA,  557.76 loss, 0.001087 LR, 2.89 GB used,   8853.12 GFLOPS,    654.88 GOPS
+770   73.51 ms run,    2.70 ms python,   70.81 ms CUDA,  556.09 loss, 0.001083 LR, 2.89 GB used,   8908.86 GFLOPS,    654.88 GOPS
+771   73.55 ms run,    2.57 ms python,   70.98 ms CUDA,  549.68 loss, 0.001078 LR, 2.89 GB used,   8903.73 GFLOPS,    654.88 GOPS
+772   74.18 ms run,    2.56 ms python,   71.62 ms CUDA,  557.78 loss, 0.001074 LR, 2.89 GB used,   8828.44 GFLOPS,    654.88 GOPS
+773   74.08 ms run,    2.60 ms python,   71.49 ms CUDA,  550.63 loss, 0.001070 LR, 2.89 GB used,   8839.84 GFLOPS,    654.88 GOPS
+774   75.80 ms run,    2.49 ms python,   73.30 ms CUDA,  559.08 loss, 0.001065 LR, 2.89 GB used,   8639.73 GFLOPS,    654.88 GOPS
+775   73.70 ms run,    2.45 ms python,   71.25 ms CUDA,  541.72 loss, 0.001061 LR, 2.89 GB used,   8885.32 GFLOPS,    654.88 GOPS
+776   73.93 ms run,    2.51 ms python,   71.41 ms CUDA,  563.70 loss, 0.001057 LR, 2.89 GB used,   8858.68 GFLOPS,    654.88 GOPS
+777   73.86 ms run,    2.61 ms python,   71.25 ms CUDA,  555.43 loss, 0.001052 LR, 2.89 GB used,   8865.98 GFLOPS,    654.88 GOPS
+778   72.82 ms run,    2.52 ms python,   70.30 ms CUDA,  554.25 loss, 0.001048 LR, 2.89 GB used,   8993.38 GFLOPS,    654.88 GOPS
+779   74.02 ms run,    2.46 ms python,   71.56 ms CUDA,  563.31 loss, 0.001044 LR, 2.89 GB used,   8847.13 GFLOPS,    654.88 GOPS
+780   73.80 ms run,    2.54 ms python,   71.26 ms CUDA,  541.28 loss, 0.001039 LR, 2.89 GB used,   8873.15 GFLOPS,    654.88 GOPS
+781   73.37 ms run,    2.48 ms python,   70.89 ms CUDA,  565.93 loss, 0.001035 LR, 2.89 GB used,   8926.29 GFLOPS,    654.88 GOPS
+782   73.56 ms run,    2.55 ms python,   71.00 ms CUDA,  551.58 loss, 0.001030 LR, 2.89 GB used,   8903.11 GFLOPS,    654.88 GOPS
+783   73.61 ms run,    2.44 ms python,   71.18 ms CUDA,  532.42 loss, 0.001026 LR, 2.89 GB used,   8896.57 GFLOPS,    654.88 GOPS
+shuffling training dataset in 150.42 ms (epoch=8)
+784 2878.07 ms run,  712.28 ms python, 2165.79 ms CUDA,  546.15 loss, 0.001022 LR, 2.89 GB used,   7378.23 GFLOPS,  21235.07 GOPS
+785   76.43 ms run,    2.84 ms python,   73.59 ms CUDA,  538.58 loss, 0.001017 LR, 2.89 GB used,   8567.81 GFLOPS,    654.88 GOPS
+786   73.89 ms run,    2.50 ms python,   71.39 ms CUDA,  537.69 loss, 0.001013 LR, 2.89 GB used,   8863.30 GFLOPS,    654.88 GOPS
+787   74.15 ms run,    2.45 ms python,   71.70 ms CUDA,  529.05 loss, 0.001009 LR, 2.89 GB used,   8831.55 GFLOPS,    654.88 GOPS
+788   74.32 ms run,    2.28 ms python,   72.03 ms CUDA,  530.88 loss, 0.001004 LR, 2.89 GB used,   8811.67 GFLOPS,    654.88 GOPS
+789   71.74 ms run,    2.26 ms python,   69.49 ms CUDA,  548.20 loss, 0.001000 LR, 2.89 GB used,   9127.89 GFLOPS,    654.88 GOPS
+790   74.03 ms run,    2.51 ms python,   71.52 ms CUDA,  532.40 loss, 0.000996 LR, 2.89 GB used,   8846.46 GFLOPS,    654.88 GOPS
+791   74.84 ms run,    2.49 ms python,   72.35 ms CUDA,  536.42 loss, 0.000991 LR, 2.89 GB used,   8750.58 GFLOPS,    654.88 GOPS
+792   73.26 ms run,    2.48 ms python,   70.78 ms CUDA,  526.55 loss, 0.000987 LR, 2.89 GB used,   8939.09 GFLOPS,    654.88 GOPS
+793   73.64 ms run,    2.46 ms python,   71.18 ms CUDA,  546.44 loss, 0.000983 LR, 2.89 GB used,   8892.91 GFLOPS,    654.88 GOPS
+794   73.68 ms run,    2.53 ms python,   71.15 ms CUDA,  549.55 loss, 0.000978 LR, 2.89 GB used,   8888.05 GFLOPS,    654.88 GOPS
+795   73.22 ms run,    2.52 ms python,   70.70 ms CUDA,  530.97 loss, 0.000974 LR, 2.89 GB used,   8944.09 GFLOPS,    654.88 GOPS
+796   73.76 ms run,    2.51 ms python,   71.25 ms CUDA,  542.08 loss, 0.000970 LR, 2.89 GB used,   8878.66 GFLOPS,    654.88 GOPS
+797   73.54 ms run,    2.54 ms python,   70.99 ms CUDA,  538.23 loss, 0.000965 LR, 2.89 GB used,   8905.43 GFLOPS,    654.88 GOPS
+798   73.64 ms run,    2.50 ms python,   71.14 ms CUDA,  542.93 loss, 0.000961 LR, 2.89 GB used,   8892.93 GFLOPS,    654.88 GOPS
+799   73.80 ms run,    2.48 ms python,   71.32 ms CUDA,  536.16 loss, 0.000956 LR, 2.89 GB used,   8873.26 GFLOPS,    654.88 GOPS
+800   73.70 ms run,    2.50 ms python,   71.20 ms CUDA,  540.37 loss, 0.000952 LR, 2.89 GB used,   8886.14 GFLOPS,    654.88 GOPS
+801   75.58 ms run,    2.39 ms python,   73.19 ms CUDA,  534.22 loss, 0.000948 LR, 2.89 GB used,   8664.19 GFLOPS,    654.88 GOPS
+802   73.92 ms run,    2.50 ms python,   71.42 ms CUDA,  542.96 loss, 0.000943 LR, 2.89 GB used,   8859.65 GFLOPS,    654.88 GOPS
+803   74.68 ms run,    2.44 ms python,   72.24 ms CUDA,  541.48 loss, 0.000939 LR, 2.89 GB used,   8769.60 GFLOPS,    654.88 GOPS
+804   73.89 ms run,    2.51 ms python,   71.38 ms CUDA,  529.35 loss, 0.000935 LR, 2.89 GB used,   8862.74 GFLOPS,    654.88 GOPS
+805   73.15 ms run,    2.45 ms python,   70.70 ms CUDA,  533.95 loss, 0.000930 LR, 2.89 GB used,   8952.49 GFLOPS,    654.88 GOPS
+806   73.53 ms run,    2.42 ms python,   71.11 ms CUDA,  532.23 loss, 0.000926 LR, 2.89 GB used,   8906.25 GFLOPS,    654.88 GOPS
+807   73.60 ms run,    2.45 ms python,   71.16 ms CUDA,  540.52 loss, 0.000922 LR, 2.89 GB used,   8897.51 GFLOPS,    654.88 GOPS
+808   73.32 ms run,    2.29 ms python,   71.03 ms CUDA,  548.64 loss, 0.000917 LR, 2.89 GB used,   8931.69 GFLOPS,    654.88 GOPS
+809   73.78 ms run,    2.48 ms python,   71.30 ms CUDA,  544.34 loss, 0.000913 LR, 2.89 GB used,   8875.90 GFLOPS,    654.88 GOPS
+810   73.49 ms run,    2.38 ms python,   71.11 ms CUDA,  542.55 loss, 0.000909 LR, 2.89 GB used,   8910.95 GFLOPS,    654.88 GOPS
+811   74.06 ms run,    2.50 ms python,   71.56 ms CUDA,  545.51 loss, 0.000904 LR, 2.89 GB used,   8842.89 GFLOPS,    654.88 GOPS
+812   74.28 ms run,    2.25 ms python,   72.03 ms CUDA,  530.52 loss, 0.000900 LR, 2.89 GB used,   8816.31 GFLOPS,    654.88 GOPS
+813   73.75 ms run,    2.48 ms python,   71.27 ms CUDA,  537.83 loss, 0.000896 LR, 2.89 GB used,   8879.92 GFLOPS,    654.88 GOPS
+814   75.55 ms run,    2.32 ms python,   73.23 ms CUDA,  539.79 loss, 0.000891 LR, 2.89 GB used,   8667.95 GFLOPS,    654.88 GOPS
+815   73.38 ms run,    2.52 ms python,   70.87 ms CUDA,  538.70 loss, 0.000887 LR, 2.89 GB used,   8923.98 GFLOPS,    654.88 GOPS
+816   74.06 ms run,    2.47 ms python,   71.60 ms CUDA,  551.40 loss, 0.000882 LR, 2.89 GB used,   8842.25 GFLOPS,    654.88 GOPS
+817   73.74 ms run,    2.49 ms python,   71.24 ms CUDA,  538.92 loss, 0.000878 LR, 2.89 GB used,   8881.51 GFLOPS,    654.88 GOPS
+818   73.37 ms run,    2.36 ms python,   71.02 ms CUDA,  555.20 loss, 0.000874 LR, 2.89 GB used,   8925.26 GFLOPS,    654.88 GOPS
+819   73.80 ms run,    2.58 ms python,   71.21 ms CUDA,  536.61 loss, 0.000869 LR, 2.89 GB used,   8874.15 GFLOPS,    654.88 GOPS
+820   73.75 ms run,    2.50 ms python,   71.25 ms CUDA,  533.01 loss, 0.000865 LR, 2.89 GB used,   8879.27 GFLOPS,    654.88 GOPS
+821   74.03 ms run,    2.48 ms python,   71.55 ms CUDA,  540.48 loss, 0.000861 LR, 2.89 GB used,   8846.36 GFLOPS,    654.88 GOPS
+822   73.63 ms run,    2.48 ms python,   71.15 ms CUDA,  527.24 loss, 0.000856 LR, 2.89 GB used,   8893.73 GFLOPS,    654.88 GOPS
+823   74.15 ms run,    2.53 ms python,   71.62 ms CUDA,  535.55 loss, 0.000852 LR, 2.89 GB used,   8831.67 GFLOPS,    654.88 GOPS
+824   75.80 ms run,    2.53 ms python,   73.27 ms CUDA,  536.20 loss, 0.000848 LR, 2.89 GB used,   8639.75 GFLOPS,    654.88 GOPS
+825   73.60 ms run,    2.45 ms python,   71.15 ms CUDA,  532.75 loss, 0.000843 LR, 2.89 GB used,   8897.84 GFLOPS,    654.88 GOPS
+826   74.26 ms run,    2.47 ms python,   71.79 ms CUDA,  536.96 loss, 0.000839 LR, 2.89 GB used,   8819.27 GFLOPS,    654.88 GOPS
+827   73.75 ms run,    2.52 ms python,   71.23 ms CUDA,  539.82 loss, 0.000835 LR, 2.89 GB used,   8879.77 GFLOPS,    654.88 GOPS
+828   73.90 ms run,    2.50 ms python,   71.40 ms CUDA,  548.38 loss, 0.000830 LR, 2.89 GB used,   8861.09 GFLOPS,    654.88 GOPS
+829   73.48 ms run,    2.39 ms python,   71.09 ms CUDA,  530.95 loss, 0.000826 LR, 2.89 GB used,   8912.40 GFLOPS,    654.88 GOPS
+830   73.95 ms run,    2.48 ms python,   71.47 ms CUDA,  535.25 loss, 0.000822 LR, 2.89 GB used,   8855.87 GFLOPS,    654.88 GOPS
+831   75.47 ms run,    2.48 ms python,   72.99 ms CUDA,  525.50 loss, 0.000817 LR, 2.89 GB used,   8677.73 GFLOPS,    654.88 GOPS
+832   73.56 ms run,    2.48 ms python,   71.08 ms CUDA,  534.93 loss, 0.000813 LR, 2.89 GB used,   8902.99 GFLOPS,    654.88 GOPS
+833   74.07 ms run,    2.53 ms python,   71.55 ms CUDA,  523.47 loss, 0.000808 LR, 2.89 GB used,   8840.92 GFLOPS,    654.88 GOPS
+834   74.33 ms run,    2.45 ms python,   71.87 ms CUDA,  529.37 loss, 0.000804 LR, 2.89 GB used,   8810.56 GFLOPS,    654.88 GOPS
+835   73.11 ms run,    2.38 ms python,   70.73 ms CUDA,  536.25 loss, 0.000800 LR, 2.89 GB used,   8957.56 GFLOPS,    654.88 GOPS
+836   74.32 ms run,    2.50 ms python,   71.82 ms CUDA,  531.79 loss, 0.000795 LR, 2.89 GB used,   8811.72 GFLOPS,    654.88 GOPS
+837   73.64 ms run,    2.49 ms python,   71.14 ms CUDA,  532.30 loss, 0.000791 LR, 2.89 GB used,   8893.25 GFLOPS,    654.88 GOPS
+838   73.67 ms run,    2.51 ms python,   71.15 ms CUDA,  536.50 loss, 0.000787 LR, 2.89 GB used,   8889.79 GFLOPS,    654.88 GOPS
+839   73.19 ms run,    2.35 ms python,   70.83 ms CUDA,  532.33 loss, 0.000782 LR, 2.89 GB used,   8948.10 GFLOPS,    654.88 GOPS
+840   73.75 ms run,    2.52 ms python,   71.24 ms CUDA,  533.12 loss, 0.000778 LR, 2.89 GB used,   8879.44 GFLOPS,    654.88 GOPS
+841   74.54 ms run,    2.57 ms python,   71.97 ms CUDA,  551.59 loss, 0.000774 LR, 2.89 GB used,   8785.54 GFLOPS,    654.88 GOPS
+842   73.85 ms run,    2.54 ms python,   71.31 ms CUDA,  537.05 loss, 0.000769 LR, 2.89 GB used,   8867.27 GFLOPS,    654.88 GOPS
+843   74.27 ms run,    2.55 ms python,   71.72 ms CUDA,  537.17 loss, 0.000765 LR, 2.89 GB used,   8817.87 GFLOPS,    654.88 GOPS
+844   75.16 ms run,    2.54 ms python,   72.62 ms CUDA,  535.43 loss, 0.000761 LR, 2.89 GB used,   8712.59 GFLOPS,    654.88 GOPS
+845   73.10 ms run,    2.50 ms python,   70.60 ms CUDA,  536.19 loss, 0.000756 LR, 2.89 GB used,   8958.89 GFLOPS,    654.88 GOPS
+846   73.51 ms run,    2.50 ms python,   71.01 ms CUDA,  531.79 loss, 0.000752 LR, 2.89 GB used,   8909.27 GFLOPS,    654.88 GOPS
+847   73.86 ms run,    2.38 ms python,   71.48 ms CUDA,  539.95 loss, 0.000748 LR, 2.89 GB used,   8866.76 GFLOPS,    654.88 GOPS
+848   72.99 ms run,    2.52 ms python,   70.47 ms CUDA,  538.51 loss, 0.000743 LR, 2.89 GB used,   8971.88 GFLOPS,    654.88 GOPS
+849   73.80 ms run,    2.52 ms python,   71.28 ms CUDA,  554.96 loss, 0.000739 LR, 2.89 GB used,   8874.11 GFLOPS,    654.88 GOPS
+850   73.54 ms run,    2.47 ms python,   71.08 ms CUDA,  537.80 loss, 0.000734 LR, 2.89 GB used,   8904.85 GFLOPS,    654.88 GOPS
+851   72.93 ms run,    2.52 ms python,   70.41 ms CUDA,  524.10 loss, 0.000730 LR, 2.89 GB used,   8979.37 GFLOPS,    654.88 GOPS
+852   73.43 ms run,    2.52 ms python,   70.91 ms CUDA,  546.55 loss, 0.000726 LR, 2.89 GB used,   8918.55 GFLOPS,    654.88 GOPS
+853   73.69 ms run,    2.55 ms python,   71.14 ms CUDA,  540.01 loss, 0.000721 LR, 2.89 GB used,   8886.66 GFLOPS,    654.88 GOPS
+854   73.18 ms run,    2.28 ms python,   70.90 ms CUDA,  531.56 loss, 0.000717 LR, 2.89 GB used,   8948.76 GFLOPS,    654.88 GOPS
+855   73.44 ms run,    2.53 ms python,   70.91 ms CUDA,  537.94 loss, 0.000713 LR, 2.89 GB used,   8917.02 GFLOPS,    654.88 GOPS
+856   73.33 ms run,    2.28 ms python,   71.05 ms CUDA,  524.84 loss, 0.000708 LR, 2.89 GB used,   8930.11 GFLOPS,    654.88 GOPS
+857   73.13 ms run,    2.52 ms python,   70.62 ms CUDA,  530.74 loss, 0.000704 LR, 2.89 GB used,   8954.53 GFLOPS,    654.88 GOPS
+858   73.33 ms run,    2.30 ms python,   71.03 ms CUDA,  536.45 loss, 0.000700 LR, 2.89 GB used,   8931.09 GFLOPS,    654.88 GOPS
+859   73.63 ms run,    2.52 ms python,   71.11 ms CUDA,  534.77 loss, 0.000695 LR, 2.89 GB used,   8894.09 GFLOPS,    654.88 GOPS
+860   73.59 ms run,    2.53 ms python,   71.06 ms CUDA,  537.24 loss, 0.000691 LR, 2.89 GB used,   8899.07 GFLOPS,    654.88 GOPS
+861   73.61 ms run,    2.51 ms python,   71.09 ms CUDA,  532.51 loss, 0.000687 LR, 2.89 GB used,   8896.65 GFLOPS,    654.88 GOPS
+862   73.66 ms run,    2.56 ms python,   71.11 ms CUDA,  540.54 loss, 0.000682 LR, 2.89 GB used,   8890.14 GFLOPS,    654.88 GOPS
+863   74.31 ms run,    2.53 ms python,   71.78 ms CUDA,  543.27 loss, 0.000678 LR, 2.89 GB used,   8813.20 GFLOPS,    654.88 GOPS
+864   74.19 ms run,    2.50 ms python,   71.69 ms CUDA,  532.35 loss, 0.000674 LR, 2.89 GB used,   8827.12 GFLOPS,    654.88 GOPS
+865   74.06 ms run,    2.54 ms python,   71.52 ms CUDA,  540.74 loss, 0.000669 LR, 2.89 GB used,   8843.05 GFLOPS,    654.88 GOPS
+866   75.16 ms run,    2.53 ms python,   72.63 ms CUDA,  522.82 loss, 0.000665 LR, 2.89 GB used,   8713.56 GFLOPS,    654.88 GOPS
+867   72.82 ms run,    2.47 ms python,   70.35 ms CUDA,  530.23 loss, 0.000660 LR, 2.89 GB used,   8992.79 GFLOPS,    654.88 GOPS
+868   73.81 ms run,    2.48 ms python,   71.34 ms CUDA,  525.32 loss, 0.000656 LR, 2.89 GB used,   8872.16 GFLOPS,    654.88 GOPS
+869   73.72 ms run,    2.49 ms python,   71.23 ms CUDA,  540.60 loss, 0.000652 LR, 2.89 GB used,   8883.10 GFLOPS,    654.88 GOPS
+870   72.73 ms run,    2.55 ms python,   70.18 ms CUDA,  530.74 loss, 0.000647 LR, 2.89 GB used,   9004.14 GFLOPS,    654.88 GOPS
+871   73.92 ms run,    2.54 ms python,   71.38 ms CUDA,  541.37 loss, 0.000643 LR, 2.89 GB used,   8859.46 GFLOPS,    654.88 GOPS
+872   73.90 ms run,    2.55 ms python,   71.34 ms CUDA,  537.01 loss, 0.000639 LR, 2.89 GB used,   8862.28 GFLOPS,    654.88 GOPS
+873   73.31 ms run,    2.52 ms python,   70.79 ms CUDA,  538.15 loss, 0.000634 LR, 2.89 GB used,   8932.56 GFLOPS,    654.88 GOPS
+874   73.56 ms run,    2.54 ms python,   71.03 ms CUDA,  536.90 loss, 0.000630 LR, 2.89 GB used,   8902.07 GFLOPS,    654.88 GOPS
+875   73.45 ms run,    2.31 ms python,   71.13 ms CUDA,  525.53 loss, 0.000626 LR, 2.89 GB used,   8916.41 GFLOPS,    654.88 GOPS
+876   73.74 ms run,    2.53 ms python,   71.21 ms CUDA,  529.27 loss, 0.000621 LR, 2.89 GB used,   8880.61 GFLOPS,    654.88 GOPS
+877   73.50 ms run,    2.30 ms python,   71.20 ms CUDA,  524.85 loss, 0.000617 LR, 2.89 GB used,   8909.86 GFLOPS,    654.88 GOPS
+878   73.78 ms run,    2.50 ms python,   71.27 ms CUDA,  526.15 loss, 0.000613 LR, 2.89 GB used,   8876.46 GFLOPS,    654.88 GOPS
+879   75.27 ms run,    2.54 ms python,   72.72 ms CUDA,  530.94 loss, 0.000608 LR, 2.89 GB used,   8700.84 GFLOPS,    654.88 GOPS
+880   74.25 ms run,    2.60 ms python,   71.64 ms CUDA,  531.93 loss, 0.000604 LR, 2.89 GB used,   8820.24 GFLOPS,    654.88 GOPS
+881   73.63 ms run,    2.40 ms python,   71.24 ms CUDA,  525.39 loss, 0.000600 LR, 2.89 GB used,   8893.75 GFLOPS,    654.88 GOPS
+shuffling training dataset in 150.07 ms (epoch=9)
+882 2874.95 ms run,  707.52 ms python, 2167.42 ms CUDA,  513.84 loss, 0.000595 LR, 2.89 GB used,   7386.25 GFLOPS,  21235.07 GOPS
+883   76.53 ms run,    3.04 ms python,   73.48 ms CUDA,  509.92 loss, 0.000591 LR, 2.89 GB used,   8557.68 GFLOPS,    654.88 GOPS
+884   74.42 ms run,    2.57 ms python,   71.85 ms CUDA,  515.70 loss, 0.000586 LR, 2.89 GB used,   8799.99 GFLOPS,    654.88 GOPS
+885   74.09 ms run,    2.42 ms python,   71.67 ms CUDA,  519.60 loss, 0.000582 LR, 2.89 GB used,   8838.74 GFLOPS,    654.88 GOPS
+886   74.11 ms run,    2.51 ms python,   71.61 ms CUDA,  512.86 loss, 0.000578 LR, 2.89 GB used,   8836.27 GFLOPS,    654.88 GOPS
+887   73.28 ms run,    2.54 ms python,   70.74 ms CUDA,  517.34 loss, 0.000573 LR, 2.89 GB used,   8936.95 GFLOPS,    654.88 GOPS
+888   74.07 ms run,    2.40 ms python,   71.66 ms CUDA,  513.75 loss, 0.000569 LR, 2.89 GB used,   8841.88 GFLOPS,    654.88 GOPS
+889   73.61 ms run,    2.52 ms python,   71.09 ms CUDA,  518.97 loss, 0.000565 LR, 2.89 GB used,   8897.00 GFLOPS,    654.88 GOPS
+890   73.65 ms run,    2.50 ms python,   71.14 ms CUDA,  519.05 loss, 0.000560 LR, 2.89 GB used,   8892.18 GFLOPS,    654.88 GOPS
+891   73.88 ms run,    2.51 ms python,   71.38 ms CUDA,  517.62 loss, 0.000556 LR, 2.89 GB used,   8863.84 GFLOPS,    654.88 GOPS
+892   73.60 ms run,    2.41 ms python,   71.18 ms CUDA,  517.05 loss, 0.000552 LR, 2.89 GB used,   8898.08 GFLOPS,    654.88 GOPS
+893   75.70 ms run,    2.53 ms python,   73.17 ms CUDA,  517.57 loss, 0.000547 LR, 2.89 GB used,   8651.13 GFLOPS,    654.88 GOPS
+894   74.10 ms run,    2.34 ms python,   71.75 ms CUDA,  519.75 loss, 0.000543 LR, 2.89 GB used,   8838.32 GFLOPS,    654.88 GOPS
+895   73.81 ms run,    2.51 ms python,   71.30 ms CUDA,  519.48 loss, 0.000539 LR, 2.89 GB used,   8872.26 GFLOPS,    654.88 GOPS
+896   72.75 ms run,    2.46 ms python,   70.29 ms CUDA,  510.25 loss, 0.000534 LR, 2.89 GB used,   9002.17 GFLOPS,    654.88 GOPS
+897   73.10 ms run,    2.49 ms python,   70.62 ms CUDA,  509.25 loss, 0.000530 LR, 2.89 GB used,   8958.13 GFLOPS,    654.88 GOPS
+898   73.72 ms run,    2.53 ms python,   71.19 ms CUDA,  500.21 loss, 0.000526 LR, 2.89 GB used,   8883.51 GFLOPS,    654.88 GOPS
+899   74.49 ms run,    2.61 ms python,   71.88 ms CUDA,  517.11 loss, 0.000521 LR, 2.89 GB used,   8791.71 GFLOPS,    654.88 GOPS
+900   72.85 ms run,    2.49 ms python,   70.35 ms CUDA,  530.25 loss, 0.000517 LR, 2.89 GB used,   8990.01 GFLOPS,    654.88 GOPS
+901   73.79 ms run,    2.50 ms python,   71.29 ms CUDA,  528.90 loss, 0.000513 LR, 2.89 GB used,   8874.41 GFLOPS,    654.88 GOPS
+902   73.66 ms run,    2.53 ms python,   71.12 ms CUDA,  518.61 loss, 0.000508 LR, 2.89 GB used,   8891.03 GFLOPS,    654.88 GOPS
+903   73.16 ms run,    2.51 ms python,   70.65 ms CUDA,  524.88 loss, 0.000504 LR, 2.89 GB used,   8951.76 GFLOPS,    654.88 GOPS
+904   73.99 ms run,    2.43 ms python,   71.55 ms CUDA,  516.68 loss, 0.000499 LR, 2.89 GB used,   8851.30 GFLOPS,    654.88 GOPS
+905   73.60 ms run,    2.53 ms python,   71.07 ms CUDA,  512.49 loss, 0.000495 LR, 2.89 GB used,   8897.82 GFLOPS,    654.88 GOPS
+906   74.52 ms run,    2.52 ms python,   72.00 ms CUDA,  524.33 loss, 0.000491 LR, 2.89 GB used,   8788.23 GFLOPS,    654.88 GOPS
+907   74.50 ms run,    2.50 ms python,   72.00 ms CUDA,  515.53 loss, 0.000486 LR, 2.89 GB used,   8790.24 GFLOPS,    654.88 GOPS
+908   74.37 ms run,    2.55 ms python,   71.82 ms CUDA,  509.21 loss, 0.000482 LR, 2.89 GB used,   8805.24 GFLOPS,    654.88 GOPS
+909   74.89 ms run,    2.51 ms python,   72.38 ms CUDA,  512.28 loss, 0.000478 LR, 2.89 GB used,   8744.27 GFLOPS,    654.88 GOPS
+910   73.42 ms run,    2.46 ms python,   70.96 ms CUDA,  506.96 loss, 0.000473 LR, 2.89 GB used,   8919.53 GFLOPS,    654.88 GOPS
+911   74.21 ms run,    2.57 ms python,   71.64 ms CUDA,  510.69 loss, 0.000469 LR, 2.89 GB used,   8824.75 GFLOPS,    654.88 GOPS
+912   73.53 ms run,    2.58 ms python,   70.95 ms CUDA,  514.49 loss, 0.000465 LR, 2.89 GB used,   8906.42 GFLOPS,    654.88 GOPS
+913   73.54 ms run,    2.50 ms python,   71.04 ms CUDA,  515.00 loss, 0.000460 LR, 2.89 GB used,   8905.43 GFLOPS,    654.88 GOPS
+914   73.65 ms run,    2.39 ms python,   71.27 ms CUDA,  512.62 loss, 0.000456 LR, 2.89 GB used,   8891.41 GFLOPS,    654.88 GOPS
+915   73.83 ms run,    2.54 ms python,   71.29 ms CUDA,  514.51 loss, 0.000452 LR, 2.89 GB used,   8870.04 GFLOPS,    654.88 GOPS
+916   75.53 ms run,    2.53 ms python,   73.00 ms CUDA,  512.54 loss, 0.000447 LR, 2.89 GB used,   8671.00 GFLOPS,    654.88 GOPS
+917   73.52 ms run,    2.30 ms python,   71.22 ms CUDA,  509.50 loss, 0.000443 LR, 2.89 GB used,   8907.27 GFLOPS,    654.88 GOPS
+918   73.85 ms run,    2.50 ms python,   71.35 ms CUDA,  515.22 loss, 0.000439 LR, 2.89 GB used,   8867.49 GFLOPS,    654.88 GOPS
+919   74.55 ms run,    2.29 ms python,   72.26 ms CUDA,  515.91 loss, 0.000434 LR, 2.89 GB used,   8784.69 GFLOPS,    654.88 GOPS
+920   72.97 ms run,    2.58 ms python,   70.39 ms CUDA,  509.59 loss, 0.000430 LR, 2.89 GB used,   8974.50 GFLOPS,    654.88 GOPS
+921   73.65 ms run,    2.51 ms python,   71.14 ms CUDA,  511.09 loss, 0.000425 LR, 2.89 GB used,   8891.78 GFLOPS,    654.88 GOPS
+922   74.01 ms run,    2.61 ms python,   71.40 ms CUDA,  518.82 loss, 0.000421 LR, 2.89 GB used,   8849.07 GFLOPS,    654.88 GOPS
+923   73.20 ms run,    2.27 ms python,   70.93 ms CUDA,  506.02 loss, 0.000417 LR, 2.89 GB used,   8946.15 GFLOPS,    654.88 GOPS
+924   73.40 ms run,    2.49 ms python,   70.91 ms CUDA,  512.77 loss, 0.000412 LR, 2.89 GB used,   8921.52 GFLOPS,    654.88 GOPS
+925   73.57 ms run,    2.27 ms python,   71.30 ms CUDA,  512.63 loss, 0.000408 LR, 2.89 GB used,   8901.83 GFLOPS,    654.88 GOPS
+926   73.55 ms run,    2.44 ms python,   71.10 ms CUDA,  515.68 loss, 0.000404 LR, 2.89 GB used,   8904.30 GFLOPS,    654.88 GOPS
+927   74.04 ms run,    2.49 ms python,   71.55 ms CUDA,  508.77 loss, 0.000399 LR, 2.89 GB used,   8844.51 GFLOPS,    654.88 GOPS
+928   73.84 ms run,    2.51 ms python,   71.34 ms CUDA,  506.59 loss, 0.000395 LR, 2.89 GB used,   8868.32 GFLOPS,    654.88 GOPS
+929   75.24 ms run,    2.53 ms python,   72.71 ms CUDA,  522.74 loss, 0.000391 LR, 2.89 GB used,   8704.27 GFLOPS,    654.88 GOPS
+930   73.80 ms run,    2.50 ms python,   71.30 ms CUDA,  514.81 loss, 0.000386 LR, 2.89 GB used,   8873.98 GFLOPS,    654.88 GOPS
+931   74.57 ms run,    2.52 ms python,   72.05 ms CUDA,  513.56 loss, 0.000382 LR, 2.89 GB used,   8781.75 GFLOPS,    654.88 GOPS
+932   74.46 ms run,    2.50 ms python,   71.96 ms CUDA,  515.26 loss, 0.000378 LR, 2.89 GB used,   8795.21 GFLOPS,    654.88 GOPS
+933   73.26 ms run,    2.52 ms python,   70.75 ms CUDA,  504.93 loss, 0.000373 LR, 2.89 GB used,   8938.86 GFLOPS,    654.88 GOPS
+934   73.97 ms run,    2.40 ms python,   71.57 ms CUDA,  511.20 loss, 0.000369 LR, 2.89 GB used,   8853.37 GFLOPS,    654.88 GOPS
+935   73.67 ms run,    2.48 ms python,   71.19 ms CUDA,  511.14 loss, 0.000365 LR, 2.89 GB used,   8889.55 GFLOPS,    654.88 GOPS
+936   73.98 ms run,    2.38 ms python,   71.60 ms CUDA,  510.67 loss, 0.000360 LR, 2.89 GB used,   8851.93 GFLOPS,    654.88 GOPS
+937   73.72 ms run,    2.42 ms python,   71.30 ms CUDA,  514.54 loss, 0.000356 LR, 2.89 GB used,   8882.84 GFLOPS,    654.88 GOPS
+938   73.69 ms run,    2.33 ms python,   71.36 ms CUDA,  512.30 loss, 0.000351 LR, 2.89 GB used,   8887.30 GFLOPS,    654.88 GOPS
+939   75.91 ms run,    2.51 ms python,   73.40 ms CUDA,  518.21 loss, 0.000347 LR, 2.89 GB used,   8627.48 GFLOPS,    654.88 GOPS
+940   73.85 ms run,    2.38 ms python,   71.47 ms CUDA,  508.25 loss, 0.000343 LR, 2.89 GB used,   8867.89 GFLOPS,    654.88 GOPS
+941   74.13 ms run,    2.44 ms python,   71.69 ms CUDA,  506.70 loss, 0.000338 LR, 2.89 GB used,   8834.03 GFLOPS,    654.88 GOPS
+942   73.58 ms run,    2.55 ms python,   71.02 ms CUDA,  519.54 loss, 0.000334 LR, 2.89 GB used,   8900.83 GFLOPS,    654.88 GOPS
+943   72.81 ms run,    2.48 ms python,   70.33 ms CUDA,  506.19 loss, 0.000330 LR, 2.89 GB used,   8994.12 GFLOPS,    654.88 GOPS
+944   73.84 ms run,    2.34 ms python,   71.49 ms CUDA,  507.07 loss, 0.000325 LR, 2.89 GB used,   8869.23 GFLOPS,    654.88 GOPS
+945   73.75 ms run,    2.49 ms python,   71.26 ms CUDA,  524.65 loss, 0.000321 LR, 2.89 GB used,   8879.35 GFLOPS,    654.88 GOPS
+946   73.46 ms run,    2.41 ms python,   71.05 ms CUDA,  510.76 loss, 0.000317 LR, 2.89 GB used,   8914.99 GFLOPS,    654.88 GOPS
+947   73.63 ms run,    2.44 ms python,   71.19 ms CUDA,  504.90 loss, 0.000312 LR, 2.89 GB used,   8894.18 GFLOPS,    654.88 GOPS
+948   73.64 ms run,    2.48 ms python,   71.16 ms CUDA,  505.63 loss, 0.000308 LR, 2.89 GB used,   8892.92 GFLOPS,    654.88 GOPS
+949   74.36 ms run,    2.57 ms python,   71.78 ms CUDA,  512.43 loss, 0.000304 LR, 2.89 GB used,   8807.02 GFLOPS,    654.88 GOPS
+950   73.92 ms run,    2.51 ms python,   71.41 ms CUDA,  512.61 loss, 0.000299 LR, 2.89 GB used,   8859.49 GFLOPS,    654.88 GOPS
+951   74.33 ms run,    2.49 ms python,   71.85 ms CUDA,  510.17 loss, 0.000295 LR, 2.89 GB used,   8810.04 GFLOPS,    654.88 GOPS
+952   76.14 ms run,    3.99 ms python,   72.15 ms CUDA,  508.98 loss, 0.000291 LR, 2.89 GB used,   8600.81 GFLOPS,    654.88 GOPS
+953   73.14 ms run,    2.50 ms python,   70.64 ms CUDA,  509.57 loss, 0.000286 LR, 2.89 GB used,   8953.75 GFLOPS,    654.88 GOPS
+954   73.61 ms run,    2.60 ms python,   71.01 ms CUDA,  515.29 loss, 0.000282 LR, 2.89 GB used,   8896.50 GFLOPS,    654.88 GOPS
+955   73.67 ms run,    2.77 ms python,   70.91 ms CUDA,  519.84 loss, 0.000277 LR, 2.89 GB used,   8888.87 GFLOPS,    654.88 GOPS
+956   73.31 ms run,    2.54 ms python,   70.77 ms CUDA,  507.38 loss, 0.000273 LR, 2.89 GB used,   8932.74 GFLOPS,    654.88 GOPS
+957   73.87 ms run,    2.48 ms python,   71.39 ms CUDA,  513.58 loss, 0.000269 LR, 2.89 GB used,   8864.97 GFLOPS,    654.88 GOPS
+958   73.80 ms run,    2.49 ms python,   71.31 ms CUDA,  520.61 loss, 0.000264 LR, 2.89 GB used,   8873.65 GFLOPS,    654.88 GOPS
+959   75.08 ms run,    2.49 ms python,   72.59 ms CUDA,  518.37 loss, 0.000260 LR, 2.89 GB used,   8722.29 GFLOPS,    654.88 GOPS
+960   73.56 ms run,    2.50 ms python,   71.06 ms CUDA,  511.60 loss, 0.000256 LR, 2.89 GB used,   8902.56 GFLOPS,    654.88 GOPS
+961   74.33 ms run,    2.47 ms python,   71.86 ms CUDA,  523.28 loss, 0.000251 LR, 2.89 GB used,   8810.83 GFLOPS,    654.88 GOPS
+962   74.78 ms run,    2.55 ms python,   72.23 ms CUDA,  520.27 loss, 0.000247 LR, 2.89 GB used,   8757.34 GFLOPS,    654.88 GOPS
+963   73.13 ms run,    2.36 ms python,   70.77 ms CUDA,  520.64 loss, 0.000243 LR, 2.89 GB used,   8954.91 GFLOPS,    654.88 GOPS
+964   74.15 ms run,    2.57 ms python,   71.58 ms CUDA,  511.44 loss, 0.000238 LR, 2.89 GB used,   8831.59 GFLOPS,    654.88 GOPS
+965   73.64 ms run,    2.51 ms python,   71.13 ms CUDA,  499.37 loss, 0.000234 LR, 2.89 GB used,   8892.77 GFLOPS,    654.88 GOPS
+966   73.94 ms run,    2.51 ms python,   71.43 ms CUDA,  512.96 loss, 0.000230 LR, 2.89 GB used,   8857.36 GFLOPS,    654.88 GOPS
+967   73.90 ms run,    2.29 ms python,   71.61 ms CUDA,  512.49 loss, 0.000225 LR, 2.89 GB used,   8861.58 GFLOPS,    654.88 GOPS
+968   73.96 ms run,    2.50 ms python,   71.46 ms CUDA,  516.07 loss, 0.000221 LR, 2.89 GB used,   8854.53 GFLOPS,    654.88 GOPS
+969   75.66 ms run,    2.30 ms python,   73.36 ms CUDA,  505.43 loss, 0.000217 LR, 2.89 GB used,   8655.51 GFLOPS,    654.88 GOPS
+970   73.95 ms run,    2.51 ms python,   71.43 ms CUDA,  520.34 loss, 0.000212 LR, 2.89 GB used,   8856.16 GFLOPS,    654.88 GOPS
+971   74.34 ms run,    2.47 ms python,   71.87 ms CUDA,  520.31 loss, 0.000208 LR, 2.89 GB used,   8809.00 GFLOPS,    654.88 GOPS
+972   74.05 ms run,    2.52 ms python,   71.53 ms CUDA,  504.78 loss, 0.000203 LR, 2.89 GB used,   8843.47 GFLOPS,    654.88 GOPS
+973   73.61 ms run,    2.50 ms python,   71.10 ms CUDA,  511.77 loss, 0.000199 LR, 2.89 GB used,   8897.14 GFLOPS,    654.88 GOPS
+974   73.76 ms run,    2.49 ms python,   71.26 ms CUDA,  514.22 loss, 0.000195 LR, 2.89 GB used,   8878.87 GFLOPS,    654.88 GOPS
+975   73.80 ms run,    2.41 ms python,   71.39 ms CUDA,  510.60 loss, 0.000190 LR, 2.89 GB used,   8873.20 GFLOPS,    654.88 GOPS
+976   75.41 ms run,    2.50 ms python,   72.91 ms CUDA,  504.75 loss, 0.000186 LR, 2.89 GB used,   8683.75 GFLOPS,    654.88 GOPS
+977   74.01 ms run,    2.37 ms python,   71.64 ms CUDA,  503.28 loss, 0.000182 LR, 2.89 GB used,   8848.93 GFLOPS,    654.88 GOPS
+978   73.91 ms run,    2.50 ms python,   71.41 ms CUDA,  500.40 loss, 0.000177 LR, 2.89 GB used,   8860.72 GFLOPS,    654.88 GOPS
+979   74.70 ms run,    2.51 ms python,   72.18 ms CUDA,  499.50 loss, 0.000173 LR, 2.89 GB used,   8767.19 GFLOPS,    654.88 GOPS
+shuffling training dataset in 151.24 ms (epoch=10)
+980 2870.01 ms run,  705.29 ms python, 2164.72 ms CUDA,  500.53 loss, 0.000169 LR, 2.89 GB used,   7398.95 GFLOPS,  21235.07 GOPS
+981   75.33 ms run,    2.80 ms python,   72.53 ms CUDA,  494.08 loss, 0.000164 LR, 2.89 GB used,   8693.84 GFLOPS,    654.88 GOPS
+982   73.67 ms run,    2.56 ms python,   71.12 ms CUDA,  490.53 loss, 0.000160 LR, 2.89 GB used,   8889.06 GFLOPS,    654.88 GOPS
+983   72.99 ms run,    2.39 ms python,   70.59 ms CUDA,  500.75 loss, 0.000156 LR, 2.89 GB used,   8972.65 GFLOPS,    654.88 GOPS
+984   73.81 ms run,    2.50 ms python,   71.31 ms CUDA,  504.60 loss, 0.000151 LR, 2.89 GB used,   8872.56 GFLOPS,    654.88 GOPS
+985   72.67 ms run,    2.53 ms python,   70.14 ms CUDA,  486.75 loss, 0.000147 LR, 2.89 GB used,   9011.68 GFLOPS,    654.88 GOPS
+986   72.87 ms run,    2.28 ms python,   70.59 ms CUDA,  492.85 loss, 0.000143 LR, 2.89 GB used,   8987.27 GFLOPS,    654.88 GOPS
+987   74.22 ms run,    2.50 ms python,   71.72 ms CUDA,  490.34 loss, 0.000138 LR, 2.89 GB used,   8823.80 GFLOPS,    654.88 GOPS
+988   73.89 ms run,    2.55 ms python,   71.34 ms CUDA,  495.59 loss, 0.000134 LR, 2.89 GB used,   8862.65 GFLOPS,    654.88 GOPS
+989   73.61 ms run,    2.52 ms python,   71.09 ms CUDA,  496.63 loss, 0.000129 LR, 2.89 GB used,   8896.77 GFLOPS,    654.88 GOPS
+990   73.67 ms run,    2.29 ms python,   71.38 ms CUDA,  496.24 loss, 0.000125 LR, 2.89 GB used,   8889.75 GFLOPS,    654.88 GOPS
+991   73.39 ms run,    2.56 ms python,   70.83 ms CUDA,  495.29 loss, 0.000121 LR, 2.89 GB used,   8923.23 GFLOPS,    654.88 GOPS
+992   74.27 ms run,    2.50 ms python,   71.78 ms CUDA,  502.62 loss, 0.000116 LR, 2.89 GB used,   8817.03 GFLOPS,    654.88 GOPS
+993   73.94 ms run,    2.65 ms python,   71.29 ms CUDA,  498.59 loss, 0.000112 LR, 2.89 GB used,   8856.68 GFLOPS,    654.88 GOPS
+994   73.87 ms run,    2.32 ms python,   71.55 ms CUDA,  490.58 loss, 0.000108 LR, 2.89 GB used,   8865.75 GFLOPS,    654.88 GOPS
+995   75.71 ms run,    2.51 ms python,   73.20 ms CUDA,  505.13 loss, 0.000103 LR, 2.89 GB used,   8650.22 GFLOPS,    654.88 GOPS
+996   73.74 ms run,    2.51 ms python,   71.23 ms CUDA,  494.49 loss, 0.000099 LR, 2.89 GB used,   8880.37 GFLOPS,    654.88 GOPS
+997   74.10 ms run,    2.55 ms python,   71.55 ms CUDA,  497.25 loss, 0.000095 LR, 2.89 GB used,   8838.21 GFLOPS,    654.88 GOPS
+998   73.74 ms run,    2.61 ms python,   71.14 ms CUDA,  500.07 loss, 0.000090 LR, 2.89 GB used,   8880.77 GFLOPS,    654.88 GOPS
+999   73.61 ms run,    2.53 ms python,   71.08 ms CUDA,  492.28 loss, 0.000086 LR, 2.89 GB used,   8896.67 GFLOPS,    654.88 GOPS
+shuffling test dataset in 0.00 ms (epoch=0)
+eval     9596/10240 93.71%,    0.41 val_loss STEP=1000 (in 1422.33 ms)
