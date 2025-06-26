@@ -72,4 +72,4 @@ Carmack
 
 </blockquote>
 
-[![](https://alexey.work/badge.png)](https://alexey.work?ref=tgn)
+[![](https://alexey.work/badge)](https://alexey.work?ref=tgn)
